@@ -1,0 +1,1 @@
+ini tujuan s2
