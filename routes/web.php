@@ -166,8 +166,49 @@ Route::get('/luar-negri', function () {
 // ini route Admin
 
 Route::get('/administrator', function () {
-    return view('admin/admindashboard');
+    return view('admin/login');
 })->name('administrator');
+
+Route::get('/berita', function () {
+    return view('admin/admindashboard');
+})->name('dashboardadmin');
+
+Route::get('/addberita', function () {
+    return view('admin/addberita');
+})->name('addberita');
+
+Route::get('/editberita', function () {
+    return view('admin/editberita');
+})->name('editberita');
+
+Route::get('/dokumen', function () {
+    return view('admin/dokumen');
+})->name('dokumen');
+
+Route::get('/addokumen', function () {
+    return view('admin/addokumen');
+})->name('addokumen');
+
+Route::get('/dosen', function () {
+    return view('admin/dosen');
+})->name('dosen');
+
+Route::get('/addosen', function () {
+    return view('admin/addosen');
+})->name('addosen');
+
+Route::get('/editdosen', function () {
+    return view('admin/editdosen');
+})->name('editdosen');
+
+Route::get('/alumni', function () {
+    return view('admin/alumni');
+})->name('alumni');
+
+Route::get('/addalumni', function () {
+    return view('admin/addalumni');
+})->name('addalumni');
+
 
 
 
