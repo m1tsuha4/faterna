@@ -75,7 +75,14 @@
                 <i class="fas fa-user-graduate"></i>
                     <span>Alumni</span></a>
             </li>
-          
+            <hr class="sidebar-divider">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('beasiswa') }}">
+                    <i class="fas fa-award"></i>
+                    <span>Beasiswa</span>
+                </a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -225,6 +232,7 @@
 
     <!-- Page level custom scripts -->
     <script src="{{asset('template/js/demo/datatables-demo.js')}}"></script>
+
 
 </body>
 
