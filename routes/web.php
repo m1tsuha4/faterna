@@ -189,9 +189,9 @@ Route::get('/addokumen', function () {
     return view('admin/addokumen');
 })->name('addokumen');
 
-Route::get('/dosen', function () {
+Route::get('/dosen-admin', function () {
     return view('admin/dosen');
-})->name('dosen');
+})->name('dosen-admin');
 
 Route::get('/addosen', function () {
     return view('admin/addosen');
@@ -208,6 +208,14 @@ Route::get('/alumni', function () {
 Route::get('/addalumni', function () {
     return view('admin/addalumni');
 })->name('addalumni');
+
+Route::get('/beasiswa', function () {
+    return view('admin/beasiswa');
+})->name('beasiswa');
+
+Route::get('/addbeasiswa', function () {
+    return view('admin/addbeasiswa');
+})->name('addbeasiswa');
 
 
 
