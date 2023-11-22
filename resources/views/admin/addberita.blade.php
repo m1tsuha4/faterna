@@ -12,7 +12,8 @@
 
                     <div class="container">
                         <div class="col-sm-12">
-                        <form>
+                        <form action="/addberita" method="post" enctype="multipart/form-data">
+                            @csrf
                               <!--Image-->
                               <div>
                                     <div class="mb-4 d-flex justify-content-center">
@@ -22,13 +23,13 @@
                                     <div class="d-flex justify-content-center">
                                         <div class="btn btn-primary btn-rounded">
                                             <label class="form-label text-white m-1" for="customFile1">Choose file</label>
-                                            <input type="file" class="form-control d-none" id="customFile1" onchange="displaySelectedImage(event, 'selectedImage')" />
+                                            <input type="file" name="file" class="form-control d-none" id="customFile1" onchange="displaySelectedImage(event, 'selectedImage')" />
                                         </div>
                                     </div>
                                 </div>
                             <div class="mb-3">
                                 <label name = "judul" for="judul" class="form-label">Judul</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="deskripsi" class="form-label">Deskripsi</label>

@@ -25,14 +25,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($allalumni as $alumni)
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>System Architect</td>
+                                <td>{{ $alumni->tahun }}</td>
+                                <td>{{ $alumni->wisuda }}</td>
+                                <td><a href="{{ asset('storage/alumni/' . $alumni->file) }}" target="_blank">{{ $alumni->file }}</a></td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm mt-2  ">Hapus</a>
+                                    <a href="{{ route('delete-alumni',['id'=>$alumni->id]) }}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -43,4 +45,3 @@
 
  @endsection
 
-    

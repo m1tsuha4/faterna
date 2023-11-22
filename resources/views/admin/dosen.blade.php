@@ -28,18 +28,20 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($alldosen as $dosen)
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>Edinburgh</td>
-                                <td>Edinburgh</td>
-                                <td>Edinburgh</td>
+                                <td>{{ $dosen->nama }}</td>
+                                <td>{{ $dosen->departemen }}</td>
+                                <td>{{ $dosen->email }}</td>
+                                <td>{{ $dosen->publikasi }}</td>
+                                <td>{{ $dosen->edukasi }}</td>
+                                <td>{{ $dosen->penelitian }}</td>
                                 <td>
-                                    <a href="{{route('editdosen')}}" class="btn btn-primary btn-sm">Edit</a><br>
-                                    <a href="" class="btn btn-danger btn-sm mt-2  ">Hapus</a>
+                                    <a href="{{route('editdosen',['id' => $dosen->id])}}" class="btn btn-primary btn-sm">Edit</a>
+                                    <a href="{{route('delete-dosen',['id' => $dosen->id])}}" class="btn btn-danger btn-sm mt-2">Hapus</a>
                                 </td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
