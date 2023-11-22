@@ -169,54 +169,85 @@ Route::get('/administrator', function () {
     return view('admin/login');
 })->name('administrator');
 
-Route::get('/berita', function () {
-    return view('admin/admindashboard');
-})->name('dashboardadmin');
+//Route::get('/berita', function () {
+//    return view('admin/admindashboard');
+//})->name('dashboardadmin');
+//
+//Route::get('/addberita', function () {
+//    return view('admin/addberita');
+//})->name('addberita');
+//
+//Route::get('/editberita', function () {
+//    return view('admin/editberita');
+//})->name('editberita');
+//
+//Route::get('/dokumen', function () {
+//    return view('admin/dokumen');
+//})->name('dokumen');
+//
+//Route::get('/addokumen', function () {
+//    return view('admin/addokumen');
+//})->name('addokumen');
+//
+//Route::get('/dosen-admin', function () {
+//    return view('admin/dosen');
+//})->name('dosen-admin');
+//
+//Route::get('/addosen', function () {
+//    return view('admin/addosen');
+//})->name('addosen');
+//
+//Route::get('/editdosen', function () {
+//    return view('admin/editdosen');
+//})->name('editdosen');
+//
+//Route::get('/alumni', function () {
+//    return view('admin/alumni');
+//})->name('alumni');
+//
+//Route::get('/addalumni', function () {
+//    return view('admin/addalumni');
+//})->name('addalumni');
+//
+//Route::get('/beasiswa', function () {
+//    return view('admin/beasiswa');
+//})->name('beasiswa');
+//
+//Route::get('/addbeasiswa', function () {
+//    return view('admin/addbeasiswa');
+//})->name('addbeasiswa');
 
-Route::get('/addberita', function () {
-    return view('admin/addberita');
-})->name('addberita');
-
-Route::get('/editberita', function () {
-    return view('admin/editberita');
-})->name('editberita');
-
-Route::get('/dokumen', function () {
-    return view('admin/dokumen');
-})->name('dokumen');
-
-Route::get('/addokumen', function () {
-    return view('admin/addokumen');
-})->name('addokumen');
-
-Route::get('/dosen-admin', function () {
-    return view('admin/dosen');
-})->name('dosen-admin');
-
-Route::get('/addosen', function () {
-    return view('admin/addosen');
-})->name('addosen');
-
-Route::get('/editdosen', function () {
-    return view('admin/editdosen');
-})->name('editdosen');
-
-Route::get('/alumni', function () {
-    return view('admin/alumni');
-})->name('alumni');
-
-Route::get('/addalumni', function () {
-    return view('admin/addalumni');
-})->name('addalumni');
-
-Route::get('/beasiswa', function () {
-    return view('admin/beasiswa');
-})->name('beasiswa');
-
-Route::get('/addbeasiswa', function () {
-    return view('admin/addbeasiswa');
-})->name('addbeasiswa');
-
+Route::middleware('auth')->group(function (){
+    //berita
+    Route::get('/berita', [\App\Http\Controllers\BeritaController::class,'index'])->name('dashboardadmin');
+    Route::get('/addberita', [\App\Http\Controllers\BeritaController::class,'create'])->name('addberita');
+    Route::post('/addberita', [\App\Http\Controllers\BeritaController::class,'store'])->name('add-berita');
+    Route::get('/editberita/{id}', [\App\Http\Controllers\BeritaController::class,'edit'])->name('editberita');
+    Route::put('/editberita/{id}', [\App\Http\Controllers\BeritaController::class,'update'])->name('edit-berita');
+    Route::get('/delete-berita/{id}', [\App\Http\Controllers\BeritaController::class,'destroy'])->name('delete-berita');
+    //dokumen
+    Route::get('/dokumen', [\App\Http\Controllers\DokumenController::class,'index'])->name('dokumen');
+    Route::get('/addokumen',  [\App\Http\Controllers\DokumenController::class,'create'])->name('addokumen');
+    Route::post('/addokumen',  [\App\Http\Controllers\DokumenController::class,'store'])->name('add-dokumen');
+    Route::get('/delete-dokumen/{id}', [\App\Http\Controllers\DokumenController::class,'destroy'])->name('delete-dokumen');
+    //dosen
+    Route::get('/dosen-admin', [\App\Http\Controllers\DosenController::class,'index'])->name('dosen-admin');
+    Route::get('/addosen',[\App\Http\Controllers\DosenController::class,'create'])->name('addosen');
+    Route::post('/addosen',[\App\Http\Controllers\DosenController::class,'store'])->name('add-dosen');
+    Route::get('/editdosen/{id}', [\App\Http\Controllers\DosenController::class,'edit'])->name('editdosen');
+    Route::put('/editdosen/{id}', [\App\Http\Controllers\DosenController::class,'update'])->name('edit-dosen');
+    Route::get('/delete-dosen/{id}', [\App\Http\Controllers\DosenController::class,'destroy'])->name('delete-dosen');
+    //alumni
+    Route::get('/alumni', [\App\Http\Controllers\AlumniController::class,'index'])->name('alumni');
+    Route::get('/addalumni', [\App\Http\Controllers\AlumniController::class,'create'])->name('addalumni');
+    Route::post('/addalumni', [\App\Http\Controllers\AlumniController::class,'store'])->name('add-alumni');
+    Route::get('/delete-alumni/{id}', [\App\Http\Controllers\AlumniController::class,'destroy'])->name('delete-alumni');
+    //beasiswa
+    Route::get('/beasiswa', [\App\Http\Controllers\BeasiswaController::class,'index'])->name('beasiswa');
+    Route::get('/addbeasiswa', [\App\Http\Controllers\BeasiswaController::class,'create'])->name('addbeasiswa');
+    Route::post('/addbeasiswa', [\App\Http\Controllers\BeasiswaController::class,'store'])->name('add-beasiswa');
+    Route::get('/delete-beasiswa/{id}', [\App\Http\Controllers\BeasiswaController::class,'destroy'])->name('delete-beasiswa');
+});
 
 
 

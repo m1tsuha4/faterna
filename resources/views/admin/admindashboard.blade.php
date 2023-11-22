@@ -25,15 +25,17 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($allberita as $berita)
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>
-                                    <a href="{{route('editberita')}}" class="btn btn-primary btn-sm">Edit</a><br>
-                                    <a href="" class="btn btn-danger btn-sm mt-2  ">Hapus</a>
-                                </td>
+                                    <td>{{ $berita->judul }}</td>
+                                    <td>{{ $berita->tanggal }}</td>
+                                    <td>{{ $berita->author }}</td>
+                                    <td>
+                                        <a href="{{route('editberita',['id' => $berita->id])}}" class="btn btn-primary btn-sm">Edit</a>
+                                        <a href="{{route('delete-berita',['id' => $berita->id])}}" class="btn btn-danger btn-sm  ">Hapus</a>
+                                    </td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

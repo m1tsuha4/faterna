@@ -25,14 +25,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($alldokumen as $dokumen)
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
+                                <td>{{ $dokumen->judul }}</td>
+                                <td>{{ $dokumen->tanggal }}</td>
+                                <td><a href="{{ asset('storage/dokumen/' . $dokumen->file) }}" target="_blank">{{ $dokumen->file }}</a></td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm mt-2  ">Hapus</a>
+                                    <a href="{{route('delete-dokumen',['id' => $dokumen->id])}}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
