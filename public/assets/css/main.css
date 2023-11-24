@@ -71,7 +71,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #47b2e4;
+  background: #B15EFF;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -413,7 +413,9 @@ h6 {
   content: "/";
 }
 
-/*akreditasi*/
+/*--------------------------------------------------------
+#akreditasi,pakademik,ormawa-------------------------------------
+-----------------------------------------------------------*/
 .post-heading {
   padding: 25px 0;
 }
@@ -425,7 +427,7 @@ h6 {
   color: black;
 }
 
-.single-post .post-heading .entry-meta {
+.post-heading .entry-meta {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
@@ -433,25 +435,25 @@ h6 {
   color: #222;
 }
 
-.single-post .post-heading .entry-meta li i{
+.post-heading .entry-meta li i{
   color: #D0A2F7;
 }
 
-.single-post .post-heading .entry-meta li {
+.post-heading .entry-meta li {
   display: inline-block;
   margin-right: 15px;
   line-height: 30px;
 }
 
-.single-post .post-heading .entry-meta li a {
+.post-heading .entry-meta li a {
   color: #222;
   text-decoration: none;
 }
 
-.single-post .post-heading .entry-meta li a:hover {
+.post-heading .entry-meta li a:hover {
   color: #D0A2F7;
 }
-.single-post .post-content blockquote{
+.post-content blockquote{
   border-left: 5px solid #87566e;
   padding: 11.5px 23px;
   font-size: 22px;
@@ -459,6 +461,106 @@ h6 {
   line-height: 1.2;
   font-style: italic;
 }
+
+.post-content table{
+  margin: 0 15px;
+}
+.post-content li a {
+  color: #B15EFF;
+}
+
+.post-content li a:hover {
+  color: #D0A2F7;
+}
+
+.post-content ul li{
+  padding: 5px 0px;
+}
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  text-indent: initial;
+}
+
+table, tr {
+  border-top: 1px solid #DADDDF;
+  border-bottom: 1px solid #DADDDF;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+td {
+  padding: 15px 10px;
+
+}
+
+th {
+  padding: 15px 10px; 
+}
+
+td a{
+  color: #B15EFF;
+}
+
+td a:hover{
+  color: #D0A2F7;
+}
+
+/*--------------------------------------------------------------
+# beasiswa
+--------------------------------------------------------------*/
+.title h2 {
+  border-bottom: 5px solid #9a55da;
+  padding: 12px 0px;
+  line-height: 1.2;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.widget.widget_rss ul{
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.widget.widget_rss ul>li{
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6 ;
+}
+.widget.widget_rss ul li{
+  padding: 15px 0px 15px 0px;
+}
+.widget.widget_rss ul li a{
+  font-size: 20px;
+  font-weight: 400;
+  color: #222;
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.widget.widget_rss ul li span{
+  font-size: 14px;
+  color: grey;
+}
+
+.widget.widget_rss ul li a:hover{
+  color: #D0A2F7;
+}
+
+.title h2 a{
+  color: #9a55da;
+}
+
+.title h2 a:hover{
+  color: #D0A2F7;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
