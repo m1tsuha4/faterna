@@ -75,7 +75,7 @@
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>S3</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
+                <ul>
                   <li><a href="{{ route('sejarah-prodi-s3') }}">Sejarah</a></li>
                   <li><a href="{{ route('visi-misi-prodi-s3') }}">Visi Misi</a></li>
                   <li><a href="{{ route('tujuan-prodi-s3') }}">Tujuan</a></li>

@@ -5,13 +5,13 @@
         <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Berita</h1>
+        <h1 class="h3 mb-2 text-gray-800">Dokumen</h1>
 
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <a href="{{route('addberita')}}" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>   Tambah Berita</a>
+                <a href="{{route('addokumen')}}" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>   Tambah Dokumen</a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -20,20 +20,19 @@
                             <tr>
                                 <th>Judul</th>
                                 <th>Tanggal Upload</th>
-                                <th>Author</th>
+                                <th>link</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                        @foreach($allberita as $berita)
+                        @foreach($alldokumen as $dokumen)
                             <tr>
-                                    <td>{{ $berita->judul }}</td>
-                                    <td>{{ $berita->tanggal }}</td>
-                                    <td>{{ $berita->author }}</td>
-                                    <td>
-                                        <a href="{{route('editberita',['id' => $berita->id])}}" class="btn btn-primary btn-sm">Edit</a>
-                                        <a href="{{route('delete-berita',['id' => $berita->id])}}" class="btn btn-danger btn-sm  ">Hapus</a>
-                                    </td>
+                                <td>{{ $dokumen->judul }}</td>
+                                <td>{{ $dokumen->tanggal }}</td>
+                                <td><a href="{{ asset('storage/dokumen/' . $dokumen->file) }}" target="_blank">{{ $dokumen->file }}</a></td>
+                                <td>
+                                    <a href="{{route('delete-dokumen',['id' => $dokumen->id])}}" class="btn btn-danger btn-sm">Hapus</a>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
