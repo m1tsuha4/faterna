@@ -37,24 +37,60 @@
                     </span>
                 </h4>
             </blockquote>
+            <p style="text-align: justify">
+                Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) merupakan satu satunya badan akreditasi yang diakui oleh 
+                pemerintah Republik Indonesia melalui Kementerian Riset Teknologi Dan Pendidikan Tinggi Republik Indonesia. 
+                BAN-PT berdiri pada tahun 1994 memiliki fungsi penilaian mutu perguruan tinggi, meliputi Perguruan Tinggi 
+                Negeri dan Swasta.
+            </p>
+            <p style="text-align: justify">
+                Hasil akreditasi yang telah dilakukan BAN-PT terhadap program studi yang ada di Fakultas Peternakan Universitas Andalas sebagai berikut
+            </p>
+            <table width="100%">
+                <tbody width="100%">
+                    <tr>
+                        <td width="15%">No</td>
+                        <td width="16%">Jenjang</td>
+                        <td width="17%">Program Studi</td>
+                        <td width="25%">No. SK</td>
+                        <td width="16%">Masa Berlaku</td>
+                        <td width="17%">Peringkat</td>
+                    </tr>
+                    <tr>
+                        <td width="5%">1</td>
+                        <td width="16%"><a href="#">Sarjana (S1)</a></td>
+                        <td width="17%">Perternakan</td>
+                        <td width="25%">4624/SK/BAN-PT/Akred/S/XII/2017</td>
+                        <td width="16%">5 - 12 - 2022</td>
+                        <td width="17%"> A </td>
+                    </tr>
+                    <tr>
+                        <td width="5%">2</td>
+                        <td width="16%"><a href="#">Sarjana (S1)</a></td>
+                        <td width="17%">Perternakan (Kampus II Payakumbuh)</td>
+                        <td width="25%">4383/SK/BAN-PT/Akred/S/XI/2017</td>
+                        <td width="16%">5 - 12 - 2022</td>
+                        <td width="17%"> B </td>
+                    </tr>
+                    <tr>
+                        <td width="5%">3</td>
+                        <td width="16%"><a href="#">Magister (S2)</a></td>
+                        <td width="17%">Ilmu Perternakan</td>
+                        <td width="25%">2610/SK/BAN-PT/Akred/M/IX/2018</td>
+                        <td width="16%">18 - 9 - 2023</td>
+                        <td width="17%"> A </td>
+                    </tr>
+                    <tr>
+                        <td width="5%">4</td>
+                        <td width="16%"><a href="#">Doktor (S3)</a></td>
+                        <td width="17%">Ilmu Perternakan</td>
+                        <td width="25%">3493/SK/BAN-PT/Akred/D/X/2017</td>
+                        <td width="16%">3 - 10 - 2022</td>
+                        <td width="17%"> B </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <p style="text-align: justify">
-            Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) merupakan satu satunya badan akreditasi yang diakui oleh 
-            pemerintah Republik Indonesia melalui Kementerian Riset Teknologi Dan Pendidikan Tinggi Republik Indonesia. 
-            BAN-PT berdiri pada tahun 1994 memiliki fungsi penilaian mutu perguruan tinggi, meliputi Perguruan Tinggi 
-            Negeri dan Swasta.
-        </p>
-        <p style="text-align: justify">
-            Hasil akreditasi yang telah dilakukan BAN-PT terhadap program studi yang ada di Fakultas Peternakan Universitas Andalas sebagai berikut
-        </p>
-        <table width="100%">
-            <tbody>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-            </tbody>
-        </table>
     </div>
 </article>
 @endsection

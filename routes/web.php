@@ -132,10 +132,6 @@ Route::get('/panduan-dan-sop-ta', function () {
     return view('download/sopTA');
 })->name('sopTA');
 
-Route::get('/sk-dosen', function () {
-    return view('download/skdosen');
-})->name('skdosen');
-
 //ini route PPID
 Route::get('/profile', function () {
     return view('ppid/profile-ppid');
