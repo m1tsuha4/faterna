@@ -167,7 +167,7 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
   <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -176,10 +176,11 @@
   <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
   <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
-
-  <!-- Template Main JS File -->
+  <script src="{{asset('template/js/sb-admin-2.min.js')}}"></script>
   <script src="{{asset('assets/js/main.js')}}"></script>
-  
+  <script src="{{asset('template/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('template/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('template/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
   <script src="{{asset('template/vendor/datatables/jquery.dataTables.min.js')}}"></script>
   <script src="{{asset('template/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
   <script src="{{asset('template/js/demo/datatables-demo.js')}}"></script>
