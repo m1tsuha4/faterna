@@ -25,14 +25,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($allbeasiswa as $beasiswa)
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>System Architect</td>
+                                <td>{{ $beasiswa->judul }}</td>
+                                <td>{{ $beasiswa->tanggal }}</td>
+                                <td><a href="{{ $beasiswa->link }}" target="_blank">{{ $beasiswa->link }}</a></td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm mt-2  ">Hapus</a>
+                                    <a href="{{ route('delete-beasiswa',['id'=>$beasiswa->id]) }}" class="btn btn-danger btn-sm mt">Hapus</a>
                                 </td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -43,4 +45,3 @@
 
  @endsection
 
-    

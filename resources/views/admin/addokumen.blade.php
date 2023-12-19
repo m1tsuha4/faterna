@@ -11,14 +11,15 @@
 
             <div class="container">
                 <div class="col-sm-12">
-                <form>
+                    <form action="/addokumen" method="post" enctype="multipart/form-data">
+                        @csrf
                         <div class="mb-3">
-                            <label name = "judul" for="judul" class="form-label">Judul</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="judul" class="form-label">Judul</label>
+                            <input type="text" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <div class="input-group">
-                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <input type="file" name="file" class="form-control" id="inputGroupFile02">
                                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
                             </div>
                         </div>

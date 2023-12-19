@@ -114,9 +114,9 @@
               <li><a href="{{ route('profile-ppid') }}">Profile</a></li>
               <li class="dropdown"><a href="#"><span>Layanan Informasi</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                  <li><a href="{{ route('info-publik') }}">Informasi Publik</a></li>
-                  <li><a href="{{ route('tata-cara-permohonan') }}">Tatacara Permohonan Informasi</a></li>
-                  <li><a href="{{ route('info-dikecualikan') }}">Infromasi Dikecualikan</a></li>
+                  <li><a href="{{ route('info-publik') }}">Informasi Yang Wajib Tersedia Setiap Saat</a></li>
+                  <li><a href="#linkgform">Form Permohonan Informasi</a></li>
+                  <li><a href="{{ route('info-dikecualikan') }}">Informasi Yang Wajib Disediakan Secara Berkala</a></li>
                 </ul>
               </li>
             </ul>
@@ -133,7 +133,6 @@
               <li><a href="{{ route('sopTA') }}">Panduan dan SOP TA</a></li>
               <li><a href="#">SK Review Karya Ilmiah</a></li>
               <li><a href="#">Surat Bebas Labor</a></li>
-              <li><a href="{{ route('skdosen') }}">SK Dosen</a></li>
             </ul>
           </li>
         </ul>
