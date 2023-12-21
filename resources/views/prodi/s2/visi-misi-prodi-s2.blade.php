@@ -55,11 +55,11 @@
         <p style="text-align: justify">
         Misi Universitas Andalas dan Fakultas Peternakan Universitas Andalas adalah melaksanakan Tri Dharma Perguruan Tinggi, yaitu Pendidikan, Penelitian dan Pengabdian kepada masyarakat dalam rangka meningkatkan IPTEKS dan menciptakan sumberdaya manusia yang berkualitas untuk terwujudnya kejayaan bangsa. Sesuai dengan misi Universitas dan Fakultas Peternakan Universits Andalas, maka misi Program Studi S2 Ilmu Peternakan adalah
         </p>
-        <ol>
-        <li>Menyelenggarakan pendidikan ilmu peternakan jenjang Magister (S2) sesuai dengan kebutuhan pengembangan sumberdaya manusia untuk pembangunan peternakan di daerah tropis.</li>
-        <li>Melaksanakan penelitian dasar, terapan dan pengembangan berbasis sumberdaya lokal untuk pengembangan peternakan yang berkelanjutan serta mempublikasikannya di tingkat nasional dan internasional.</li>
-        <li>Menyelenggarakan kegiatan pengabdian kepada masyarakat berbasis IPTEKS yang diperoleh dari hasil penelitian yang dapat diadopsi oleh masyarakat.</li>
-        <li>Membangun jejaring kerjasama (network) dengan pihak pemerintah, swasta serta lembaga Perguruan Tinggi baik di dalam maupun luar negeri, untuk meningkatkan kualitas penyelenggaraan proses pendidikan, penelitian dan pengabdian kepada masyarakat.</li>
+        <ol style="list-style-type: decimal;">
+            <li>Menyelenggarakan pendidikan ilmu peternakan jenjang Magister (S2) sesuai dengan kebutuhan pengembangan sumberdaya manusia untuk pembangunan peternakan di daerah tropis.</li>
+            <li>Melaksanakan penelitian dasar, terapan dan pengembangan berbasis sumberdaya lokal untuk pengembangan peternakan yang berkelanjutan serta mempublikasikannya di tingkat nasional dan internasional.</li>
+            <li>Menyelenggarakan kegiatan pengabdian kepada masyarakat berbasis IPTEKS yang diperoleh dari hasil penelitian yang dapat diadopsi oleh masyarakat.</li>
+            <li>Membangun jejaring kerjasama (network) dengan pihak pemerintah, swasta serta lembaga Perguruan Tinggi baik di dalam maupun luar negeri, untuk meningkatkan kualitas penyelenggaraan proses pendidikan, penelitian dan pengabdian kepada masyarakat.</li>
         </ol>
 
     </div>

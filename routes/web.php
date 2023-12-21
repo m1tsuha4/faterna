@@ -102,9 +102,9 @@ Route::get('/akreditasi', function () {
     return view('akademik/informasi/akreditasi');
 })->name('akreditasi');
 
-Route::get('/beasiswa', function () {
+Route::get('/beasiswa-info', function () {
     return view('akademik/informasi/beasiswa');
-})->name('beasiswa');
+})->name('infobeasiswa');
 
 Route::get('/kalender-akademik', function () {
     return view('akademik/informasi/kalenderakademik');
@@ -115,9 +115,9 @@ Route::get('/panduan-akademik', function () {
 })->name('pAkademik');
 
 
-Route::get('/alumni', function () {
+Route::get('/alumni-info', function () {
     return view('akademik/kemahasiswaan/alumni');
-})->name('alumni');
+})->name('infoalumni');
 
 Route::get('/fasilitas', function () {
     return view('akademik/kemahasiswaan/fasilitas');
@@ -164,6 +164,10 @@ Route::get('/luar-negri', function () {
 Route::get('/administrator', function () {
     return view('admin/login');
 })->name('administrator');
+
+Route::get('/judul-berita', function () {
+    return view('home/berita/berita');
+})->name('berita');
 
 //Route::get('/berita', function () {
 //    return view('admin/admindashboard');

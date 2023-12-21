@@ -41,11 +41,11 @@
               Organisasi Umum Fakultas Perternakan terdiri dari Badan Eksekutif Mahasiswa (BEM), Dewan Perwakilan Mahasiswa (DPM), dan 
               Himpunan Mahasiswa Perternakan (Himapet).
             </p>
-            <ul>
+            <ol style="list-style-type: decimal;">
               <li><a href="#"><b>Badan Eksekutif Mahasiswa</b></a> Keluarga Mahasiswa Fakultas Perternakan (BEM KM FATERNA)</li>
               <li><a href="#"><b>Dewan Perwakilan Mahasiswa</b></a> Keluarga Mahasiswa Fakultas Perternakan (DPM KM FATERNA)</li>
               <li><a href="#"><b>Himpunan Mahasiswa Perternakan</b></a> (HIMAPET)</li>
-            </ul>
+            </ol>
           </li>
           <br>
           <li>
@@ -55,7 +55,7 @@
               keputusan sendiri tanpa terlalu banyak campur tangan dari pihak lain dalam organisasi.
               Badan Otonom Fakultas Perternakan terdiri dari
             </p>
-            <ul>
+            <ol style="list-style-type: decimal;">
               <li><a href="#"><b>Sanggar Ungu Unit Kegiatan Seni</b></a> merupakan UKMF yang bergerak di bidang seni yang
                 terdiri dari beberapa bidang yaitu vokal, tari, dan mc</li>
               <li><a href="#"><b>Svarna Dvipa Ungu</b></a> merupakan UKMF yang bergerak di bidang pencinta alam 
@@ -64,7 +64,7 @@
               <li><a href="#"><b>Academia Young Enterpreneur</b></a> merupakan UKMF yang bergerak di bidang kewirausahaan </li>
               <li><a href="#"><b>Forum Studi Islam</b></a> merupakan UKMF yang bergerak di bidang kerohanian islam</li>
               <li><a href="#"><b>lembaga kajian Ilmiah</b></a> merupakan UKMF yang bergerak di bidang pembuatan karya ilmiah</li>
-            </ul> 
+            </ol> 
           </li>
         </ol>
       </div>

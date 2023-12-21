@@ -38,7 +38,7 @@
                 </h4>
             </blockquote>
         </div>
-        <ol>
+        <ol style="list-style-type: decimal;">
           <li>Menghasilkan sarjana peternakan yang unggul dan bermoral, memiliki kompetensi global yang berorientasi sumberdaya lokal.</li>
           <li>Menghasilkan karya penelitian dan inovasi teknologi berorientasi sumberdaya lokal secara optimal dan berkelanjutan.</li>
           <li>Meningkatnya kualitas dan kuantitas pengabdian kepada masyarakat untuk meningkatkan daya saing peternakan rakyat</li>

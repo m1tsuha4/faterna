@@ -521,7 +521,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-color: #f9f3fa;
 }
 
 .section-title {
@@ -536,7 +536,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #1d1d1d;
 }
 
 .section-title h2::before {
@@ -556,7 +556,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #6c07c5;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -593,11 +593,62 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding: 60px 0;
+  background: url("../img/sapi.png");
+}
+
+
+.counts .count-box {
+  width: 100%;
+  text-align: center;
+}
+
+.counts .count-box span {
+  font-size: 48px;
+  line-height: 48px;
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 80px;
+  margin: auto;
+}
+
+.counts .count-box p {
+  padding: 8px 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
+}
+
+.about .content .more-btn {
+  display: inline-block;
+  background: rgba(182, 2, 2, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #5a015a;
+  border-radius: 30px;
+  transition: all ease-in-out 0.4s;
+}
+
+.about .content .more-btn i {
+  font-size: 14px;
+}
+
+.about .content .more-btn:hover {
+  color: #fff;
+  background: #4a055c;
 }
 
 .about .content ul {
@@ -862,48 +913,58 @@ tr:nth-child(even) {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Trainers
 --------------------------------------------------------------*/
-.services .icon-box {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
-  transition: all ease-in-out 0.4s;
+.trainers .member {
+  text-align: center;
+  margin-bottom: 20px;
   background: #fff;
+  border: 1px solid #eef0ef;
 }
 
-.services .icon-box .icon {
-  margin-bottom: 10px;
+.trainers .member img {
+  margin: -1px -1px 30px -1px;
 }
 
-.services .icon-box .icon i {
-  color: #47b2e4;
-  font-size: 36px;
+.trainers .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.trainers .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.trainers .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.trainers .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.trainers .member .social {
+  margin-top: 15px;
+}
+
+.trainers .member .social a {
+  color: #7e9486;
   transition: 0.3s;
 }
 
-.services .icon-box h4 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 24px;
+.trainers .member .social a:hover {
+  color: #5fcf80;
 }
 
-.services .icon-box h4 a {
-  color: #37517e;
-  transition: ease-in-out 0.3s;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-  transform: translateY(-10px);
-}
-
-.services .icon-box:hover h4 a {
-  color: #47b2e4;
+.trainers .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
 }
 
 /*--------------------------------------------------------------
@@ -1228,6 +1289,25 @@ tr:nth-child(even) {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #4f0852;
+  color: #4e054b;
+}
+
+.pricing .cta-btn:hover {
+  background: #4a025c;
+  color: #fff;
 }
 
 .swiper-slide h3 {

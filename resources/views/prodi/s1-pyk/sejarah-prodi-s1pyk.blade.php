@@ -44,7 +44,7 @@
         <p style="text-align: justify">
         Tahun 1983, Menteri Pendidikan dan Kebudayaan dengan Surat Keputusan No. 0125/O/1983, menetapkan 2 (dua) jurusan di Faterna Universitas Andalas yaitu Jurusan Produksi Ternak serta Jurusan Nutrisi dan Makanan Ternak. Masing-masing jurusan mempunyai 1 (satu) program studi yaitu :
         </p>
-        <ol>
+        <ol style="list-style-type: decimal;">
           <li>Jurusan Produksi Ternak dengan Program Studi Produksi Ternak</li>
           <li>Jurusan Nutrisi & Makanan Ternak dengan Program Studi Nutrisi & Makanan Ternak</li>
          </ol>
@@ -57,7 +57,7 @@
         <p style="text-align: justify">
         Semua Program Studi yang diselenggarakan sudah dilakukan akreditasi oleh BAN-PT (Badan Akreditasi Nasional Perguruan Tinggi) Depdiknas tahun 2006 dengan hasil sebagai berikut :
         </p>
-        <ol>
+        <ol style="list-style-type: decimal;">
           <li>P.S. Produksi Ternak dengan Akreditasi A berdasarkan SK. No. 010/BAN-PT/Ak-X/S1/VIII/2006 tanggal 3 Agustus 2006</li>
           <li>P.S Nutrisi & Makanan Ternak dengan Akreditasi A berdasarkan SK. No. 009/BAN-PT/Ak-X/S1/VII/2006 tanggal 27 Juli 2006</li>
           <li>P.S. Teknologi Hasil Ternak dengan Akreditasi A berdasarkan SK No. 008/BAN-PT/Ak-X/S1/VII/2006 tanggal 13 Juli 2006</li>
