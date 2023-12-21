@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('assets/img/logo-unand.png')}}" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -46,7 +46,6 @@
               <li><a href="{{ route('selayang-pandang') }}">Selayang Pandang</a></li>
               <li><a href="{{ route('visi-misi') }}">Visi Misi</a></li>
               <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
-              <li><a href="{{ route('pimpinan') }}">Pimpinan</a></li>
               <li><a href="{{ route('dosen') }}">Dosen</a></li>
               <li><a href="{{ route('tendik') }}">Tendik</a></li>
             </ul>
@@ -161,6 +160,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
   <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
   <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>

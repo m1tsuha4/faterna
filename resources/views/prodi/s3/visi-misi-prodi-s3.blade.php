@@ -53,10 +53,10 @@
             </blockquote>
         </div>
        
-        <ol>
-        <li>Mengembangkan Pendidikan Ilmu Peternakan Sesuai Kebutuhan Pembangunan Dan Penerapan Teknologi Dimasa Datang Yang Penuh Tantangan Didaerah Terutama Sumatera</li>
-        <li>Memfokuskan Penelitian Tentang Masalah Pemanfaatan Dan Pelestarian Sumber Daya Alam Peternakan Tropis Di Daerah, Yang Ditunjang Dengan Posisi Sumatera Yang Berada Pada Khatulistiwa Serta Ditunjang Dengan Fasilitas Laboratorium yang Modern</li>
-        <li>Mengupayakan Alih Teknolohi Dalam Pengololaan, Pemanfaatan Dan Pelestarian Peternakan Kepada Manyarakat, Khususnya Yang Bergerak Dalam Bidang Peternakan</li>
+        <ol style="list-style-type: decimal;">
+            <li>Mengembangkan Pendidikan Ilmu Peternakan Sesuai Kebutuhan Pembangunan Dan Penerapan Teknologi Dimasa Datang Yang Penuh Tantangan Didaerah Terutama Sumatera</li>
+            <li>Memfokuskan Penelitian Tentang Masalah Pemanfaatan Dan Pelestarian Sumber Daya Alam Peternakan Tropis Di Daerah, Yang Ditunjang Dengan Posisi Sumatera Yang Berada Pada Khatulistiwa Serta Ditunjang Dengan Fasilitas Laboratorium yang Modern</li>
+            <li>Mengupayakan Alih Teknolohi Dalam Pengololaan, Pemanfaatan Dan Pelestarian Peternakan Kepada Manyarakat, Khususnya Yang Bergerak Dalam Bidang Peternakan</li>
         </ol>
 
     </div>

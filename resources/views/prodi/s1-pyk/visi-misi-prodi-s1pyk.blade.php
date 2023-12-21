@@ -55,11 +55,11 @@
         <p style="text-align: justify">
         Untuk menjabarkan visi tersebut demi mewujudkan pendidikan bidang peternakan yang mampu membangun insan Indonesia yang cerdas dan kompetitif dengan berkeadilan, bermutu dan relevan dengan kebutuhan masyarakat lokal dan nasional, maka PS menyusun misi sebagai berikut:
         </p>
-        <ol>
-        <li>Menyelenggarakan pendidikan di bidang peternakan yang unggul dalam rangka menghasilkan lulusan yang bermoral, berorientasi sumber daya lokal dengan kompetensi global.</li>
-        <li>Menyelenggarakan riset dibidang peternakan berorientasi sumberdaya lokal dalam rangka pengembangan ilmu pengetahuan dan teknologi peternakan.</li>
-        <li>Melaksanakan pengabdian kepada masyarakat untuk menerapkan ilmu dan teknologi dalam rangka peningkatan daya saing peternakan rakyat.</li>
-        <li>Mendukung misi pemerintah daerah untuk menjadikan Payakumbuh dan daerah sekitarnya sebagai sentra peternakan nasional.</li>
+        <ol style="list-style-type: decimal;">
+            <li>Menyelenggarakan pendidikan di bidang peternakan yang unggul dalam rangka menghasilkan lulusan yang bermoral, berorientasi sumber daya lokal dengan kompetensi global.</li>
+            <li>Menyelenggarakan riset dibidang peternakan berorientasi sumberdaya lokal dalam rangka pengembangan ilmu pengetahuan dan teknologi peternakan.</li>
+            <li>Melaksanakan pengabdian kepada masyarakat untuk menerapkan ilmu dan teknologi dalam rangka peningkatan daya saing peternakan rakyat.</li>
+            <li>Mendukung misi pemerintah daerah untuk menjadikan Payakumbuh dan daerah sekitarnya sebagai sentra peternakan nasional.</li>
         </ol>
 
     </div>

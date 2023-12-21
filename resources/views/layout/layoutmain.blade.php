@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('assets/img/logo-unand.png')}}" rel="icon">">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -32,6 +32,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
   
   <link href="{{asset('template/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 
@@ -96,13 +97,13 @@
                 <ul>
                   <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
                   <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
-                  <li><a href="{{ route('beasiswa') }}">Beasiswa</a></li>
+                  <li><a href="{{ route('infobeasiswa') }}">Beasiswa</a></li>
                   <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Kemahasiswaan</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{{ route('alumni') }}">Alumni</a></li>
+                  <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
                   <li><a href="{{ route('ormawa') }}">Organisasi Mahasiswa</a></li>
                   <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
                 </ul>
