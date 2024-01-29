@@ -1,34 +1,32 @@
-@extends('layout.layoutmain')
+@extends('layout.menulayout')
 
-@section('content')
-<div class="breadcrumbs">
-    <nav>
-      <div class="container">
-        <ol>
-          <li><a href="/">Beranda</a></li>
-          <li>Informasi Yang Wajib Disediakan Secara Berkala</li>
-        </ol>
+@section('contentmenu')
+   <!-- ======= Breadcrumbs ======= -->
+   <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/unand.png'); height: 40vh;  background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Informasi Yang Wajib Diberikan (Berkala)</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-</div>  
-<div class="infopublik" id="infopublik">
-  <div class="container">
-    <div class="post-heading">
-      <h2>Informasi Yang Wajib Diberikan (Berkala)</h2>
-      <ul class="entry-meta">
-          <li class="post-date"> <!-- data tanggal upload-->
-              <i class='bx bx-time-five'></i>
-              6 November 2023, 13.00
-          </li>
-          <li class="post-autor"> <!-- data admin yang upload dan terhubung ke admin-->
-              <i class='bx bxs-user'></i>
-              Oleh:
-              <a href="#">admin</a>
-          </li>
-      </ul>
-    </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li>PPID</li>
+            <li>Informasi Publik</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs --> 
+
+<section class="infopublik" id="infopublik">
+  <div class="container-fluid">
     <div class="post-content">
-      <table>
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <tr>
             <th>No</th>
             <th>Kategori</th>
@@ -158,6 +156,6 @@
     </table>
     </div>
   </div>
-</div>
+</section>
 @endsection
 

@@ -52,8 +52,8 @@
     <section id="trainers" class="trainers">
       <div class="container" data-aos="fade-up">
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/dekan.jpg')}}" class="img-fluid" alt="">
               <div class="member-content">
@@ -65,8 +65,11 @@
               </div>
             </div>
           </div>
+      </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd1.jpg')}}" class="img-fluid" alt="">
               <div class="member-content">
@@ -79,7 +82,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd2.jpg')}}" class="img-fluid" alt="">
               <div class="member-content">
@@ -91,7 +94,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd3.jpg')}}" class="img-fluid" alt="">
               <div class="member-content">
@@ -116,6 +119,8 @@
 
         <div class="row content">
           <div class="col-lg-6">
+
+          <!-- Ubah Jadi selayang pandang -->
             <center><h1>Visi</h1></center>
             <p>
             Menjadi fakultas yang menghasilkan lulusan berdaya saing nasional menuju internasional dan berperan aktif dalam pembangunan bangsa
@@ -211,7 +216,7 @@
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="2" class="purecounter"></span>
-              <p>Tendik</p>
+              <p>Dosen</p>
             </div>
           </div>
 

@@ -41,25 +41,48 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="/"><img src="{{asset('assets/img/logo.png')}}" alt=""></a></h1>
+      <h1 class="logo me-auto"><a href="{{ route('home') }}"><img src="{{asset('assets/img/logo.png')}}" alt=""></a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="/">Beranda</a></li>
-          <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="{{ route('selayang-pandang') }}">Selayang Pandang</a></li>
-              <li><a href="{{ route('visi-misi') }}">Visi Misi</a></li>
+            <!-- selayang pandang routenya dipake untuk SAMBUTAN DEKAN, malas mau ganti hehe -->
+              <li><a href="{{ route('selayang-pandang') }}">Sambutan Dekan</a></li> 
               <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
-              <li><a href="{{ route('pimpinan') }}">Pimpinan</a></li>
+              <li><a href="#">Visi Misi</a></li>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="#">Lokasi Kampus</a></li>
+              <li><a href="#">Profil Guru Besar</a></li>
+              <li><a href="#">Profil Departemen</a></li>
+              <li><a href="#">Profil Unit</a></li>
+              <li><a href="#">Sarana & Prasarana</a></li>
+              <li><a href="#">Penjaminan Mutu</a></li>
+              <li><a href="#">Akreditasi</a></li>
+              <li><a href="#">Mars Faterna UNAND</a></li>
+              <li><a href="#">Brand Faterna UNAND</a></li>
+              <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
               <li><a href="{{ route('dosen') }}">Dosen</a></li>
               <li><a href="{{ route('tendik') }}">Tendik</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Program Studi</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Akademik</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
+                  <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
+                  <li><a href="{{ route('beasiswa') }}">Beasiswa</a></li>
+                  <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ route('kemahasiswaan') }}"><span>Kemahasiswaan</span></a>
+              </li>
+              <li class="dropdown"><a href="#"><span>Program Studi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
             <li class="dropdown"><a href="#"><span>S1 Padang</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -83,7 +106,7 @@
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>S3</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
+                <ul>
                   <li><a href="{{ route('sejarah-prodi-s3') }}">Sejarah</a></li>
                   <li><a href="{{ route('visi-misi-prodi-s3') }}">Visi Misi</a></li>
                   <li><a href="{{ route('tujuan-prodi-s3') }}">Tujuan</a></li>
@@ -91,23 +114,6 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Akademik</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
-                  <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
-                  <li><a href="{{ route('infobeasiswa') }}">Beasiswa</a></li>
-                  <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Kemahasiswaan</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
-                  <li><a href="{{ route('ormawa') }}">Organisasi Mahasiswa</a></li>
-                  <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
-                </ul>
-              </li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>PPID</span> <i class="bi bi-chevron-down"></i></a>
@@ -122,12 +128,13 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Riset</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('mou-bimtek-agam') }}">MoU Bimtek Agam</a></li>
               <li><a href="{{ route('luar-negri') }}">Kerja Sama Luar Negri</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto active" href="#">kerjasama</a></li>
           <li class="dropdown"><a href="#"><span>Download</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">SK Akreditasi Prodi</a></li>

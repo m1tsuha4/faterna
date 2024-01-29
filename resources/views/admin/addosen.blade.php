@@ -40,7 +40,7 @@
                                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="">
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Publikasi</label>
+                                <label for="" class="form-label">Link Sinta</label>
                                 <textarea class="form-control" id="deskripsi" name="publikasi" rows="5"></textarea>
                             </div>
                             <div class="mb-3">
@@ -48,7 +48,7 @@
                                 <textarea class="form-control" id="deskripsi" name="edukasi" rows="5"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Penelitian</label>
+                                <label for="" class="form-label">Link Scopus</label>
                                 <textarea class="form-control" id="deskripsi" name="penelitian" rows="5"></textarea>
                             </div>
                                 <button type="submit" class="btn btn-primary">Tambah</button>

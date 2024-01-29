@@ -1,20 +1,32 @@
-@extends('layout.layoutmain')
+@extends('layout.menulayout')
 
-@section('content')
-<div class="breadcrumbs">
-    <nav>
-      <div class="container">
-        <ol>
-          <li><a href="/">Beranda</a></li>
-          <li>Informasi Yang Tersedia Setiap Saat</li>
-        </ol>
+@section('contentmenu')
+   <!-- ======= Breadcrumbs ======= -->
+   <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/unand.png'); height: 40vh;  background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Informasi Publik</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-</div>  
-<div class="infopublik" id="infopublik">
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li>PPID</li>
+            <li>Informasi Publik</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs --> 
+
+<section class="infopublik" id="infopublik">
   <div class="container">
     <div class="post-heading">
-      <h2>Informasi Yang Wajib Tersedia Setiap Saat</h2>
+      <h2></h2>
       <ul class="entry-meta">
           <li class="post-date"> <!-- data tanggal upload-->
               <i class='bx bx-time-five'></i>
@@ -28,7 +40,7 @@
       </ul>
     </div>
     <div class="post-content">
-      <table>
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <tr>
           <th>1. Profil Institusi</th>
           <td>

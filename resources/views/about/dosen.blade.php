@@ -1,20 +1,30 @@
-@extends('layout.layoutmain')
+@extends('layout.menulayout')
 
-@section('content')
-<div class="breadcrumbs mb-5">
-    <nav>
-      <div class="container">
-        <ol>
-          <li><a href="/">Beranda</a></li>
-          <li>Dosen</li>
-        </ol>
+@section('contentmenu')
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/unand.png'); height: 40vh;  background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Dosen Faterna</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-</div>  
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li>Dosen</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->  
 
  <!-- ======= Team Section ======= -->
- <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
+ <section id="dosen" class="dosen">
+      <div class="container-fluid" data-aos="fade-up">
 
 
        <div class="row mt-4">
@@ -125,15 +135,12 @@
           </div>
        </div>
 
-         
-
         </div>
 
       </div>
     </section><!-- End Team Section -->
 
 
-
-
 @endsection
+
 

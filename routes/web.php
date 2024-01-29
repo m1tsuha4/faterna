@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 //ini route Home
 Route::get('/', function () {
-    return view('home/home');
-});
+    return view('home/main');
+})->name('home');
 
 // ini route tentang kami
 Route::get('/selayang-pandang', function () {
@@ -43,8 +43,35 @@ Route::get('/tendik', function () {
 })->name('tendik');
 
 
-// ini route prodi
 
+Route::get('/struktur-organisasi', function () {
+    return view('about/struktur');
+})->name('struktur');
+
+Route::get('/profil-guru-besar', function () {
+    return view('about/profilgb');
+})->name('profilgb');
+
+Route::get('/profil-departemen', function () {
+    return view('about/profildepartemen');
+})->name('profildepartemen');
+
+Route::get('/sarana-dan-prasarana', function () {
+    return view('about/fasilitas');
+})->name('fasilitas');
+
+Route::get('/akreditasi', function () {
+    return view('about/akreditasi');
+})->name('akreditasi');
+
+Route::get('/alumni-info', function () {
+    return view('about/alumni');
+})->name('infoalumni');
+
+Route::get('/zona-integritas', function () {
+    return view('about/zona');
+})->name('zona');
+// ini route prodi
 Route::get('/sejarah-prodi-pdg', function () {
     return view('prodi/s1-pdg/sejarah-prodi-s1pdg');
 })->name('sejarah-prodi-pdg');
@@ -96,11 +123,22 @@ Route::get('/tujuan-prodi-s3', function () {
     return view('prodi/s3/tujuan-prodi-s3');
 })->name('tujuan-prodi-s3');
 
-// ini route akademik
+// ini route kerjasama
+Route::get('/kerja-sama', function () {
+    return view('kerjasama/kerjasama');
+})->name('kerjasama');
 
-Route::get('/akreditasi', function () {
-    return view('akademik/informasi/akreditasi');
-})->name('akreditasi');
+// ini route conference
+Route::get('/conference', function () {
+    return view('conference/conference');
+})->name('conference');
+
+// ini route conference
+Route::get('/berita-duka-cita', function () {
+    return view('dukacita/dukacita');
+})->name('dukacita');
+
+// ini route akademik
 
 Route::get('/beasiswa-info', function () {
     return view('akademik/informasi/beasiswa');
@@ -115,13 +153,9 @@ Route::get('/panduan-akademik', function () {
 })->name('pAkademik');
 
 
-Route::get('/alumni-info', function () {
-    return view('akademik/kemahasiswaan/alumni');
-})->name('infoalumni');
-
-Route::get('/fasilitas', function () {
-    return view('akademik/kemahasiswaan/fasilitas');
-})->name('fasilitas');
+Route::get('/kemahasiswaan', function () {
+    return view('akademik/kemahasiswaan/kemahasiswaan');
+})->name('kemahasiswaan');
 
 Route::get('/organisasi-mahasiswa', function () {
     return view('akademik/kemahasiswaan/ormawa');
@@ -151,13 +185,13 @@ Route::get('/informasi-dikecualikan', function () {
 
 //ini route riset
 
-Route::get('/mou-bimtek-agam', function () {
-    return view('riset/mou-bimtek-agam');
-})->name('mou-bimtek-agam');
+Route::get('/penelitian', function () {
+    return view('riset/penelitian');
+})->name('penelitian');
 
-Route::get('/luar-negri', function () {
-    return view('riset/luar-negri');
-})->name('luar-negri');
+Route::get('/pengabdian', function () {
+    return view('riset/pengabdian');
+})->name('pengabdian');
 
 // ini route Admin
 

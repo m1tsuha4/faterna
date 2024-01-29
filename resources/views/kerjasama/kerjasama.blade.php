@@ -6,7 +6,7 @@
     <div class="container position-relative">
       <div class="row d-flex justify-content-center">
         <div class="col-lg-6 text-center">
-          <h2>Ormawa FATERNA</h2>
+          <h2>Kerja Sama FATERNA UNAND</h2>
         </div>
       </div>
     </div>
@@ -15,7 +15,7 @@
     <div class="container">
       <ol>
         <li><a href="{{ route('home') }}">Home</a></li>
-        <li>Ormawa</li>
+        <li>Kerja Sama FATERNA UNAND</li>
       </ol>
     </div>
   </nav>
