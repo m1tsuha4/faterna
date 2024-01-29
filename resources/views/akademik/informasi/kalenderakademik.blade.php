@@ -1,34 +1,24 @@
-@extends('layout.layoutmain')
+@extends('layout.menulayout')
 
-@section('content')
+@section('contentmenu')
 <div class="breadcrumbs">
-    <nav>
-      <div class="container">
-        <ol>
-          <li><a href="/">Beranda</a></li>
-          <li>Kalender Akademik</li>
-        </ol>
+  <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/unand.png'); height: 40vh;  background-size: cover;background-position: center;background-repeat: no-repeat;">
+    <div class="container position-relative">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2>Kalender Akademik FATERNA</h2>
+        </div>
       </div>
-    </nav>
-</div>  
-<div class="container">
-  <div class="post-heading">
-    <h2>Kalender Akademik</h2>
-    <ul class="entry-meta">
-        <li class="post-date"> <!-- data tanggal upload-->
-            <i class='bx bx-time-five'></i>
-            6 November 2023, 13.00
-        </li>
-        <li class="post-autor"> <!-- data admin yang upload dan terhubung ke admin-->
-            <i class='bx bxs-user'></i>
-            Oleh:
-            <a href="#">admin</a>
-        </li>
-    </ul>
+    </div>
   </div>
-  <div class="post-content">
-    <iframe src="{{asset('assets/kalenderakademik.pdf')}}" frameborder="0" width="100%" height="500"></iframe>
-  </div>
+  <nav>
+    <div class="container">
+      <ol>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li>Kalender Akademik</li>
+      </ol>
+    </div>
+  </nav>
 </div>
 @endsection
 

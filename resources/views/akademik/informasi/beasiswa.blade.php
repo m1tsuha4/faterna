@@ -1,33 +1,25 @@
-@extends('layout.layoutmain')
 
-@section('content')
+@extends('layout.menulayout')
+
+@section('contentmenu')
 <div class="breadcrumbs">
-    <nav>
-      <div class="container">
-        <ol>
-          <li><a href="/">Beranda</a></li>
-          <li>Beasiswa</li>
-        </ol>
-      </div>
-    </nav>
-</div>  
-<div id="beasiswa" class="beasiswa">
-  <div class="container">
-      <div class="post-heading">
-        <h2>Beasiswa</h2>
-        <ul class="entry-meta">
-            <li class="post-date"> <!-- data tanggal upload-->
-                <i class='bx bx-time-five'></i>
-                6 November 2023, 13.00
-            </li>
-            <li class="post-autor"> <!-- data admin yang upload dan terhubung ke admin-->
-                <i class='bx bxs-user'></i>
-                Oleh:
-                <a href="#">admin</a>
-            </li>
-        </ul>
+  <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/unand.png'); height: 40vh;  background-size: cover;background-position: center;background-repeat: no-repeat;">
+    <div class="container position-relative">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2>Informasi Beasiswa</h2>
+        </div>
       </div>
     </div>
+  </div>
+  <nav>
+    <div class="container">
+      <ol>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li>Informasi Beasiswa</li>
+      </ol>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12 tpb-header">
@@ -53,7 +45,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 </div>
 @endsection
+
+
 
