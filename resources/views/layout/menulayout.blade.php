@@ -29,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/impact.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/css/impact-submenu.css')}}" rel="stylesheet">
 
 </head>
 
@@ -121,7 +122,7 @@
           </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>PPID</span> </a>
+          <li class="dropdown"><a href="{{ route('profile-ppid') }}"><span>PPID</span> </a>
             <!-- <ul>
               <li><a href="{{ route('profile-ppid') }}">Profile</a></li>
               <li class="dropdown"><a href="#"><span>Layanan Informasi</span> <i class="bi bi-chevron-right"></i></a>
