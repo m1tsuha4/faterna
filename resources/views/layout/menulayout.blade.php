@@ -82,7 +82,7 @@
               <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
-                  <li><a href="{{ route('beasiswa') }}">Beasiswa</a></li>
+                  <li><a href="{{ route('infobeasiswa') }}">Beasiswa</a></li>
                   <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
                 </ul>
               </li>
