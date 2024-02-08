@@ -32,7 +32,18 @@
                                             <input type="file" name="file" class="form-control d-none" id="customFile1" onchange="displaySelectedImage(event, 'selectedImage')" />
                                         </div>
                                     </div>
-                                </div>
+                                </div><br>
+                                <!-- ini untuk kategori berita -->
+                                <div class="input-group">
+                                <label class="input-group-text text-bg-primary"
+                                    for="inputGroupSelect01">Kategori</label>
+                                <select class="form-select"name="kategori-berita" id="inputGroupSelect01">
+                                    <option selected>Select</option>
+                                    <option value="Berita">Berita</option>
+                                    <option value="Informasi Event">Informasi Event</option>
+                                    <option value="Kiprah Civitas Akademika">Kiprah Civitas Akademika</option>
+                                </select>
+                            </div> <br>
                                 <div class="mb-3">
                                     <label name = "judul" for="judul" class="form-label">Judul</label>
                                     <input type="text" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={{ $berita->judul }}"">
