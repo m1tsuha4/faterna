@@ -1,100 +1,203 @@
 .about .ppid h1{
-    font-weight: 700;
-    color: #662549;
+  font-weight: 700;
+  color: #662549;
 }
 
 .layanan-informasi {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: url("../img/sapi.png");
-  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("../img/sapi.png");
+}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-    padding: 0 100px;
-  }
+  padding: 0 100px;
+}
 .faq .faq-list h5 {
-    font-weight: 600;
-  }
+  font-weight: 600;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
   
-  .faq .faq-list ul {
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #87566e;
+  border-radius: 4px;
+  position: relative;
+  color: #fff;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #fff;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #ed2020;
+  transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #000;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
     padding: 0;
-    list-style: none;
   }
-  
-  .faq .faq-list li+li {
-    margin-top: 15px;
-    
-  }
-  
-  .faq .faq-list li {
-    padding: 20px;
-    background: #87566e;
-    border-radius: 4px;
-    position: relative;
-    color: #fff;
-  }
-  
-  .faq .faq-list a {
-    display: block;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    padding: 0 30px;
-    outline: none;
-    cursor: pointer;
-    color: #000;
-  }
-  
-  .faq .faq-list .icon-help {
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    left: 20px;
-    color: #fff;
-  }
-  
-  .faq .faq-list .icon-show,
-  .faq .faq-list .icon-close {
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .faq .faq-list p {
-    margin-bottom: 0;
-    padding: 10px 0 0 0;
-  }
-  
-  .faq .faq-list .icon-show {
-    display: none;
-  }
-  
-  .faq .faq-list a.collapsed {
-    color: #ed2020;
-    transition: 0.3s;
-  }
-  
-  .faq .faq-list a.collapsed:hover {
-    color: #000;
-  }
-  
-  .faq .faq-list a.collapsed .icon-show {
-    display: inline-block;
-  }
-  
-  .faq .faq-list a.collapsed .icon-close {
-    display: none;
-  }
-  
-  @media (max-width: 1200px) {
-    .faq .faq-list {
-      padding: 0;
-    }
-  }
+}
+
+/*--------------------------------------------------------------
+# beasiswa
+--------------------------------------------------------------*/
+.beasiswa .content h3 {
+font-weight: 400;
+font-size: 34px;
+}
+
+.beasiswa .content h4 {
+font-size: 20px;
+font-weight: 700;
+margin-top: 5px;
+}
+
+.beasiswa .content p {
+font-size: 15px;
+color: #6c757d;
+}
+
+.beasiswa .accordion-item {
+border: 0;
+margin-bottom: 20px;
+box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+border-radius: 10px;
+}
+
+.beasiswa .accordion-item:last-child {
+margin-bottom: 0;
+}
+
+.beasiswa .accordion-collapse {
+border: 0;
+}
+
+.beasiswa .accordion-button {
+padding: 20px 50px 20px 20px;
+font-weight: 600;
+border: 0;
+font-size: 18px;
+line-height: 24px;
+color: #fff;
+text-align: left;
+background: var(--color-primary);
+box-shadow: none;
+border-radius: 10px;
+}
+
+.beasiswa .accordion-button .num {
+padding-right: 10px;
+font-size: 20px;
+line-height: 0;
+color: #fff;
+}
+
+.beasiswa .accordion-button:not(.collapsed) {
+color:whitesmoke ;
+border-bottom: 0;
+box-shadow: none;
+}
+
+.beasiswa .accordion-button:after {
+position: absolute;
+right: 20px;
+top: 20px;
+}
+
+.beasiswa .accordion-body {
+padding: 0 40px 30px 45px;
+border: 0;
+border-radius: 10px;
+background: #fff;
+box-shadow: none;
+}
+/*--------------------------------------------------------------
+# visimisi
+--------------------------------------------------------------*/
+.visimisi li{
+padding-bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# alumni
+--------------------------------------------------------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
