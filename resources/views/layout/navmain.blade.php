@@ -88,34 +88,34 @@
               <li><a href="{{ route('kemahasiswaan') }}"><span>Kemahasiswaan</span></a>
               </li>
               <li class="dropdown"><a href="#"><span>Program Studi</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            <li class="dropdown"><a href="#"><span>S1 Padang</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
+              <ul>
+            <li class="dropdown"><a href="{{ route('s1-pdg') }}"><span>S1 Padang</span></a>
+                <!-- <ul>
                   <li><a href="{{ route('sejarah-prodi-pdg') }}">Sejarah</a></li>
                   <li><a href="{{ route('visi-misi-prodi-pdg') }}">Visi Misi</a></li>
                   <li><a href="{{ route('tujuan-prodi-pdg') }}">Tujuan</a></li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="dropdown"><a href="#"><span>S1 Payakumbuh</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
+              <li class="dropdown"><a href="{{ route('s1-pyk') }}"><span>S1 Payakumbuh</span></a>
+              <!-- <ul>
                   <li><a href="{{ route('sejarah-prodi-pyk') }}">Sejarah</a></li>
                   <li><a href="{{ route('visi-misi-prodi-pyk') }}">Visi Misi</a></li>
                   <li><a href="{{ route('tujuan-prodi-pyk') }}">Tujuan</a></li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="dropdown"><a href="#"><span>S2</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
+              <li class="dropdown"><a href="{{ route('s2') }}"><span>S2</span></a>
+              <!-- <ul>
                   <li><a href="{{ route('sejarah-prodi-s2') }}">Sejarah</a></li>
                   <li><a href="{{ route('visi-misi-prodi-s2') }}">Visi Misi</a></li>
                   <li><a href="{{ route('tujuan-prodi-s2') }}">Tujuan</a></li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="dropdown"><a href="#"><span>S3</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
+              <li class="dropdown"><a href="{{ route('s3') }}"><span>S3</span></a>
+                <!-- <ul>
                   <li><a href="{{ route('sejarah-prodi-s3') }}">Sejarah</a></li>
                   <li><a href="{{ route('visi-misi-prodi-s3') }}">Visi Misi</a></li>
                   <li><a href="{{ route('tujuan-prodi-s3') }}">Tujuan</a></li>
-                </ul>
+                </ul> -->
               </li>
             </ul>
           </li>
