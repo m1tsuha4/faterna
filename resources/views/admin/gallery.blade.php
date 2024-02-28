@@ -18,20 +18,25 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>Judul</th>
+                                <th>Deskripsi</th>
                                 <th>Foto</th>
+                                <th>Tanggal Upload</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                       
+                        @foreach($allGallery as $gallery)
                             <tr>
-                                <td></td>
+                                <td>{{ $gallery->judul }}</td>
+                                <td>{{ $gallery->deskripsi }}</td>
+                                <td><a href="{{ asset('storage/galeri/' . $gallery->file) }}" target="_blank">{{ $gallery->file }}</a></td>
+                                <td>{{ $gallery->created_at }}</td>
                                 <td>
-                                    <a href="" class="btn btn-primary btn-sm">Edit</a>
-                                    <a href="" class="btn btn-danger btn-sm mt-2">Hapus</a>
+                                    <a href="{{route('delete-galeri',['id' => $gallery->id])}}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
-                  
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

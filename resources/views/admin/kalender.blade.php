@@ -18,23 +18,24 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Tahun Ajaran</th>
+                                <th>Judul</th>
+                                <th>File</th>
                                 <th>Tanggal Upload</th>
-                                <th>link</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                        
+                            @foreach($allKalender as $kalender)
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td><a href="" target="_blank"></a></td>
+                                <td>{{ $kalender->judul }}</td>
+                                <td><a href="{{ asset('storage/kalender/' . $kalender->file) }}" target="_blank">{{ $kalender->file }}</a></td>
+                                <td>{{ $kalender->created_at }}</td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm">Hapus</a>
+                                    <a href="{{route('delete-kalender',['id' => $kalender->id])}}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
                         </tbody>
+                        @endforeach
                     </table>
                 </div>
             </div>

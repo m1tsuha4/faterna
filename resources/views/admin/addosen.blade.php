@@ -46,7 +46,7 @@
                             <div class="input-group">
                                 <label class="input-group-text text-bg-primary"
                                     for="inputGroupSelect01">Jabatan Akademik</label>
-                                <select class="form-select"name="jabatan" id="inputGroupSelect01">
+                                <select class="form-select" name="jabatan_akademik" id="inputGroupSelect01">
                                     <option selected>Select</option>
                                     <option value="Guru Besar">Guru Besar</option>
                                     <option value="Lektor Kepala">Lektor Kepala</option>
@@ -57,15 +57,15 @@
                             </div><br>
                             <div class="mb-3">
                                 <label for="" class="form-label">Edukasi S1</label>
-                                <textarea class="form-control" id="deskripsi" name="edukasi" rows="5"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="edukasi_s1" rows="5"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Edukasi S2</label>
-                                <textarea class="form-control" id="deskripsi" name="edukasi2" rows="5"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="edukasi_s2" rows="5"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Edukasi S3</label>
-                                <textarea class="form-control" id="deskripsi" name="edukasi3" rows="5"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="edukasi_s3" rows="5"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Link Sinta</label>

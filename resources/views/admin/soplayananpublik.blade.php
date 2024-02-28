@@ -11,7 +11,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <a href="{{route('addkalender')}}" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>   Tambah SOP Layanan Publik</a>
+                <a href="{{route('addsop-ppid')}}" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>   Tambah SOP Layanan Publik</a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -19,22 +19,23 @@
                         <thead>
                             <tr>
                                 <th>Nama</th>
+                                <th>File</th>
                                 <th>Tanggal Upload</th>
-                                <th>link</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                        
+                        @foreach($allSop as $sop)
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td><a href="" target="_blank"></a></td>
+                                <td>{{ $sop->judul }}</td>
+                                <td><a href="{{ asset('storage/sop/' . $sop->file) }}" target="_blank">{{ $sop->file }}</a></td>
+                                <td>{{ $sop->created_at }}</td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm">Hapus</a>
+                                    <a href="{{route('delete-sop-ppid',['id' => $sop->id])}}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
                         </tbody>
+                        @endforeach
                     </table>
                 </div>
             </div>

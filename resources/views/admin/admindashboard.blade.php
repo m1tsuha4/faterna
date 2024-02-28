@@ -31,7 +31,7 @@
                                     <td>{{ $berita->judul }}</td>
                                     <td>{{ $berita->tanggal }}</td>
                                     <td>{{ $berita->author }}</td>
-                                    <td>Panggil Kategori Berita disini</td>
+                                    <td>{{ $berita->kategori }}</td>
                                     <td>
                                         <a href="{{route('editberita',['id' => $berita->id])}}" class="btn btn-primary btn-sm">Edit</a>
                                         <a href="{{route('delete-berita',['id' => $berita->id])}}" class="btn btn-danger btn-sm  ">Hapus</a>
