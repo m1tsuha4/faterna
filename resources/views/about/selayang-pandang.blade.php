@@ -25,7 +25,7 @@
     </div><!-- End Breadcrumbs --> 
     <div class="container">
       <div class="visimisi">
-        <div class="visi" style="text-align: center">
+        <div class="visi" style="text-align: center" data-aos="fade-up">
           <img src="assets/img/visi.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
           <strong><p>Menjadi fakultas yang menghasilkan lulusan berdaya saing nasional menuju internasional dan berperan aktif dalam pembangunan bangsa</p></strong>
         </div>

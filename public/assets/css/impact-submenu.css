@@ -82,7 +82,7 @@
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #000;
+  color: #fff;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -102,22 +102,34 @@
 /*--------------------------------------------------------------
 # beasiswa
 --------------------------------------------------------------*/
-.beasiswa .content h3 {
-font-weight: 400;
-font-size: 34px;
+.beasiswa .section-header {
+  text-align: left;
+  padding-bottom: 60px;
 }
 
-.beasiswa .content h4 {
-font-size: 20px;
-font-weight: 700;
-margin-top: 5px;
+.beasiswa .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-.beasiswa .content p {
-font-size: 15px;
-color: #6c757d;
+.beasiswa .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  right: auto;
+  bottom: 8px;
 }
 
+.beasiswa .section-title h1{
+  font-weight: 700;
+  color: #662549;
+}
 .beasiswa .accordion-item {
 border: 0;
 margin-bottom: 20px;
@@ -154,7 +166,7 @@ color: #fff;
 }
 
 .beasiswa .accordion-button:not(.collapsed) {
-color:whitesmoke ;
+color: #fff;
 border-bottom: 0;
 box-shadow: none;
 }
@@ -166,12 +178,13 @@ top: 20px;
 }
 
 .beasiswa .accordion-body {
-padding: 0 40px 30px 45px;
+padding: 30px;
 border: 0;
 border-radius: 10px;
 background: #fff;
 box-shadow: none;
 }
+
 /*--------------------------------------------------------------
 # visimisi
 --------------------------------------------------------------*/
@@ -200,4 +213,207 @@ th {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+/*--------------------------------------------------------------
+# pakademik
+--------------------------------------------------------------*/
+.pakademik .accordion-item{
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.pakademik .accordion-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  background: var(--color-primary);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.pakademik .accordion-button:not(.collapsed) {
+  color: #fff;
+  border-bottom: 0;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+}
+
+.pakademik .accordion-button:after {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.pakademik .accordion-body {
+  padding: 30px;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# kerjasama
+--------------------------------------------------------------*/
+.kerjasama .section-header {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.kerjasama .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.kerjasama .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  right: auto;
+  bottom: 8px;
+}
+
+.kerjasama .section-title h1{
+  font-weight: 700;
+  color: #662549;
+}
+
+/*--------------------------------------------------------------
+# fasilitas
+--------------------------------------------------------------*/
+.fasilitas .section-title h1{
+  font-weight: 900;
+  color: #662549;
+  text-align: center;
+}
+
+.fasilitas h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.fasilitas img{
+  border-radius: 20px;
+}
+
+.about-fasilitas .section-header {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.about-fasilitas .section-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.about-fasilitas .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  right: auto;
+  bottom: 8px;
+}
+
+.about-fasilitas .section-title h1{
+  font-weight: 700;
+  color: #662549;
+}
+
+.about-fasilitas img{
+  border-radius: 20px;
+}
+
+/*--------------------------------------------------------------
+# duka cita
+--------------------------------------------------------------*/
+.dukacita-header .duka h1{
+  font-weight: 700;
+  color: #662549;
+  text-align: center;
+}
+
+.dukacita-header .section-header {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.dukacita-header .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.dukacita-header .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  margin: auto;
+}
+
+.duka .duka h1{
+  font-size: xx-large;
+  font-weight: 600;
+  color: #662549;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.duka img {
+  border-radius: 20px;
+}
+
+.duka span {
+  color: grey;
+}
+
+/*--------------------------------------------------------------
+# conference
+--------------------------------------------------------------*/
+.conference .accordion-button {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-default);
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.conference .accordion-button .num {
+  padding-right: 10px;
+  font-size: 20px;
+  line-height: 0;
+  color: black;
+}
+
+.conference .accordion-body {
+  border-radius: 10px;
+  text-align: center;
 }

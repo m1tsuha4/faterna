@@ -22,7 +22,7 @@
     </div>
   </nav>
 </div>
-<section id="faq" class="faq">
+<section id="faq" class="faq" data-aos="fade-up">
   <div class="container" data-aos="fade-up">
 
     <div class="section-header">

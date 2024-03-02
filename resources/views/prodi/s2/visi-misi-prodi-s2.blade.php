@@ -21,7 +21,7 @@
   </nav>
 </div>
 <div class="container">
-  <div class="visimisi">
+  <div class="visimisi" data-aos="fade-up" data-aos-delay="100">
     <div class="visi" style="text-align: center">
       <img src="assets/img/visis2.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
       <strong><p>
