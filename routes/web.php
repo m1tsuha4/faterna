@@ -123,6 +123,23 @@ Route::get('/tujuan-prodi-s3', function () {
     return view('prodi/s3/tujuan-prodi-s3');
 })->name('tujuan-prodi-s3');
 
+Route::get('/s1-pdg', function () {
+    return view('prodi/s1-pdg/s1pdg');
+})->name('s1-pdg');
+
+Route::get('/s1-pyk', function () {
+    return view('prodi/s1-pyk/s1pyk');
+})->name('s1-pyk');
+
+Route::get('/s2', function () {
+    return view('prodi/s2/s2');
+})->name('s2');
+
+Route::get('/s3', function () {
+    return view('prodi/s3/s3');
+})->name('s3');
+
+
 // ini route kerjasama
 Route::get('/kerja-sama', function () {
     return view('kerjasama/kerjasama');
