@@ -24,13 +24,13 @@
 <div class="container">
   <div class="visimisi">
     <div class="visi" style="text-align: center">
-      <img src="assets/img/visis1.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
+      <img src="assets/img/visis3.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
       <strong><p>Menjadi Lembaga Pendidikan Penghasil Doktor Ilmu Peternakan Terkemuka Di Indonesia 
         dan Memiliki Peran Serta Dalam Jaringan Kerjasama Akademik Secara Nasional Dan Internasional 
         Terutama Dalam Aspek Pengolahan Sumber Daya Alam Peternakan Sumatera</p></strong>
     </div>
     <div class="misi" style="text-align: center">
-      <img src="assets/img/misis1.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
+      <img src="assets/img/misis3.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
     </div>
     <ol type="1" style="text-align: justify; padding-bottom:100px;">
       <li>Mengembangkan Pendidikan Ilmu Peternakan Sesuai Kebutuhan 
