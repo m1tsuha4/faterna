@@ -7,12 +7,12 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Berita</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Gallery</h1>
                     </div>
 
                     <div class="container">
                         <div class="col-sm-12">
-                        <form action="/addberita" method="post" enctype="multipart/form-data">
+                        <form action="/addgallery" method="post" enctype="multipart/form-data">
                             @csrf
                               <!--Image-->
                               <div>
@@ -26,27 +26,20 @@
                                             <input type="file" name="file" class="form-control d-none" id="customFile1" onchange="displaySelectedImage(event, 'selectedImage')" />
                                         </div>
                                     </div>
+                                  <div class="mb-3">
+                                      <label  for="nama" class="form-label">Judul</label>
+                                      <input type="text" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="">
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="" class="form-label">Deskripsi</label>
+                                      <textarea class="form-control" id="deskripsi" name="deskripsi" rows="5"></textarea>
+                                  </div>
                                 </div>
                                 <br>
-                            <div class="input-group">
-                                <label class="input-group-text text-bg-primary"
-                                    for="inputGroupSelect01">Kategori</label>
-                                <select class="form-select" name="kategori" id="inputGroupSelect01">
-                                    <option selected>Select</option>
-                                    <option value="Berita">Berita</option>
-                                    <option value="Informasi Event">Informasi Event</option>
-                                    <option value="Kiprah Civitas Akademika">Kiprah Civitas Akademika</option>
-                                </select>
-                            </div><br>
-                            <div class="mb-3">
-                                <label for="judul" class="form-label">Judul</label>
-                                <input type="text" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="deskripsi" class="form-label">Deskripsi</label>
-                                <textarea class="form-control" id="deskripsi" name="deskripsi" rows="15"></textarea>
-                            </div>
+
+                                <div class="container d-flex justify-content-center">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>

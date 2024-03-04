@@ -20,6 +20,7 @@
     </div>
   </nav>
 </div>
+
 @extends('layout.menulayout')
 
 @section('contentmenu')
@@ -45,6 +46,7 @@
 </div>
 <div class="container">
   <div class="visimisi">
+
     <div class="visi" style="text-align: center">
       <img src="assets/img/visis2.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
       <strong><p>
@@ -69,5 +71,6 @@
   </div>
 </div>
 @endsection
-@endsection
+
+
 

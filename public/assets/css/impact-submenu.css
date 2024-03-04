@@ -1,100 +1,419 @@
 .about .ppid h1{
-    font-weight: 700;
-    color: #662549;
+  font-weight: 700;
+  color: #662549;
 }
 
 .layanan-informasi {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: url("../img/sapi.png");
-  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("../img/sapi.png");
+}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-    padding: 0 100px;
-  }
+  padding: 0 100px;
+}
 .faq .faq-list h5 {
-    font-weight: 600;
-  }
+  font-weight: 600;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
   
-  .faq .faq-list ul {
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #87566e;
+  border-radius: 4px;
+  position: relative;
+  color: #fff;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #fff;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #ed2020;
+  transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #fff;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
     padding: 0;
-    list-style: none;
   }
-  
-  .faq .faq-list li+li {
-    margin-top: 15px;
-    
-  }
-  
-  .faq .faq-list li {
-    padding: 20px;
-    background: #87566e;
-    border-radius: 4px;
-    position: relative;
-    color: #fff;
-  }
-  
-  .faq .faq-list a {
-    display: block;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    padding: 0 30px;
-    outline: none;
-    cursor: pointer;
-    color: #000;
-  }
-  
-  .faq .faq-list .icon-help {
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    left: 20px;
-    color: #fff;
-  }
-  
-  .faq .faq-list .icon-show,
-  .faq .faq-list .icon-close {
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .faq .faq-list p {
-    margin-bottom: 0;
-    padding: 10px 0 0 0;
-  }
-  
-  .faq .faq-list .icon-show {
-    display: none;
-  }
-  
-  .faq .faq-list a.collapsed {
-    color: #ed2020;
-    transition: 0.3s;
-  }
-  
-  .faq .faq-list a.collapsed:hover {
-    color: #000;
-  }
-  
-  .faq .faq-list a.collapsed .icon-show {
-    display: inline-block;
-  }
-  
-  .faq .faq-list a.collapsed .icon-close {
-    display: none;
-  }
-  
-  @media (max-width: 1200px) {
-    .faq .faq-list {
-      padding: 0;
-    }
-  }
+}
+
+/*--------------------------------------------------------------
+# beasiswa
+--------------------------------------------------------------*/
+.beasiswa .section-header {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.beasiswa .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.beasiswa .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  right: auto;
+  bottom: 8px;
+}
+
+.beasiswa .section-title h1{
+  font-weight: 700;
+  color: #662549;
+}
+.beasiswa .accordion-item {
+border: 0;
+margin-bottom: 20px;
+box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+border-radius: 10px;
+}
+
+.beasiswa .accordion-item:last-child {
+margin-bottom: 0;
+}
+
+.beasiswa .accordion-collapse {
+border: 0;
+}
+
+.beasiswa .accordion-button {
+padding: 20px 50px 20px 20px;
+font-weight: 600;
+border: 0;
+font-size: 18px;
+line-height: 24px;
+color: #fff;
+text-align: left;
+background: var(--color-primary);
+box-shadow: none;
+border-radius: 10px;
+}
+
+.beasiswa .accordion-button .num {
+padding-right: 10px;
+font-size: 20px;
+line-height: 0;
+color: #fff;
+}
+
+.beasiswa .accordion-button:not(.collapsed) {
+color: #fff;
+border-bottom: 0;
+box-shadow: none;
+}
+
+.beasiswa .accordion-button:after {
+position: absolute;
+right: 20px;
+top: 20px;
+}
+
+.beasiswa .accordion-body {
+padding: 30px;
+border: 0;
+border-radius: 10px;
+background: #fff;
+box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# visimisi
+--------------------------------------------------------------*/
+.visimisi li{
+padding-bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# alumni
+--------------------------------------------------------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*--------------------------------------------------------------
+# pakademik
+--------------------------------------------------------------*/
+.pakademik .accordion-item{
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.pakademik .accordion-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  background: var(--color-primary);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.pakademik .accordion-button:not(.collapsed) {
+  color: #fff;
+  border-bottom: 0;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+}
+
+.pakademik .accordion-button:after {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.pakademik .accordion-body {
+  padding: 30px;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# kerjasama
+--------------------------------------------------------------*/
+.kerjasama .section-header {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.kerjasama .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.kerjasama .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  right: auto;
+  bottom: 8px;
+}
+
+.kerjasama .section-title h1{
+  font-weight: 700;
+  color: #662549;
+}
+
+/*--------------------------------------------------------------
+# fasilitas
+--------------------------------------------------------------*/
+.fasilitas .section-title h1{
+  font-weight: 900;
+  color: #662549;
+  text-align: center;
+}
+
+.fasilitas h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.fasilitas img{
+  border-radius: 20px;
+}
+
+.about-fasilitas .section-header {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.about-fasilitas .section-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.about-fasilitas .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  right: auto;
+  bottom: 8px;
+}
+
+.about-fasilitas .section-title h1{
+  font-weight: 700;
+  color: #662549;
+}
+
+.about-fasilitas img{
+  border-radius: 20px;
+}
+
+/*--------------------------------------------------------------
+# duka cita
+--------------------------------------------------------------*/
+.dukacita-header .duka h1{
+  font-weight: 700;
+  color: #662549;
+  text-align: center;
+}
+
+.dukacita-header .section-header {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.dukacita-header .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.dukacita-header .section-header h2:after {
+  content: "";
+  position:absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  margin: auto;
+}
+
+.duka .duka h1{
+  font-size: xx-large;
+  font-weight: 600;
+  color: #662549;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.duka img {
+  border-radius: 20px;
+}
+
+.duka span {
+  color: grey;
+}
+
+/*--------------------------------------------------------------
+# conference
+--------------------------------------------------------------*/
+.conference .accordion-button {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-default);
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.conference .accordion-button .num {
+  padding-right: 10px;
+  font-size: 20px;
+  line-height: 0;
+  color: black;
+}
+
+.conference .accordion-body {
+  border-radius: 10px;
+  text-align: center;
+}

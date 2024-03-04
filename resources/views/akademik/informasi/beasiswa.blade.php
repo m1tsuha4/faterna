@@ -1,4 +1,3 @@
-
 @extends('layout.menulayout')
 
 @section('contentmenu')
@@ -7,7 +6,7 @@
     <div class="container position-relative">
       <div class="row d-flex justify-content-center">
         <div class="col-lg-6 text-center">
-          <h2>Informasi Beasiswa</h2>
+          <h2>Informasi Beasiswa</h2> 
         </div>
       </div>
     </div>
@@ -19,34 +18,75 @@
         <li>Informasi Beasiswa</li>
       </ol>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 tpb-header">
-          <div class="title">
-            <h2><a href="#"><i class='bx bx-rss' style="color: #9a55da;"></i> Informasi Beasiswa</a></h2>
-          </div>
-          <div class="col-md-12 widget widget_rss">
-            <ul>
-              <li>
-                <a class="rsswidget" href="#">PENERIMAAN BEASISWA BANK INDONESIA</a>
-                <span class="rss-date">16 November 2023</span>
-              </li>
-              <li>
-                <a class="rsswidget" href="#">PENERIMAAN BEASISWA KSE</a>
-                <span class="rss-date">16 November 2023</span>
-              </li>
-              <li>
-                <a class="rsswidget" href="#">PENERIMAAN BEASISWA LPS</a>
-                <span class="rss-date">16 November 2023</span>
-              </li>
-            </ul>
-          </div>
+  </nav>
+</div><!-- End Breadcrumbs --> 
+<section id="beasiswa" class="beasiswa">
+  <div class="container" data-aos="fade-up">
+    <div style="margin-top: -50px;" class="row content">
+      <div class="col-lg-6 d-flex justify-content-start">
+        <img width="400" height="350" src="{{asset('assets/img/beasiswa.jpg')}}" alt="image">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0" style="margin-top: 50px">
+        <div class="section-header">
+          <h2>FATERNA UNAND</h2>
+        </div>
+        <div class="section-title d-flex justify-content-start" style="margin-top:-80px ">
+          <h1>Informasi Penerimaan Beasiswa</h1>
         </div>
       </div>
     </div>
-  </nav>
-</div>
+  </div>
+  <div class="container" data-aos="fade-up" style="margin-top: 30px">
+    <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+            <span class="num">1.</span>
+            PENERIMAAN BEASISWA BANK INDONESIA
+          </button>
+        </h3>
+        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+          <div class="accordion-body">
+          <p>Penerima Beasiswa Bank Indonesia adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>
+          <a href="#">Selengkapnya</a>
+          </div>
+        </div>
+      </div><!-- # Faq item-->
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+            <span class="num">2.</span>
+            PENERIMAAN BEASISWA KSE
+          </button>
+        </h3>
+        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+          <div class="accordion-body">
+            <p>Penerima Beasiswa Karya Salemba Empat adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>
+            <a href="#">Selengkapnya</a>
+          </div>
+        </div>
+      </div><!-- # Faq item-->
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+            <span class="num">3.</span>
+            PENERIMAAN BEASISWA LPS
+          </button>
+        </h3>
+        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+          <div class="accordion-body">
+            <p>Penerima Beasiswa Lembaga Penjamin Simpanan adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>
+            <a href="#">Selengkapnya</a>
+          </div>
+        </div>
+      </div><!-- # Faq item-->
+    </div>
+  </div>     
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+
 @endsection
 
 

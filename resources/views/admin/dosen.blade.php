@@ -21,9 +21,8 @@
                                 <th>Nama</th>
                                 <th>Departemen</th>
                                 <th>Email</th>
-                                <th>Publikasi</th>
                                 <th>Edukasi</th>
-                                <th>Penelitian</th>
+                                <th>Link</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -33,12 +32,19 @@
                                 <td>{{ $dosen->nama }}</td>
                                 <td>{{ $dosen->departemen }}</td>
                                 <td>{{ $dosen->email }}</td>
-                                <td>{{ $dosen->publikasi }}</td>
-                                <td>{{ $dosen->edukasi }}</td>
-                                <td>{{ $dosen->penelitian }}</td>
+                                <td>
+                                    S1 {{ $dosen->edukasi_s1 }} <br>
+                                    S2 {{ $dosen->edukasi_s2 }} <br>
+                                    S3 {{ $dosen->edukasi_s3 }} <br>
+                                </td>
+                                <td>
+                                    sinta : {{ $dosen->link_sinta }} <br>
+                                    scopus : {{ $dosen->link_scopus }} <br>
+                                    scholar : {{ $dosen->link_scholar }} <br>
+                                </td>
                                 <td>
                                     <a href="{{route('editdosen',['id' => $dosen->id])}}" class="btn btn-primary btn-sm">Edit</a>
-                                    <a href="{{route('delete-dosen',['id' => $dosen->id])}}" class="btn btn-danger btn-sm mt-2">Hapus</a>
+                                    <a href="{{route('delete-dosen',['id' => $dosen->id])}}" class="btn btn-danger btn-sm">Hapus</a>
                                 </td>
                             </tr>
                         @endforeach

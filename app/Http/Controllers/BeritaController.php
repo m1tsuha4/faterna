@@ -25,12 +25,14 @@ class BeritaController extends Controller
     {
         try {
             $validatedData = $request->validate([
+                'kategori' => 'required',
                 'judul' => 'required',
                 'deskripsi' => 'required',
                 'file' => 'required|file|image|mimes:jpeg,png,jpg',
             ]);
 
             $berita = new berita();
+            $berita->kategori = $request->kategori;
             $berita->judul = $request->judul;
             $berita->deskripsi = $request->deskripsi;
             $berita->tanggal = now();
@@ -80,6 +82,7 @@ class BeritaController extends Controller
     {
         try {
             $validatedData = $request->validate([
+                'kategori' => 'required',
                 'judul' => 'required',
                 'deskripsi' => 'required',
 //                'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
@@ -90,6 +93,7 @@ class BeritaController extends Controller
                 return redirect()->route('dashboardadmin')->with('error', 'Ruangan tidak ditemukan');
             }
 
+            $berita->kategori = $request->kategori;
             $berita->judul = $request->judul;
             $berita->deskripsi = $request->deskripsi;
             $berita->tanggal = now();

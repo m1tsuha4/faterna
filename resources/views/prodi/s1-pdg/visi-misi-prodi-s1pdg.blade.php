@@ -22,7 +22,9 @@
   </nav>
 </div>
 <div class="container">
+
   <div class="visimisi">
+
     <div class="visi" style="text-align: center">
       <img src="assets/img/visis1.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
       <strong><p>Menjadi fakultas yang menghasilkan lulusan berdaya saing nasional menuju internasional dan berperan aktif dalam pembangunan bangsa</p></strong>

@@ -85,6 +85,30 @@
                     <span>Beasiswa</span>
                 </a>
             </li>
+            <hr class="sidebar-divider">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('galeri') }}">
+                    <i class="fas fa-award"></i>
+                    <span>Gallery</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('kalender') }}">
+                    <i class="fas fa-award"></i>
+                    <span>Kalender Akademik</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('sop-ppid') }}">
+                    <i class="fas fa-award"></i>
+                    <span>SOP Layanan Informasi Publik</span>
+                </a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -192,7 +216,7 @@
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button class="btn btn-primary">Logout</button>
-                        <form>
+                    <form>
                 </div>
             </div>
         </div>

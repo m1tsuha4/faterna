@@ -22,7 +22,10 @@
   </nav>
 </div>
 <div class="container">
+
   <div class="visimisi">
+
+
     <div class="visi" style="text-align: center">
       <img src="assets/img/visis1.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
       <strong><p>Menjadi Prodi Peternakan yang unggul melalui penyelenggaraan pendidikan, penelitian, 
@@ -45,3 +48,7 @@
   </div>
 </div>
 @endsection
+
+
+
+
