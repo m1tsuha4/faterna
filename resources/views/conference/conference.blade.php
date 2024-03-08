@@ -20,5 +20,71 @@
     </div>
   </nav>
 </div>
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div style="margin-top: -80px;" class="row content">
+      <div class="col-lg-6 d-flex justify-content-start">
+        <img width="400" height="350" src="{{asset('assets/img/conference.png')}}" alt="image">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0" style="margin-top: 110px">
+        <div class="section-title ppid d-flex justify-content-start">
+          <h1>Conference FATERNA UNAND</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="conference" class="conference" style="margin-top: -110px">
+  <div class="container" data-aos="fade-up" >
+    <div class="accordion" id="conlist" data-aos="fade-up" data-aos-delay="100" >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-1">
+            <span class="num">1. </span>
+              Judul Conference 1  
+          </button>
+        </h2>
+        <div id="con-conten-1" class="accordion-collapse collapse" data-bs-parent="#conlist">
+          <div class="accordion-body">
+            <p>Informasi detail terkait file atau dokumen tentang conference dapat di download dibawah ini</p>
+            <p><a href="#">Download</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-2">
+            <span class="num">2. </span>
+              Judul Conference 2  
+          </button>
+        </h2>
+        <div id="con-conten-2" class="accordion-collapse collapse" data-bs-parent="#conlist">
+          <div class="accordion-body">
+            <p>Informasi detail terkait file atau dokumen tentang conference dapat di download dibawah ini</p>
+            <p><a href="#">Download</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-3">
+            <span class="num">3. </span>
+              Judul Conference 3  
+          </button>
+        </h2>
+        <div id="con-conten-3" class="accordion-collapse collapse" data-bs-parent="#conlist">
+          <div class="accordion-body">
+            <p>Informasi detail terkait file atau dokumen tentang conference dapat di download dibawah ini</p>
+            <p><a href="#">Download</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 @endsection
 

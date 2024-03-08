@@ -27,21 +27,25 @@ class DosenController extends Controller
         try {
             $validatedData = $request->validate([
                 'nama' => 'required',
+                'nidn' => 'required',
                 'departemen' => 'required',
                 'email' => 'required',
-                'publikasi' => 'required',
-                'edukasi' => 'required',
-                'penelitian' => 'required',
+                'jabatan_akademik' => 'required',
                 'file' => 'required|file',
             ]);
 
             $dosen = new dosen();
             $dosen->nama = $request->nama;
+            $dosen->nidn = $request->nidn;
             $dosen->departemen = $request->departemen;
             $dosen->email = $request->email;
-            $dosen->publikasi = $request->publikasi;
-            $dosen->edukasi = $request->edukasi;
-            $dosen->penelitian = $request->penelitian;
+            $dosen->jabatan_akademik = $request->jabatan_akademik;
+            $dosen->edukasi_s1 = $request->edukasi_s1;
+            $dosen->edukasi_s2 = $request->edukasi_s2;
+            $dosen->edukasi_s3 = $request->edukasi_s3;
+            $dosen->link_sinta = $request->publikasi;
+            $dosen->link_scopus = $request->penelitian;
+            $dosen->link_scholar = $request->scholar;
 
 
             if ($request->hasFile('file')) {
@@ -96,12 +100,10 @@ class DosenController extends Controller
         try {
             $validatedData = $request->validate([
                 'nama' => 'required',
+                'nidn' => 'required',
                 'departemen' => 'required',
                 'email' => 'required',
-                'publikasi' => 'required',
-                'edukasi' => 'required',
-                'penelitian' => 'required',
-//                'file' => 'required|file',
+                'jabatan_akademik' => 'required',
             ]);
             $dosen = dosen::find($id);
 
@@ -110,11 +112,16 @@ class DosenController extends Controller
             }
 
             $dosen->nama = $request->nama;
+            $dosen->nidn = $request->nidn;
             $dosen->departemen = $request->departemen;
             $dosen->email = $request->email;
-            $dosen->publikasi = $request->publikasi;
-            $dosen->edukasi = $request->edukasi;
-            $dosen->penelitian = $request->penelitian;
+            $dosen->jabatan_akademik = $request->jabatan_akademik;
+            $dosen->edukasi_s1 = $request->edukasi_s1;
+            $dosen->edukasi_s2 = $request->edukasi_s2;
+            $dosen->edukasi_s3 = $request->edukasi_s3;
+            $dosen->link_sinta = $request->publikasi;
+            $dosen->link_scopus = $request->penelitian;
+            $dosen->link_scholar = $request->scholar;
 
 
             if ($request->hasFile('file')) {

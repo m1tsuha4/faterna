@@ -123,6 +123,23 @@ Route::get('/tujuan-prodi-s3', function () {
     return view('prodi/s3/tujuan-prodi-s3');
 })->name('tujuan-prodi-s3');
 
+Route::get('/s1-pdg', function () {
+    return view('prodi/s1-pdg/s1pdg');
+})->name('s1-pdg');
+
+Route::get('/s1-pyk', function () {
+    return view('prodi/s1-pyk/s1pyk');
+})->name('s1-pyk');
+
+Route::get('/s2', function () {
+    return view('prodi/s2/s2');
+})->name('s2');
+
+Route::get('/s3', function () {
+    return view('prodi/s3/s3');
+})->name('s3');
+
+
 // ini route kerjasama
 Route::get('/kerja-sama', function () {
     return view('kerjasama/kerjasama');
@@ -281,6 +298,24 @@ Route::middleware('auth')->group(function (){
     Route::get('/addbeasiswa', [\App\Http\Controllers\BeasiswaController::class,'create'])->name('addbeasiswa');
     Route::post('/addbeasiswa', [\App\Http\Controllers\BeasiswaController::class,'store'])->name('add-beasiswa');
     Route::get('/delete-beasiswa/{id}', [\App\Http\Controllers\BeasiswaController::class,'destroy'])->name('delete-beasiswa');
+
+    //Gallery
+    Route::get('/gallery', [\App\Http\Controllers\GalleryController::class,'index'])->name('galeri');
+    Route::get('/addgallery', [\App\Http\Controllers\GalleryController::class,'create'])->name('addgallery');
+    Route::post('/addgallery', [\App\Http\Controllers\GalleryController::class,'store'])->name('add-galeri');
+    Route::get('/delete-gallery/{id}', [\App\Http\Controllers\GalleryController::class,'destroy'])->name('delete-galeri');
+
+    //Kalender Akademik
+    Route::get('/kalender', [\App\Http\Controllers\KalenderController::class,'index'])->name('kalender');
+    Route::get('/addkalender', [\App\Http\Controllers\KalenderController::class,'create'])->name('addkalender');
+    Route::post('/addkalender', [\App\Http\Controllers\KalenderController::class,'store'])->name('add-kalender');
+    Route::get('/delete-kalender/{id}', [\App\Http\Controllers\KalenderController::class,'destroy'])->name('delete-kalender');
+
+    //SOP PPID
+    Route::get('/sop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'index'])->name('sop-ppid');
+    Route::get('/addsop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'create'])->name('addsop-ppid');
+    Route::post('/addsop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'store'])->name('add-sop-ppid');
+    Route::get('/delete-sop-ppid/{id}', [\App\Http\Controllers\SopLayananPpidController::class,'destroy'])->name('delete-sop-ppid');
 });
 
 
