@@ -146,9 +146,9 @@ Route::get('/kerja-sama', function () {
 })->name('kerjasama');
 
 // ini route conference
-Route::get('/conference', function () {
+Route::get('/konferensi', function () {
     return view('conference/conference');
-})->name('conference');
+})->name('konferensi');
 
 // ini route conference
 Route::get('/berita-duka-cita', function () {
@@ -216,9 +216,29 @@ Route::get('/administrator', function () {
     return view('admin/login');
 })->name('administrator');
 
-Route::get('/judul-berita', function () {
-    return view('home/berita/berita');
-})->name('berita');
+Route::get('/all-berita', function () {
+    return view('home/berita/allberita');
+})->name('allberita');
+
+Route::get('/detail-berita', function () {
+    return view('home/berita/detail-berita');
+})->name('detailberita');
+
+Route::get('/all-kipraah', function () {
+    return view('home/kiprah/allkiprah');
+})->name('allkiprah');
+
+Route::get('/detail-kipraah', function () {
+    return view('home/kiprah/detailkiprah');
+})->name('detailkiprah');
+
+Route::get('/all-pengumuman', function () {
+    return view('home/pengumuman/allpengumuman');
+})->name('allpengumuman');
+
+Route::get('/detail-pengumuman', function () {
+    return view('home/pengumuman/detailpengumuman');
+})->name('detailpengumuman');
 
 //Route::get('/berita', function () {
 //    return view('admin/admindashboard');
@@ -316,6 +336,18 @@ Route::middleware('auth')->group(function (){
     Route::get('/addsop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'create'])->name('addsop-ppid');
     Route::post('/addsop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'store'])->name('add-sop-ppid');
     Route::get('/delete-sop-ppid/{id}', [\App\Http\Controllers\SopLayananPpidController::class,'destroy'])->name('delete-sop-ppid');
+
+    //Conference
+    Route::get('/conference', [\App\Http\Controllers\ConferenceController::class,'index'])->name('allconference');
+    Route::get('/add-conference', [\App\Http\Controllers\ConferenceController::class,'create'])->name('addconference');
+    Route::post('/add-conference', [\App\Http\Controllers\ConferenceController::class,'store'])->name('add-conference');
+    Route::get('/delete-conference/{id}', [\App\Http\Controllers\ConferenceController::class,'destroy'])->name('delete-conference');
+
+    //Fasilitas
+    Route::get('/allfasilitas', [\App\Http\Controllers\FasilitasController::class,'index'])->name('allfasilitas');
+    Route::get('/addfasilitas', [\App\Http\Controllers\FasilitasController::class,'create'])->name('addfasilitas');
+    Route::post('/add-fasilitas', [\App\Http\Controllers\FasilitasController::class,'store'])->name('add-fasilitas');
+    Route::get('/delete-fasilitas/{id}', [\App\Http\Controllers\FasilitasController::class,'destroy'])->name('delete-fasilitas');
 });
 
 

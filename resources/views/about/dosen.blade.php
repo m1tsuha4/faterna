@@ -22,123 +22,91 @@
       </nav>
     </div><!-- End Breadcrumbs -->  
 
- <!-- ======= Team Section ======= -->
- <section id="dosen" class="dosen">
-      <div class="container-fluid" data-aos="fade-up">
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
 
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-       <div class="row mt-4">
-       <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Elandra Maulana</h4>
-                <span>
-                    <p class="card-text">Depertement: </p>
-                    <p class="card-text">Email: </p>
-                    <p class="card-text">Edukasi: </p>
-                </span>
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
-                    </div>
-                </div>
-              </div>
-            </div>
+          <div>
+            <ul class="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-s1-padang">S1 Padang</li>
+              <li data-filter=".filter-s1-pyk">S1 Payakumbuh</li>
+              <li data-filter=".filter-s2">S2</li>
+              <li data-filter=".filter-s3">S3</li>
+            </ul>
           </div>
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Elandra Maulana</h4>
-                <span>
-                    <p class="card-text">Depertement: </p>
-                    <p class="card-text">Email: </p>
-                    <p class="card-text">Edukasi: </p>
-                </span>
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-       </div>
-       
-       <div class="row mt-4">
-       <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Elandra Maulana</h4>
-                <span>
-                    <p class="card-text">Depertement: </p>
-                    <p class="card-text">Email: </p>
-                    <p class="card-text">Edukasi: </p>
-                </span>
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row gy-4 portfolio-container">
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Elandra Maulana</h4>
-                <span>
-                    <p class="card-text">Depertement: </p>
-                    <p class="card-text">Email: </p>
-                    <p class="card-text">Edukasi: </p>
-                </span>
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
+            <div class="col-xl-6 col-md-6 portfolio-item filter-s1-padang">
+              <div class="portfolio-wrap">
+                  <div class="dosen">
+                  <div class="member d-flex align-items-start">
+                      <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                        <h4>Elandra Maulana</h4>
+                        <span>
+                            <p class="card-text">Depertement: </p>
+                            <p class="card-text">Email: </p>
+                            <p class="card-text">Edukasi: </p>
+                        </span>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
-                    </div>
-                </div>
+                  </div>
               </div>
-            </div>
-          </div>
-       </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-6 col-md-6 portfolio-item filter-s1-pyk">
+              <div class="portfolio-wrap">
+                  <div class="dosen">
+                  <div class="member d-flex align-items-start">
+                      <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                        <h4>Elandra Maulana</h4>
+                        <span>
+                            <p class="card-text">Depertement: </p>
+                            <p class="card-text">Email: </p>
+                            <p class="card-text">Edukasi: </p>
+                        </span>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+          </div><!-- End Portfolio Container -->
 
         </div>
 
+
       </div>
-    </section><!-- End Team Section -->
+    </section><!-- End Portfolio Section -->
 
 
 @endsection

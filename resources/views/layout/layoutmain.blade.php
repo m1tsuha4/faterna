@@ -130,8 +130,8 @@
           </li>
           <li class="dropdown"><a href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="{{ route('mou-bimtek-agam') }}">MoU Bimtek Agam</a></li>
-              <li><a href="{{ route('luar-negri') }}">Kerja Sama Luar Negri</a></li>
+              <li><a href="">MoU Bimtek Agam</a></li>
+              <li><a href="">Kerja Sama Luar Negri</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto active" href="#">kerjasama</a></li>
@@ -192,6 +192,7 @@
   <script src="{{asset('template/vendor/datatables/jquery.dataTables.min.js')}}"></script>
   <script src="{{asset('template/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
   <script src="{{asset('template/js/demo/datatables-demo.js')}}"></script>
+
 
 </body>
 

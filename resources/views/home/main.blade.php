@@ -5,21 +5,24 @@
 
 @section('contentmain')
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
-    <div class="container position-relative">
-      <div class="row gy-5" data-aos="fade-in">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Fakultas Peternakan Universitas Andalas</h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            
-        </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-        </div>
-      </div>
+  <section style="margin-top:-60px" id="hero" class="hero">
+    
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{asset('assets/img/unand.png')}}" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="{{asset('assets/img/unand.png')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('assets/img/unand.png')}}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+
+
 
     <div class="icon-boxes position-relative">
       <div class="container position-relative">
@@ -63,41 +66,109 @@
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <!-- ======= About Us Section ======= -->
+      <section style="margin-top: -100px;" id="blog" class="blog">
 
-        <div class="section-header">
+      <div class="section-header">
           <h2>Selayang Pandang</h2>
         </div>
 
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <h3>FATERNA UNAND</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
-          </div>
-          <div class="col-lg-6">
-          <h3>Informasi Penerimaan Mahasiswa Baru</h3>
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Berikut adalah informasi terkait Penerimaan Mahasiswa Baru FATERNA UNAND.
-              </p>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
+      <div class="container" data-aos="fade-up">
 
+        <div class="row g-5">
+
+          <div class="col-lg-8">
+
+          <div class="card shadow">
+            <div class="row no-gutters">
+                <div class="col-sm-4">
+                    <div class="post-img">
+                        <img width="300" src="{{asset('assets/img/adrizal-dekan.jpg')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="card-body">
+                      <h1>Selamat Datang</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe laudantium mollitia ea quod quam possimus deleniti accusantium in quis. Doloremque magni nemo unde ducimus facere fugit, neque tempora quisquam nobis minus eius illo soluta mollitia, voluptatem voluptate adipisci, reprehenderit iusto suscipit nesciunt incidunt nam! Autem expedita dicta minus recusandae!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, perspiciatis. Quisquam maxime amet ea illum illo ratione maiores, laboriosam, eaque eligendi itaque expedita est nemo, aut fugit. Sunt ipsum reprehenderit corrupti ipsa tempore porro facere ratione? Cumque repellat vel in fugiat quibusdam accusamus sequi possimus nihil libero nulla molestias, ut ratione similique nemo aliquam amet. Dolore atque voluptatem numquam ab!</p>
+                      </div>
+                </div>
             </div>
+        </div>
+
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+              <div class="sidebar-item recent-posts">
+                <h3 class="sidebar-title">Pengumuman</h3>
+
+                <div class="mt-3">
+
+                  <div class="post-item mt-3">
+                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
+                    <div>
+                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
+                      <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+                  </div><!-- End recent post item-->
+
+                  <div class="post-item">
+                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
+                    <div>
+                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
+                      <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+                  </div><!-- End recent post item-->
+
+                  <div class="post-item">
+                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
+                    <div>
+                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
+                      <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+                  </div><!-- End recent post item-->
+
+                  <div class="post-item">
+                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
+                    <div>
+                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
+                      <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+                  </div><!-- End recent post item-->
+
+                  <div class="post-item">
+                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
+                    <div>
+                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
+                      <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+                  </div><!-- End recent post item-->
+
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+              <div class="col-sm-12 mt-3">
+                <div class="d-flex justify-content-center">
+                        <button style="background: #451952; color:#fff;" class="btn">
+                          <a style="color: white;" href="{{route('allpengumuman')}}">Selengkapnya</a>
+                        </button>
+                      </div>
+                </div>
+
+            </div><!-- End Blog Sidebar -->
+
           </div>
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section><!-- End Blog Details Section -->
 
          <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
+    <section id="team" class="team sections-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -106,7 +177,7 @@
         <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/dekan.jpg')}}" class="img-fluid" alt="">
-              <h4>Walter White</h4>
+              <h4>Dr.Ir. Adrizal, M.Si</h4>
               <span>Dekan</span>
             </div>
           </div><!-- End Team Member -->
@@ -118,7 +189,7 @@
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd1.jpg')}}" class="img-fluid" alt="">
-              <h4>Sarah Jhinson</h4>
+              <h4>Dr. Rusfidra, S.Pt, MP</h4>
               <span>Wakil Dekan I</span>
             </div>
           </div><!-- End Team Member -->
@@ -126,7 +197,7 @@
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd2.jpg')}}" class="img-fluid" alt="">
-              <h4>William Anderson</h4>
+              <h4>Dr.Ir. Firda Arlina, M.Si</h4>
               <span>Wakil Dekan II</span>
             </div>
           </div><!-- End Team Member -->
@@ -134,7 +205,7 @@
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd3.jpg')}}" class="img-fluid" alt="">
-              <h4>Amanda Jepson</h4>
+              <h4>Dr.Ir. Rusmana Wijaya Setia Ningrat, M.Rur.Sc</h4>
               <span>Wakil Dekan III</span>
             </div>
           </div><!-- End Team Member -->
@@ -143,26 +214,6 @@
 
       </div>
     </section><!-- End Our Team Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-out">
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
 
 
       <!-- ======= Counts Section ======= -->
@@ -222,7 +273,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Rilis Berita</h2>
+          <h2>Rilis Berita & Informasi Event</h2>
         </div>
 
         <div class="row gy-4">
@@ -231,21 +282,21 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Politics</p>
+              <p class="post-category">Berita</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                
                 <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
+                  <p class="post-author">Admin Faterna</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                    <time datetime="2022-01-01">Jan 1, 2024</time>
                   </p>
                 </div>
               </div>
@@ -257,21 +308,21 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Sports</p>
+              <p class="post-category">Berita</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                
                 <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
+                  <p class="post-author">Admin Faterna</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                    <time datetime="2022-01-01">Jan 1, 2024</time>
                   </p>
                 </div>
               </div>
@@ -283,21 +334,21 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Entertainment</p>
+              <p class="post-category">Berita</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                
                 <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
+                  <p class="post-author">Admin Faterna</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                    <time datetime="2022-01-01">Jan 1, 2024</time>
                   </p>
                 </div>
               </div>
@@ -306,6 +357,14 @@
           </div><!-- End post list item -->
 
         </div><!-- End recent posts list -->
+
+   <div class="col-sm-12 mt-3">
+   <div class="d-flex justify-content-center">
+          <button style="background: #451952; color:#fff;" class="btn">
+            <a style="color: white;" href="{{route('allberita')}}">Selengkapnya</a>
+          </button>
+        </div>
+   </div>
 
       </div>
     </section><!-- End Recent Blog Posts Section -->
@@ -325,15 +384,13 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
                     <div>
-                      <h3>Saul Goodman</h3>
+                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
                     </div>
                   </div>
                   <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bi bi-quote quote-icon-right"></i>
+                      Meraih medali perunggu dari lomba lari melawan kuda
                   </p>
                 </div>
               </div>
@@ -343,15 +400,13 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
                     <div>
-                      <h3>Sara Wilsson</h3>
+                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
                     </div>
                   </div>
                   <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bi bi-quote quote-icon-right"></i>
+                      Meraih medali perunggu dari lomba lari melawan kuda
                   </p>
                 </div>
               </div>
@@ -361,15 +416,13 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
                     <div>
-                      <h3>Jena Karlis</h3>
+                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
                     </div>
                   </div>
                   <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
+                      Meraih medali perunggu dari lomba lari melawan kuda
                   </p>
                 </div>
               </div>
@@ -379,41 +432,31 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
                     <div>
-                      <h3>Matt Brandon</h3>
+                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
                     </div>
                   </div>
                   <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
-                    <i class="bi bi-quote quote-icon-right"></i>
+                      Meraih medali perunggu dari lomba lari melawan kuda
                   </p>
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>John Larson</h3>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
+
+        <div class="col-sm-12 mt-3">
+          <div class="d-flex justify-content-center">
+                  <button style="background: #451952; color:#fff;" class="btn">
+                    <a style="color: white;" href="{{route('allkiprah')}}">Selengkapnya</a>
+                  </button>
+                </div>
+          </div>
+
 
       </div>
     </section><!-- End Testimonials Section -->
@@ -428,134 +471,74 @@
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-          <div>
+          <!-- <div>
             <ul class="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-product">Product</li>
               <li data-filter=".filter-branding">Branding</li>
               <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters -->
-          </div>
+            </ul>
+          </div> -->
 
           <div class="row gy-4 portfolio-container">
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
+                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Judul</h4>
+                  <p>Deskripsi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
+                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Judul</h4>
+                  <p>Deskripsi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Judul</h4>
+                  <p>Deskripsi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Judul</h4>
+                  <p>Deskripsi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Judul</h4>
+                  <p>Deskripsi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
+                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Judul</h4>
+                  <p>Deskripsi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -564,8 +547,36 @@
 
         </div>
 
+        <div class="col-sm-12 mt-3">
+          <div class="d-flex justify-content-center">
+                  <button style="background: #451952; color:#fff;" class="btn">
+                    <a style="color: white;" href="">Selengkapnya</a>
+                  </button>
+                </div>
+          </div>
+
       </div>
     </section><!-- End Portfolio Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
 
 
     <!-- ======= Stats Counter Section ======= -->
@@ -579,24 +590,28 @@
         <div class="row gy-4 align-items-center">
 
           <div class="col-lg-6">
-            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          <div class=" d-flex justify-content-center">
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="100" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+          </div>
           </div>
 
           <div class="col-lg-6">
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
+              <p><strong>Dosen & Tendik</strong></p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+              <p><strong>Alumni</strong></p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+              <span data-purecounter-start="0" data-purecounter-end="68" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Tahun Berdiri</strong></p>
             </div><!-- End Stats Item -->
 
           </div>

@@ -13,6 +13,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('assets/img/logo-unand.png')}}" rel="icon">
+    <link href="{{asset('assets/img/logo-unand.png')}}" rel="apple-touch-icon">
     <link href="{{asset('template/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -35,10 +36,10 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul style="background-color: #87566e;" class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul style="background-color: #451952;" class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -48,38 +49,38 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('dashboardadmin')}}">
                 <i class="fas fa-newspaper"></i>
-                    <span>Berita</span></a>
+                    <span>Berita & Event</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('dokumen')}}">
                 <i class="fas fa-file-alt"></i>
-                    <span>Dokumen</span></a>
+                    <span>Dokumen Panduan</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('dosen-admin')}}">
                 <i class="fas fa-chalkboard-teacher"></i>
-                    <span>Dosen</span></a>
+                    <span>Dosen & Tendik</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{route('alumni')}}">
                 <i class="fas fa-user-graduate"></i>
                     <span>Alumni</span></a>
             </li>
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{ route('beasiswa') }}">
                     <i class="fas fa-award"></i>
                     <span>Beasiswa</span>
@@ -87,7 +88,7 @@
             </li>
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{ route('galeri') }}">
                     <i class="fas fa-award"></i>
                     <span>Gallery</span>
@@ -95,7 +96,7 @@
             </li>
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{ route('kalender') }}">
                     <i class="fas fa-award"></i>
                     <span>Kalender Akademik</span>
@@ -103,12 +104,30 @@
             </li>
             <hr class="sidebar-divider">
 
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="{{ route('sop-ppid') }}">
                     <i class="fas fa-award"></i>
-                    <span>SOP Layanan Informasi Publik</span>
+                    <span>SOP Layanan Informasi Publik (Dokumen PPID)</span>
                 </a>
             </li>
+            <hr class="sidebar-divider">
+
+            <li class="nav-item ">
+                <a class="nav-link" href="{{ route('allconference') }}">
+                    <i class="fas fa-award"></i>
+                    <span>Conference</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item ">
+                <a class="nav-link" href="{{route('allfasilitas')}}">
+                    <i class="fas fa-award"></i>
+                    <span>Fasilitas & Sapras</span>
+                </a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -238,6 +257,27 @@
             }
         }
     </script>
+
+
+<script>
+    // Dapatkan URL saat ini
+    var currentUrl = window.location.href;
+
+    // Dapatkan semua elemen <a> di dalam elemen dengan id "accordionSidebar"
+    var sidebarLinks = document.querySelectorAll('#accordionSidebar a');
+
+    // Iterasi melalui setiap tautan di sidebar
+    sidebarLinks.forEach(function (link) {
+        // Dapatkan URL tautan
+        var linkUrl = link.getAttribute('href');
+
+        // Periksa apakah URL saat ini cocok dengan URL tautan
+        if (currentUrl.includes(linkUrl)) {
+            // Tambahkan kelas "active" untuk menyoroti tautan yang aktif
+            link.classList.add('active');
+        }
+    });
+</script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('template/vendor/jquery/jquery.min.js')}}"></script>
