@@ -129,9 +129,9 @@ Route::get('/kerja-sama', function () {
 })->name('kerjasama');
 
 // ini route conference
-Route::get('/conference', function () {
+Route::get('/konferensi', function () {
     return view('conference/conference');
-})->name('conference');
+})->name('konferensi');
 
 // ini route conference
 Route::get('/berita-duka-cita', function () {
@@ -325,6 +325,12 @@ Route::middleware('auth')->group(function (){
     Route::get('/add-conference', [\App\Http\Controllers\ConferenceController::class,'create'])->name('addconference');
     Route::post('/add-conference', [\App\Http\Controllers\ConferenceController::class,'store'])->name('add-conference');
     Route::get('/delete-conference/{id}', [\App\Http\Controllers\ConferenceController::class,'destroy'])->name('delete-conference');
+
+    //Fasilitas
+    Route::get('/allfasilitas', [\App\Http\Controllers\FasilitasController::class,'index'])->name('allfasilitas');
+    Route::get('/addfasilitas', [\App\Http\Controllers\FasilitasController::class,'create'])->name('addfasilitas');
+    Route::post('/add-fasilitas', [\App\Http\Controllers\FasilitasController::class,'store'])->name('add-fasilitas');
+    Route::get('/delete-fasilitas/{id}', [\App\Http\Controllers\FasilitasController::class,'destroy'])->name('delete-fasilitas');
 });
 
 

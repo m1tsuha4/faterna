@@ -122,7 +122,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{route('allfasilitas')}}">
                     <i class="fas fa-award"></i>
                     <span>Fasilitas & Sapras</span>
                 </a>
