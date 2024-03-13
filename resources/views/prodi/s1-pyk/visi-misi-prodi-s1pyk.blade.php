@@ -15,13 +15,17 @@
     <div class="container">
       <ol>
         <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="{{ route('s1-pyk') }}">Sarjana Peternakan</a></li>
         <li>Visi Misi Program Studi Sarjana Perternakan</li>
       </ol>
     </div>
   </nav>
 </div>
 <div class="container">
-  <div class="visimisi" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="visimisi">
+
+
     <div class="visi" style="text-align: center">
       <img src="assets/img/visis1.png" alt="" width="50%" style="padding: 65px 0px 25px 0px;">
       <strong><p>Menjadi Prodi Peternakan yang unggul melalui penyelenggaraan pendidikan, penelitian, 
@@ -44,4 +48,7 @@
   </div>
 </div>
 @endsection
+
+
+
 
