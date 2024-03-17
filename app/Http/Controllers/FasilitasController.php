@@ -33,6 +33,9 @@ class FasilitasController extends Controller
             $fasilitas = new fasilitas();
             $fasilitas->nama = $request->nama;
             $fasilitas->deskripsi = $request->deskripsi;
+            $fasilitas->tanggal = now();
+            $fasilitas->author = "Admin Faterna";
+
 
             if ($request->hasFile('file')) {
                 $file = $request->file('file');
@@ -70,7 +73,7 @@ class FasilitasController extends Controller
             $fasilitas = Fasilitas::find($id);
             DB::table('fasilitas')->where('id', $id)->delete();
             Storage::delete('public/fasilitas/' . $fasilitas->file);
-            Alert::success('Success', 'galeri berhasil dihapus');
+            Alert::success('Success', 'fasilitas berhasil dihapus');
 
             return redirect()->route('allfasilitas');
         } catch (\Exception $e) {

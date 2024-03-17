@@ -90,7 +90,7 @@
 
             <li class="nav-item ">
                 <a class="nav-link" href="{{ route('galeri') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-images"></i>
                     <span>Gallery</span>
                 </a>
             </li>
@@ -98,15 +98,16 @@
 
             <li class="nav-item ">
                 <a class="nav-link" href="{{ route('kalender') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-calendar-alt"></i>
                     <span>Kalender Akademik</span>
                 </a>
             </li>
+
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
                 <a class="nav-link" href="{{ route('sop-ppid') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-file-alt"></i>
                     <span>SOP Layanan Informasi Publik (Dokumen PPID)</span>
                 </a>
             </li>
@@ -114,7 +115,7 @@
 
             <li class="nav-item ">
                 <a class="nav-link" href="{{ route('allconference') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-users"></i>
                     <span>Conference</span>
                 </a>
             </li>
@@ -123,7 +124,7 @@
 
             <li class="nav-item ">
                 <a class="nav-link" href="{{route('allfasilitas')}}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-building"></i>
                     <span>Fasilitas & Sapras</span>
                 </a>
             </li>
