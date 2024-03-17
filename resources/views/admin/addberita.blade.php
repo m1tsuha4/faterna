@@ -32,8 +32,8 @@
                                 <label class="input-group-text text-bg-primary"
                                     for="inputGroupSelect01">Kategori</label>
                                 <select class="form-select" name="kategori" id="inputGroupSelect01">
-                                    <option selected>Select</option>
-                                    <option value="Berita">Berita</option>
+                                    <option value="Berita" selected>Berita</option>
+                                    <option value="Pengumuman">Pengumuman</option>
                                     <option value="Informasi Event">Informasi Event</option>
                                     <option value="Kiprah Civitas Akademika">Kiprah Civitas Akademika</option>
                                     <!-- <option value="Pengumuman">Pengumuman</option>
