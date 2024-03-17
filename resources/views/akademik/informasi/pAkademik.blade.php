@@ -54,7 +54,7 @@
         </h3>
         <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
           <div class="accordion-body">
-            <p>Informasi detail terkait Panduan Portal Akademik Mahasiswa, Download dibawah ini</p>
+            <p>Informasi detail terkait dapat di Download dibawah ini</p>
             <p><a href="#">Download</a></p>
           </div>
         </div>
@@ -70,7 +70,7 @@
         </h2>
         <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionlist" style="">
           <div class="accordion-body">
-            <p>Informasi detail terkait Panduan FARM 2016, Download dibawah ini</p>
+          <p>Informasi detail terkait dapat di Download dibawah ini</p>
             <p><a href="#">Download</a></p>
           </div>
         </div>
@@ -88,11 +88,11 @@
           <div class="accordion-body">
             <ol>
               <li>
-                <p style="text-align: left">Informasi detail terkait Panduan Akademik 2015, Download dibawah ini</p><br>
+              <p>Informasi detail terkait dapat di Download dibawah ini</p>
                 <p><a href="#">Download</a></p>
               </li>
               <li>
-                <p style="text-align: left">Informasi detail terkait Panduan Akademik 2017/2019, Download dibawah ini</p><br>
+              <p>Informasi detail terkait dapat di Download dibawah ini</p>
                 <p><a href="#">Download</a></p>
               </li>
             </ol>

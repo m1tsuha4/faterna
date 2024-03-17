@@ -47,9 +47,13 @@
                       <div class="member-info">
                         <h4>Elandra Maulana</h4>
                         <span>
-                            <p class="card-text">Depertement: </p>
-                            <p class="card-text">Email: </p>
-                            <p class="card-text">Edukasi: </p>
+                            <p class="card-text"><strong>NIDN:</strong> Teknik Komputer</p>
+                            <p class="card-text"><strong>Depertement:</strong> Teknik Komputer</p>
+                            <p class="card-text"><strong>Jabatan:</strong>Lektor</p>
+                            <p class="card-text"><strong>Email:</strong> elandramaulana81@gmail.com</p>
+                            <p class="card-text"><strong>Edukasi S1:</strong></p>
+                            <p class="card-text"><strong>Edukasi S2:</strong></p>
+                            <p class="card-text"><strong>Edukasi S3:</strong></p>
                         </span>
                         <br>
                         <div class="row">
@@ -77,9 +81,13 @@
                       <div class="member-info">
                         <h4>Elandra Maulana</h4>
                         <span>
-                            <p class="card-text">Depertement: </p>
-                            <p class="card-text">Email: </p>
-                            <p class="card-text">Edukasi: </p>
+                            <p class="card-text"><strong>NIDN:</strong> Teknik Komputer</p>
+                            <p class="card-text"><strong>Depertement:</strong> Teknik Komputer</p>
+                            <p class="card-text"><strong>Jabatan:</strong>Lektor</p>
+                            <p class="card-text"><strong>Email:</strong> elandramaulana81@gmail.com</p>
+                            <p class="card-text"><strong>Edukasi S1:</strong></p>
+                            <p class="card-text"><strong>Edukasi S2:</strong></p>
+                            <p class="card-text"><strong>Edukasi S3:</strong></p>
                         </span>
                         <br>
                         <div class="row">

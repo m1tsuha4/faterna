@@ -36,6 +36,7 @@
                                     <option value="Pengumuman">Pengumuman</option>
                                     <option value="Informasi Event">Informasi Event</option>
                                     <option value="Kiprah Civitas Akademika">Kiprah Civitas Akademika</option>
+                                    <option value="Duka Cita">Duka Cita</option>
                                     <!-- <option value="Pengumuman">Pengumuman</option>
                                     <option value="Berita Duka">Berita Duka</option> -->
                                 </select>

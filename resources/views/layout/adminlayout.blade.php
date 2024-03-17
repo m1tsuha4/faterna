@@ -87,18 +87,19 @@
                     <span>Beasiswa</span>
                 </a>
             </li>
+
             <hr class="sidebar-divider">
             <li class="nav-item ">
                 <a class="nav-link {{ \Route::is('galeri') ? 'active' : '' }}" href="{{ route('galeri') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-images"></i>
                     <span>Gallery</span>
                 </a>
             </li>
             <hr class="sidebar-divider">
 
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link {{ \Route::is('kalender') ? 'active' : '' }}" href="{{ route('kalender') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-calendar-alt"></i>
                     <span>Kalender Akademik</span>
                 </a>
             </li>
@@ -107,26 +108,44 @@
 
             <li class="nav-item ">
                 <a class="nav-link {{ \Route::is('sop-ppid') ? 'active' : '' }}" href="{{ route('sop-ppid') }}">
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-info-circle"></i>
                     <span>SOP Layanan Informasi Publik (Dokumen PPID)</span>
                 </a>
             </li>
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link {{ \Route::is('allconference') ? 'active' : '' }}" href="{{ route('allconference') }}">
-                    <i class="fas fa-award"></i>
-                    <span>Conference</span>
-                </a>
+            <a class="nav-link {{ \Route::is('allconference') ? 'active' : '' }}" href="{{ route('allconference') }}">
+                <i class="fas fa-users"></i>
+                <span>Conference</span>
+            </a>
             </li>
 
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link {{ \Route::is('allfasilitas') ? 'active' : '' }}" href="{{route('allfasilitas')}}">
-                    <i class="fas fa-award"></i>
-                    <span>Fasilitas & Sapras</span>
-                </a>
+            <a class="nav-link {{ \Route::is('allfasilitas') ? 'active' : '' }}" href="{{ route('allfasilitas') }}">
+                <i class="fas fa-building"></i>
+                <span>Fasilitas & Sapras</span>
+            </a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item ">
+            <a class="nav-link {{ \Route::is('allkerjasama') ? 'active' : '' }}" href="{{ route('allkerjasama') }}">
+                <i class="fas fa-handshake"></i>
+                <span>Kerjasama</span>
+            </a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item ">
+            <a class="nav-link {{ \Route::is('overview') ? 'active' : '' }}" href="{{ route('overview') }}">
+                <i class="fas fa-chart-line"></i>
+                <span>Overview</span>
+            </a>
             </li>
 
 

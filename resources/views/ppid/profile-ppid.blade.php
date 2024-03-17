@@ -118,52 +118,8 @@
         </div>
     </section>
 
-    
-    <section  class="profile-ppid about layanan-informasi" id="profile-ppid about">
-      <div class="container" data-aos="fade-up">
-      <div class="section-header">
-          <h2 style="color:white">PPID Faterna UNAND</h2>
-        </div>
 
-        <div style="margin-top: -60px;" class="section-title ppid d-flex justify-content-center">
-          <h1 style="color:white"> SOP Layanan Informasi Publik</h1>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <div class="container-fluid">
-            <div class="card shadow mb-4">
-            <div class="card-body">
-                <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>Judul</th>
-                                <th>jenis</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>asdasd</td>
-                                <td>adadasdas</td>
-                                <td>
-                                    <a href="#" class="btn btn-success btn-sm mt">Download</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-            </div>
-        
-          </div>
-          
-        </div>
-    </section>
-
-    <section  class="profile-ppid faq sections-bg" id="profile-ppid alur">
+    <section  class="profile-ppid faq" id="profile-ppid alur">
       <div class="container-fluid" data-aos="fade-up">
         <div class="section-header">
           <h2>PPID Faterna UNAND</h2>
@@ -204,6 +160,49 @@
           </ul>
         </div>
             </div>
+        </div>
+    </section>
+
+
+    <section  class="profile-ppid about layanan-informasi" id="profile-ppid about">
+      <div class="container" data-aos="fade-up">
+      <div class="section-header">
+          <h2 style="color:white">PPID Faterna UNAND</h2>
+        </div>
+
+        <div style="margin-top: -60px;" class="section-title ppid d-flex justify-content-center">
+          <h1 style="color:white"> SOP Layanan Informasi Publik</h1>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <div class="container-fluid">
+            <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Dokumen</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>asdasd</td>
+                                <td  width="25%">
+                                    <a href="#" class="btn btn-success btn-sm mt">Download</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            </div>
+        
+          </div>
+          
         </div>
     </section>
 

@@ -43,6 +43,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="px-5" id="fasilitas-content1">
                     <div style="margin: 0" class="row  nama-fakultas">
                         Fakultas Peternakan
@@ -63,7 +64,7 @@
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam itaque explicabo officia
                                 sapiente quae odit exercitationem, fugit qui delectus placeat quidem nobis voluptate
                                 pariatur necessitatibus nostrum perferendis inventore dolores corporis?</p>
-                            <button class="btn btn-first" data-bs-toggle="modal" data-bs-target="#exampleModal">Daftar
+                            <!-- <button class="btn btn-first" data-bs-toggle="modal" data-bs-target="#exampleModal">Daftar
                                 Laboratorium</button>
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
@@ -94,14 +95,13 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </section>
+
                 <section class="px-5" id="fasilitas-content2">
-                    <div style="margin: 0" class="row d-flex justify-content-end  nama-fakultas">
-                        Fakultas Peternakan
-                    </div>
+                   
                     <div style="margin: 0" class="row d-flex justify-content-end nama-fasilitas">
                         Fasilitas 2
                     </div>
@@ -118,7 +118,7 @@
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam itaque explicabo officia
                                 sapiente quae odit exercitationem, fugit qui delectus placeat quidem nobis voluptate
                                 pariatur necessitatibus nostrum perferendis inventore dolores corporis?</p>
-                            <button class="btn btn-first" data-bs-toggle="modal"
+                            <!-- <button class="btn btn-first" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">Selengkapnya</button>
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
@@ -149,7 +149,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </section>

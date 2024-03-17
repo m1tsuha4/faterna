@@ -348,6 +348,18 @@ Route::middleware('auth')->group(function (){
     Route::get('/addfasilitas', [\App\Http\Controllers\FasilitasController::class,'create'])->name('addfasilitas');
     Route::post('/add-fasilitas', [\App\Http\Controllers\FasilitasController::class,'store'])->name('add-fasilitas');
     Route::get('/delete-fasilitas/{id}', [\App\Http\Controllers\FasilitasController::class,'destroy'])->name('delete-fasilitas');
+    
+    //Kerjasama
+    Route::get('/allkerjasama', [\App\Http\Controllers\KerjasamaController::class,'index'])->name('allkerjasama');
+    Route::get('/addkerjasama', [\App\Http\Controllers\KerjasamaController::class,'create'])->name('addkerjasama');
+    Route::post('/add-kerjasama', [\App\Http\Controllers\KerjasamaController::class,'store'])->name('add-kerjasama');
+    Route::get('/delete-kerjasama/{id}', [\App\Http\Controllers\KerjasamaController::class,'destroy'])->name('delete-kerjasama');
+
+
+    //Faternma Dalam Angka
+    Route::get('/overview', [\App\Http\Controllers\OverviewController::class,'index'])->name('overview');
+    Route::get('/editoverview', [\App\Http\Controllers\OverviewController::class,'edit'])->name('editoverview');
+    Route::post('/edit-overview', [\App\Http\Controllers\OverviewController::class,'update'])->name('edit-overview');
 });
 
 

@@ -64,6 +64,35 @@
   </nav>
 </div>
 
+
+<section id="faq" class="faq" data-aos="fade-up">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Kalender Akademik</h2>
+    </div>
+    <div class="post-content">
+      <table width="100%">
+        <tbody width="100%">
+            <tr>
+              <td width="5%" >No</td>
+              <td width="20%" >Judul</td>
+              <td width="20%" >Link Download</td>
+            </tr>
+            <tr>
+              <td width="5%" >1</td>
+              <td width="20%" >Ganjil 2023/2024</td>
+              <td width="20%" ><a href="#">Download</a></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>  
+
+  </div>
+</section>
+
+
 <script>
   const daysTag = document.querySelector(".days"),
 currentDate = document.querySelector(".current-date"),
