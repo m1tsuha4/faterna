@@ -81,7 +81,7 @@
             <ul>
               <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{{ route('pAkademik') }}">Panduan Akademik & Download Dokumen</a></li>
+                  <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
                   <li><a href="{{ route('infobeasiswa') }}">Beasiswa</a></li>
                   <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
                 </ul>
@@ -236,6 +236,25 @@
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <div id="preloader"></div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var hero = document.getElementById('hero');
+  var images = ['assets/img/unand.png', 'assets/img/unand.png']; // Ganti dengan path gambar yang diinginkan
+  var currentIndex = 0;
+  var interval = 5000; // Interval perubahan gambar (ms)
+
+  function changeBackground() {
+    hero.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  changeBackground(); // Pertama kali memanggil untuk gambar awal
+
+  setInterval(changeBackground, interval);
+});
+</script>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>

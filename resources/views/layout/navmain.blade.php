@@ -29,6 +29,10 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/impact.css')}}" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   
 </head>
 
@@ -230,6 +234,24 @@
 
 <div id="preloader"></div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var hero = document.getElementById('hero');
+  var images = ['/assets/img/unand.png', '/assets/img/cta-bg.jpg']; // Ganti dengan path gambar yang diinginkan
+  var currentIndex = 0;
+  var interval = 5000; // Interval perubahan gambar (ms)
+
+  function changeBackground() {
+    hero.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  changeBackground(); // Pertama kali memanggil untuk gambar awal
+
+  setInterval(changeBackground, interval);
+});
+</script>
+
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
   <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
@@ -239,6 +261,7 @@
   <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
   <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+
 
 <!-- Template Main JS File -->
 <script src="{{asset('assets/js/impact.js')}}"></script>
