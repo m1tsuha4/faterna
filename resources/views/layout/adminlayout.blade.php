@@ -25,6 +25,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('template/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('template/css/admin.css')}}" rel="stylesheet">
     <link href="{{asset('template/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 
 </head>
@@ -50,7 +51,7 @@
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{route('dashboardadmin')}}">
+                <a class="nav-link {{ \Route::is('dashboardadmin') ? 'active' : '' }}" href="{{route('dashboardadmin')}}">
                 <i class="fas fa-newspaper"></i>
                     <span>Berita & Event</span></a>
             </li>
@@ -58,7 +59,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{route('dokumen')}}">
+                <a class="nav-link {{ \Route::is('dokumen') ? 'active' : '' }}" href="{{route('dokumen')}}">
                 <i class="fas fa-file-alt"></i>
                     <span>Dokumen Panduan</span></a>
             </li>
@@ -66,7 +67,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{route('dosen-admin')}}">
+                <a class="nav-link {{ \Route::is('dosen-admin') ? 'active' : '' }}" href="{{route('dosen-admin')}}">
                 <i class="fas fa-chalkboard-teacher"></i>
                     <span>Dosen & Tendik</span></a>
             </li>
@@ -74,31 +75,30 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{route('alumni')}}">
+                <a class="nav-link {{ \Route::is('alumni') ? 'active' : '' }}" href="{{route('alumni')}}">
                 <i class="fas fa-user-graduate"></i>
                     <span>Alumni</span></a>
             </li>
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{ route('beasiswa') }}">
+                <a class="nav-link {{ \Route::is('beasiswa') ? 'active' : '' }}" href="{{ route('beasiswa') }}">
                     <i class="fas fa-award"></i>
                     <span>Beasiswa</span>
                 </a>
             </li>
             <hr class="sidebar-divider">
-
             <li class="nav-item ">
-                <a class="nav-link" href="{{ route('galeri') }}">
-                    <i class="fas fa-images"></i>
+                <a class="nav-link {{ \Route::is('galeri') ? 'active' : '' }}" href="{{ route('galeri') }}">
+                    <i class="fas fa-award"></i>
                     <span>Gallery</span>
                 </a>
             </li>
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{ route('kalender') }}">
-                    <i class="fas fa-calendar-alt"></i>
+                <a class="nav-link {{ \Route::is('kalender') ? 'active' : '' }}" href="{{ route('kalender') }}">
+                    <i class="fas fa-award"></i>
                     <span>Kalender Akademik</span>
                 </a>
             </li>
@@ -106,16 +106,16 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{ route('sop-ppid') }}">
-                    <i class="fas fa-file-alt"></i>
+                <a class="nav-link {{ \Route::is('sop-ppid') ? 'active' : '' }}" href="{{ route('sop-ppid') }}">
+                    <i class="fas fa-award"></i>
                     <span>SOP Layanan Informasi Publik (Dokumen PPID)</span>
                 </a>
             </li>
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{ route('allconference') }}">
-                    <i class="fas fa-users"></i>
+                <a class="nav-link {{ \Route::is('allconference') ? 'active' : '' }}" href="{{ route('allconference') }}">
+                    <i class="fas fa-award"></i>
                     <span>Conference</span>
                 </a>
             </li>
@@ -123,8 +123,8 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item ">
-                <a class="nav-link" href="{{route('allfasilitas')}}">
-                    <i class="fas fa-building"></i>
+                <a class="nav-link {{ \Route::is('allfasilitas') ? 'active' : '' }}" href="{{route('allfasilitas')}}">
+                    <i class="fas fa-award"></i>
                     <span>Fasilitas & Sapras</span>
                 </a>
             </li>

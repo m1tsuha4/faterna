@@ -60,8 +60,8 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{ route('home') }}">Beranda</a></li>
-          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto {{ \Route::is('home') ? 'active' : '' }}" href="{{ route('home') }}">Beranda</a></li>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('selayang-pandang', 'sejarah', 'struktur', 'profilgb', 'profildepartemen', 'fasilitas', 'akreditasi', 'infoalumni', 'dosen', 'tendik', 'zona') ? 'active' : '' }}" href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
             <!-- selayang pandang routenya dipake untuk VISI MISI, malas mau ganti hehe -->
               <li><a href="{{ route('selayang-pandang') }}">Visi Misi</a></li> 
@@ -77,7 +77,7 @@
               <li><a href="{{ route('zona') }}">Zona Integritas</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Akademik</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('pAkademik', 'infobeasiswa', 'kalenderakademik', 'kemahasiswaan', 's1-pdg', 's1-pyk', 's2', 's3') ? 'active' : '' }}" href="#"><span>Akademik</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -122,7 +122,7 @@
           </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="{{ route('profile-ppid') }}"><span>PPID</span> </a>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('profile-ppid') ? 'active' : '' }}" href="{{ route('profile-ppid') }}"><span>PPID</span> </a>
             <!-- <ul>
               <li><a href="{{ route('profile-ppid') }}">Profile</a></li>
               <li class="dropdown"><a href="#"><span>Layanan Informasi</span> <i class="bi bi-chevron-right"></i></a>
@@ -134,15 +134,15 @@
               </li>
             </ul> -->
           </li>
-          <li class="dropdown"><a href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('penelitian') }}">Penelitian</a></li>
               <li><a href="{{ route('pengabdian') }}">Pengabdian</a></li>
             </ul>
           </li>
-          <li><a class="" href="{{ route('kerjasama') }}">Kerjasama</a></li>
-          <li><a class="" href="{{ route('konferensi') }}">Conference</a></li>
-          <li class=""><a href="{{ route('dukacita') }}">Duka Cita</a></li>
+          <li><a class="nav-link scrollto {{ \Route::is('kerjasama') ? 'active' : '' }}" href="{{ route('kerjasama') }}">Kerjasama</a></li>
+          <li><a class="nav-link scrollto {{ \Route::is('konferensi') ? 'active' : '' }}" href="{{ route('konferensi') }}">Conference</a></li>
+          <li><a class="nav-link scrollto {{ \Route::is('dukacita') ? 'active' : '' }}" href="{{ route('dukacita') }}">Duka Cita</a></li>
         </ul>
       </nav><!-- .navbar -->
 

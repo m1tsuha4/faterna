@@ -1,0 +1,23 @@
+.nav-item .nav-link {
+    color:rgba(255,255,255,.8);
+}
+  
+.nav-item .nav-link i {
+    color:rgba(255,255,255,.8);
+}
+ 
+.nav-item .nav-link.active {
+    color: #fff;
+}
+  
+.nav-item .nav-link.active i {
+    color: #fff;
+}
+
+.nav-item .nav-link:hover {
+    color: #fff;
+}
+  
+.nav-item .nav-link:hover i {
+    color: #fff;
+}
