@@ -52,7 +52,7 @@
             </font></font>  
           </button>
         </h3>
-        <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+        <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
           <div class="accordion-body">
             <p>Informasi detail terkait dapat di Download dibawah ini</p>
             <p><a href="#">Download</a></p>
@@ -68,7 +68,7 @@
             </font></font>  
           </button>
         </h2>
-        <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionlist" style="">
+        <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionlist" >
           <div class="accordion-body">
           <p>Informasi detail terkait dapat di Download dibawah ini</p>
             <p><a href="#">Download</a></p>
@@ -84,7 +84,7 @@
             </font></font>  
           </button>
         </h2>
-        <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionlist" style="">
+        <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionlist" >
           <div class="accordion-body">
             <ol>
               <li>
@@ -108,7 +108,7 @@
             </font></font>  
           </button>
         </h2>
-        <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionlist" style="">
+        <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionlist" >
           <div class="accordion-body">
             <p>Informasi detail terkait Panduan dan SOP Tugas Akhir, Download dibawah ini</p>
             <p><a href="#">Download</a></p>
@@ -124,7 +124,7 @@
             </font></font>  
           </button>
         </h2>
-        <div id="collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionlist" style="">
+        <div id="collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionlist" >
           <div class="accordion-body">
             <p>Informasi detail terkait Surat Bebas Labor, Download dibawah ini</p>
             <p><a href="#">Download</a></p>
