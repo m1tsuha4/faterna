@@ -15,10 +15,10 @@ class Tabelfaternadalamangka extends Migration
     {
         Schema::create('angka_faternas', function (Blueprint $table) {
             $table->id();
-            $table->string('mahasiswa');
-            $table->string('prodi');
-            $table->string('dosen');
-            $table->string('labor');
+            $table->integer('mahasiswa');
+            $table->integer('prodi');
+            $table->integer('dosen');
+            $table->integer('labor');
             $table->string('author')->default('Admin');
             $table->timestamps();
         });

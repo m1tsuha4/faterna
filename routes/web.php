@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //ini route Home
-Route::get('/', function () {
-    return view('home/main');
-})->name('home');
+//Route::get('/', function () {
+//    return view('home/main');
+//})->name('home');
+Route::get('/', [\App\Http\Controllers\Home\HomeController::class,'index'])->name('home');
 
 // ini route tentang kami
 Route::get('/selayang-pandang', function () {
@@ -232,13 +233,15 @@ Route::get('/detail-kipraah', function () {
     return view('home/kiprah/detailkiprah');
 })->name('detailkiprah');
 
-Route::get('/all-pengumuman', function () {
-    return view('home/pengumuman/allpengumuman');
-})->name('allpengumuman');
+//Route::get('/all-pengumuman', function () {
+//    return view('home/pengumuman/allpengumuman');
+//})->name('allpengumuman');
+Route::get('/all-pengumuman', [\App\Http\Controllers\Berita\BeritaController::class,'allPengumuman'])->name('allpengumuman');
+Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailPengumuman'])->name('detailpengumuman');
 
-Route::get('/detail-pengumuman', function () {
-    return view('home/pengumuman/detailpengumuman');
-})->name('detailpengumuman');
+//Route::get('/detail-pengumuman', function () {
+//    return view('home/pengumuman/detailpengumuman');
+//})->name('detailpengumuman');
 
 //Route::get('/berita', function () {
 //    return view('admin/admindashboard');
@@ -348,7 +351,7 @@ Route::middleware('auth')->group(function (){
     Route::get('/addfasilitas', [\App\Http\Controllers\FasilitasController::class,'create'])->name('addfasilitas');
     Route::post('/add-fasilitas', [\App\Http\Controllers\FasilitasController::class,'store'])->name('add-fasilitas');
     Route::get('/delete-fasilitas/{id}', [\App\Http\Controllers\FasilitasController::class,'destroy'])->name('delete-fasilitas');
-    
+
     //Kerjasama
     Route::get('/allkerjasama', [\App\Http\Controllers\KerjasamaController::class,'index'])->name('allkerjasama');
     Route::get('/addkerjasama', [\App\Http\Controllers\KerjasamaController::class,'create'])->name('addkerjasama');

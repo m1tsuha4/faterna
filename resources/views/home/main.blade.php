@@ -12,7 +12,7 @@
           <h2>Fakultas Peternakan Universitas Andalas</h2>
           <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            
+
         </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -103,46 +103,48 @@
                 <h3 class="sidebar-title">Pengumuman</h3>
 
                 <div class="mt-3">
+                    @foreach($pengumuman as $p)
+                        <div class="post-item mt-3">
+                            <img style="width: 50px" src="{{ asset('storage/berita/'.$p->file) }}" alt="">
+                            <div>
+                                <h4><a href="{{ route('detailpengumuman',['id' => $p->id]) }}">{{ $p->judul }}</a></h4>
+                                <time datetime="2020-01-01">{{ $p->tanggal }}</time>
+                            </div>
+                        </div><!-- End recent post item-->
+                    @endforeach
 
-                  <div class="post-item mt-3">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
 
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
+{{--                  <div class="post-item">--}}
+{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
+{{--                    <div>--}}
+{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
+{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
+{{--                    </div>--}}
+{{--                  </div><!-- End recent post item-->--}}
 
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
+{{--                  <div class="post-item">--}}
+{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
+{{--                    <div>--}}
+{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
+{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
+{{--                    </div>--}}
+{{--                  </div><!-- End recent post item-->--}}
 
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
+{{--                  <div class="post-item">--}}
+{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
+{{--                    <div>--}}
+{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
+{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
+{{--                    </div>--}}
+{{--                  </div><!-- End recent post item-->--}}
 
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
+{{--                  <div class="post-item">--}}
+{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
+{{--                    <div>--}}
+{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
+{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
+{{--                    </div>--}}
+{{--                  </div><!-- End recent post item-->--}}
 
                 </div>
 
@@ -289,7 +291,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                
+
                 <div class="post-meta">
                   <p class="post-author">Admin Faterna</p>
                   <p class="post-date">
@@ -315,7 +317,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                
+
                 <div class="post-meta">
                   <p class="post-author">Admin Faterna</p>
                   <p class="post-date">
@@ -341,7 +343,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                
+
                 <div class="post-meta">
                   <p class="post-author">Admin Faterna</p>
                   <p class="post-date">

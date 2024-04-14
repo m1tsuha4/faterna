@@ -20,9 +20,9 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Breadcrumbs -->  
+    </div><!-- End Breadcrumbs -->
 
-   
+
   <!-- ======= Recent Blog Posts Section ======= -->
   <section id="recent-posts" class="recent-posts ">
       <div class="container" data-aos="fade-up">
@@ -32,84 +32,86 @@
         </div>
 
         <div class="row gy-4">
+        @foreach($pengumuman as $p)
+                <div class="col-xl-4 col-md-6">
+                    <article>
 
-          <div class="col-xl-4 col-md-6">
-            <article>
+                        <div class="post-img">
+                            <img src="{{ asset('storage/berita/'.$p->file) }}" alt="" class="img-fluid">
+                        </div>
 
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
+                        <p class="post-category">Pengumuman</p>
 
-              <p class="post-category">Pengumuman</p>
+                        <h2 class="title">
+                            <a href="{{ route('detailpengumuman',['id' => $p->id]) }}">{{ $p->judul }}</a>
+                        </h2>
 
-              <h2 class="title">
-                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+                        <div class="d-flex align-items-center">
 
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
+                            <div class="post-meta">
+                                <p class="post-author">{{ $p->author }} Faterna</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">{{ $p->tanggal }}</time>
+                                </p>
+                            </div>
+                        </div>
 
-            </article>
-          </div><!-- End post list item -->
+                    </article>
+                </div><!-- End post list item -->
+        @endforeach
 
-          <div class="col-xl-4 col-md-6">
-            <article>
 
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
+{{--          <div class="col-xl-4 col-md-6">--}}
+{{--            <article>--}}
 
-              <p class="post-category">Pengumuman</p>
+{{--              <div class="post-img">--}}
+{{--                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">--}}
+{{--              </div>--}}
 
-              <h2 class="title">
-                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+{{--              <p class="post-category">Pengumuman</p>--}}
 
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
+{{--              <h2 class="title">--}}
+{{--                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>--}}
+{{--              </h2>--}}
 
-            </article>
-          </div><!-- End post list item -->
+{{--              <div class="d-flex align-items-center">--}}
+{{--                --}}
+{{--                <div class="post-meta">--}}
+{{--                  <p class="post-author">Admin Faterna</p>--}}
+{{--                  <p class="post-date">--}}
+{{--                    <time datetime="2022-01-01">Jan 1, 2024</time>--}}
+{{--                  </p>--}}
+{{--                </div>--}}
+{{--              </div>--}}
 
-          <div class="col-xl-4 col-md-6">
-            <article>
+{{--            </article>--}}
+{{--          </div><!-- End post list item -->--}}
 
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
+{{--          <div class="col-xl-4 col-md-6">--}}
+{{--            <article>--}}
 
-              <p class="post-category">Pengumuman</p>
+{{--              <div class="post-img">--}}
+{{--                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">--}}
+{{--              </div>--}}
 
-              <h2 class="title">
-                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+{{--              <p class="post-category">Pengumuman</p>--}}
 
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
+{{--              <h2 class="title">--}}
+{{--                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>--}}
+{{--              </h2>--}}
 
-            </article>
-          </div><!-- End post list item -->
+{{--              <div class="d-flex align-items-center">--}}
+{{--                --}}
+{{--                <div class="post-meta">--}}
+{{--                  <p class="post-author">Admin Faterna</p>--}}
+{{--                  <p class="post-date">--}}
+{{--                    <time datetime="2022-01-01">Jan 1, 2024</time>--}}
+{{--                  </p>--}}
+{{--                </div>--}}
+{{--              </div>--}}
+
+{{--            </article>--}}
+{{--          </div><!-- End post list item -->--}}
 
         </div><!-- End recent posts list -->
 
