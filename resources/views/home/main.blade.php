@@ -113,39 +113,6 @@
                         </div><!-- End recent post item-->
                     @endforeach
 
-
-{{--                  <div class="post-item">--}}
-{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
-{{--                    <div>--}}
-{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
-{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
-{{--                    </div>--}}
-{{--                  </div><!-- End recent post item-->--}}
-
-{{--                  <div class="post-item">--}}
-{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
-{{--                    <div>--}}
-{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
-{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
-{{--                    </div>--}}
-{{--                  </div><!-- End recent post item-->--}}
-
-{{--                  <div class="post-item">--}}
-{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
-{{--                    <div>--}}
-{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
-{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
-{{--                    </div>--}}
-{{--                  </div><!-- End recent post item-->--}}
-
-{{--                  <div class="post-item">--}}
-{{--                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">--}}
-{{--                    <div>--}}
-{{--                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>--}}
-{{--                      <time datetime="2020-01-01">Jan 1, 2020</time>--}}
-{{--                    </div>--}}
-{{--                  </div><!-- End recent post item-->--}}
-
                 </div>
 
               </div><!-- End sidebar recent posts-->
@@ -276,86 +243,34 @@
         </div>
 
         <div class="row gy-4">
+            @foreach($berita as $b)
+                <div class="col-xl-4 col-md-6">
+                    <article>
 
-          <div class="col-xl-4 col-md-6">
-            <article>
+                        <div class="post-img">
+                            <img src="{{ asset('storage/berita/'. $b->file) }}" alt="" class="img-fluid">
+                        </div>
 
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
+                        <p class="post-category">{{ $b->kategori }}</p>
 
-              <p class="post-category">Berita</p>
+                        <h2 class="title">
+                            <a href="{{route('detailberita', ['id' => $b->id]) }}">{{ $b->judul }}</a>
+                        </h2>
 
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+                        <div class="d-flex align-items-center">
 
-              <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">{{ $b->author }} Faterna</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">{{ $b->tanggal }}</time>
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
+                    </article>
+                </div><!-- End post list item -->
+            @endforeach
 
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Berita</p>
-
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Berita</p>
-
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
 
    <div class="col-sm-12 mt-3">
    <div class="d-flex justify-content-center">

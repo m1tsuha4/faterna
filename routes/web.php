@@ -217,13 +217,9 @@ Route::get('/administrator', function () {
     return view('admin/login');
 })->name('administrator');
 
-Route::get('/all-berita', function () {
-    return view('home/berita/allberita');
-})->name('allberita');
+Route::get('/all-berita', [\App\Http\Controllers\Berita\BeritaController::class,'allBerita'])->name('allberita');
+Route::get('/detail-berita/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailBerita'])->name('detailberita');
 
-Route::get('/detail-berita', function () {
-    return view('home/berita/detail-berita');
-})->name('detailberita');
 
 Route::get('/all-kipraah', function () {
     return view('home/kiprah/allkiprah');
@@ -233,9 +229,6 @@ Route::get('/detail-kipraah', function () {
     return view('home/kiprah/detailkiprah');
 })->name('detailkiprah');
 
-//Route::get('/all-pengumuman', function () {
-//    return view('home/pengumuman/allpengumuman');
-//})->name('allpengumuman');
 Route::get('/all-pengumuman', [\App\Http\Controllers\Berita\BeritaController::class,'allPengumuman'])->name('allpengumuman');
 Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailPengumuman'])->name('detailpengumuman');
 

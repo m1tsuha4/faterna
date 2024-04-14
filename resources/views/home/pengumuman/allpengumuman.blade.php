@@ -61,58 +61,6 @@
         @endforeach
 
 
-{{--          <div class="col-xl-4 col-md-6">--}}
-{{--            <article>--}}
-
-{{--              <div class="post-img">--}}
-{{--                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">--}}
-{{--              </div>--}}
-
-{{--              <p class="post-category">Pengumuman</p>--}}
-
-{{--              <h2 class="title">--}}
-{{--                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>--}}
-{{--              </h2>--}}
-
-{{--              <div class="d-flex align-items-center">--}}
-{{--                --}}
-{{--                <div class="post-meta">--}}
-{{--                  <p class="post-author">Admin Faterna</p>--}}
-{{--                  <p class="post-date">--}}
-{{--                    <time datetime="2022-01-01">Jan 1, 2024</time>--}}
-{{--                  </p>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-
-{{--            </article>--}}
-{{--          </div><!-- End post list item -->--}}
-
-{{--          <div class="col-xl-4 col-md-6">--}}
-{{--            <article>--}}
-
-{{--              <div class="post-img">--}}
-{{--                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">--}}
-{{--              </div>--}}
-
-{{--              <p class="post-category">Pengumuman</p>--}}
-
-{{--              <h2 class="title">--}}
-{{--                <a href="{{route('detailpengumuman')}}">Dolorum optio tempore voluptas dignissimos</a>--}}
-{{--              </h2>--}}
-
-{{--              <div class="d-flex align-items-center">--}}
-{{--                --}}
-{{--                <div class="post-meta">--}}
-{{--                  <p class="post-author">Admin Faterna</p>--}}
-{{--                  <p class="post-date">--}}
-{{--                    <time datetime="2022-01-01">Jan 1, 2024</time>--}}
-{{--                  </p>--}}
-{{--                </div>--}}
-{{--              </div>--}}
-
-{{--            </article>--}}
-{{--          </div><!-- End post list item -->--}}
-
         </div><!-- End recent posts list -->
 
       </div>
