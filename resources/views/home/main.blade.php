@@ -227,28 +227,28 @@
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->mahasiswa ?? 1500 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Mahasiswa</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->prodi ?? 3 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Prodi</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->dosen ?? 100 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Dosen</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->labor ?? 10 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Laboratorium</p>
             </div>
           </div>
