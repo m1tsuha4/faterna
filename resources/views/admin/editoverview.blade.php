@@ -15,22 +15,22 @@
                         @csrf
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Mahasiswa</label>
-                            <input type="number" name="jumlah_mahasiswa" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input value="{{ $overview->mahasiswa ?? '1'}}" type="number" name="jumlah_mahasiswa" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Prodi</label>
-                            <input type="number" name="jumlah_prodi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input value="{{ $overview->prodi ?? '1'}}" type="number" name="jumlah_prodi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Dosen</label>
-                            <input type="number" name="jumlah_dosen" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input value="{{ $overview->dosen ?? '1'}}" type="number" name="jumlah_dosen" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Laboratorium</label>
-                            <input type="number" name="jumlah_lab" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input value="{{ $overview->labor ?? '1'}}" type="number" name="jumlah_lab" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
