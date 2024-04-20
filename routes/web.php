@@ -220,14 +220,17 @@ Route::get('/administrator', function () {
 Route::get('/all-berita', [\App\Http\Controllers\Berita\BeritaController::class,'allBerita'])->name('allberita');
 Route::get('/detail-berita/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailBerita'])->name('detailberita');
 
+Route::get('/all-kiprah', [\App\Http\Controllers\Berita\BeritaController::class,'allKiprah'])->name('allkiprah');
+Route::get('/detail-kiprah/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailKiprah'])->name('detailkiprah');
 
-Route::get('/all-kipraah', function () {
-    return view('home/kiprah/allkiprah');
-})->name('allkiprah');
 
-Route::get('/detail-kipraah', function () {
-    return view('home/kiprah/detailkiprah');
-})->name('detailkiprah');
+//Route::get('/all-kipraah', function () {
+//    return view('home/kiprah/allkiprah');
+//})->name('allkiprah');
+//
+//Route::get('/detail-kipraah', function () {
+//    return view('home/kiprah/detailkiprah');
+//})->name('detailkiprah');
 
 Route::get('/all-pengumuman', [\App\Http\Controllers\Berita\BeritaController::class,'allPengumuman'])->name('allpengumuman');
 Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailPengumuman'])->name('detailpengumuman');

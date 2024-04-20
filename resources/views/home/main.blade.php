@@ -284,98 +284,50 @@
     </section><!-- End Recent Blog Posts Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
+      <section id="testimonials" class="testimonials">
+          <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Kiprah Civitas Akademika</h2>
-        </div>
-
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
-                  </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
+              <div class="section-header">
+                  <h2>Kiprah Civitas Akademika</h2>
               </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
+              <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                      @foreach($kiprah as $k)
+                          <div class="swiper-slide">
+                              <div class="testimonial-wrap">
+                                  <div class="testimonial-item">
+                                      <div class="d-flex align-items-center">
+                                          <img src="{{ asset('storage/berita/'. $k->file) }}" class="testimonial-img flex-shrink-0" alt="">
+                                          <div>
+                                              <h3><a href="{{ route('detailkiprah',['id' => $k->id]) }}">{{ $k->judul }}</a></h3>
+                                          </div>
+                                      </div>
+                                      <p>
+                                          {{ $k->deskripsi }}
+                                      </p>
+                                  </div>
+                              </div>
+                          </div><!-- End testimonial item -->
+                      @endforeach
+
+
                   </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
+                  <div class="swiper-pagination"></div>
               </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
+              <div class="col-sm-12 mt-3">
+                  <div class="d-flex justify-content-center">
+                      <button style="background: #451952; color:#fff;" class="btn">
+                          <a style="color: white;" href="{{ route('allkiprah') }}">Selengkapnya</a>
+                      </button>
                   </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
-                  </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
 
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
+      </section><!-- End Testimonials Section -->
 
-        <div class="col-sm-12 mt-3">
-          <div class="d-flex justify-content-center">
-                  <button style="background: #451952; color:#fff;" class="btn">
-                    <a style="color: white;" href="{{route('allkiprah')}}">Selengkapnya</a>
-                  </button>
-                </div>
-          </div>
-
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Portfolio Section ======= -->
+      <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio sections-bg">
       <div class="container" data-aos="fade-up">
 

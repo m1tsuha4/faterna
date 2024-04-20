@@ -15,8 +15,9 @@ class HomeController extends Controller
         $overview = Overview::where('id' ,1)->first();
         //section berita & informasi event
         $berita = berita::where('kategori','Berita')->orWhere('kategori', 'Informasi Event')->take(3)->get();
-
-        return view('home/main', compact('pengumuman','overview','berita'));
+        //section kiprah
+        $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->take(6)->get();
+        return view('home/main', compact('pengumuman','overview','berita','kiprah'));
     }
 
 }

@@ -31,4 +31,16 @@ class BeritaController extends Controller
 
         return view('home/berita/detail-berita',compact('berita'));
     }
+
+    //Kiprah Civitas Akademika
+    public function allKiprah(){
+        $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->get();
+
+        return view('home/kiprah/allkiprah',compact('kiprah'));
+    }
+    public function detailKiprah($id){
+        $kiprah = berita::where('id', $id)->first();
+
+        return view('home/kiprah/detailkiprah',compact('kiprah'));
+    }
 }
