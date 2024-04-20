@@ -348,66 +348,17 @@
           </div> -->
 
           <div class="row gy-4 portfolio-container">
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+            @foreach($galeri as $g)
+                  <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                          <a href="{{ asset('storage/galeri/'. $g->file) }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('storage/galeri/'. $g->file) }}" class="img-fluid" alt=""></a>
+                          <div class="portfolio-info">
+                              <h4>{{ $g->judul }}</h4>
+                              <p>{{ $g->deskripsi }}</p>
+                          </div>
+                      </div>
+                  </div><!-- End Portfolio Item -->
+            @endforeach
 
           </div><!-- End Portfolio Container -->
 

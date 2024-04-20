@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use App\Models\berita;
+use App\Models\Galeri;
 use App\Models\Overview;
 
 class HomeController extends Controller
@@ -17,7 +18,10 @@ class HomeController extends Controller
         $berita = berita::where('kategori','Berita')->orWhere('kategori', 'Informasi Event')->take(3)->get();
         //section kiprah
         $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->take(6)->get();
-        return view('home/main', compact('pengumuman','overview','berita','kiprah'));
+        //section galeri
+        $galeri = Galeri::take(6)->get();
+
+        return view('home/main', compact('pengumuman','overview','berita','kiprah','galeri'));
     }
 
 }
