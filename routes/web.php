@@ -161,15 +161,17 @@ Route::get('/berita-duka-cita', function () {
 
 // ini route akademik
 
-Route::get('/beasiswa-info', function () {
-    return view('akademik/informasi/beasiswa');
-})->name('infobeasiswa');
+Route::get('/beasiswa-info', [\App\Http\Controllers\Akademik\AkademikController::class,'beasiswa'])->name('infobeasiswa');
+
+//Route::get('/beasiswa-info', function () {
+//    return view('akademik/informasi/beasiswa');
+//})->name('infobeasiswa');
 
 Route::get('/kalender-akademik', function () {
     return view('akademik/informasi/kalenderakademik');
 })->name('kalenderakademik');
 
-Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\PanduanAkademikController::class,'index'])->name('pAkademik');
+Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'panduan'])->name('pAkademik');
 
 //Route::get('/panduan-akademik', function () {
 //    return view('akademik/informasi/pAkademik');
