@@ -150,14 +150,10 @@ Route::get('/kerja-sama', function () {
 })->name('kerjasama');
 
 // ini route conference
-Route::get('/konferensi', function () {
-    return view('conference/conference');
-})->name('konferensi');
+Route::get('/konferensi', [\App\Http\Controllers\Conference\ConferenceController::class,'conference'])->name('konferensi');
 
 // ini route conference
-Route::get('/berita-duka-cita', function () {
-    return view('dukacita/dukacita');
-})->name('dukacita');
+Route::get('/berita-duka-cita', [\App\Http\Controllers\Berita\BeritaController::class,'dukaCita'])->name('dukacita');
 
 // ini route akademik
 
@@ -181,9 +177,7 @@ Route::get('/panduan-dan-sop-ta', function () {
 })->name('sopTA');
 
 //ini route PPID
-Route::get('/profile', function () {
-    return view('ppid/profile-ppid');
-})->name('profile-ppid');
+Route::get('/profile', [\App\Http\Controllers\Ppid\ProfilePPIDController::class,'dokumen'])->name('profile-ppid');
 
 Route::get('/tata-cara-permohonan-informasi', function () {
     return view('ppid/layananinfo/tata-cara-permohonan');

@@ -38,65 +38,72 @@
 <section id="conference" class="conference" style="margin-top: -110px">
   <div class="container" data-aos="fade-up" >
     <div class="accordion" id="conlist" data-aos="fade-up" data-aos-delay="100" >
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-1">
-            <span class="num">1. </span>
-              Judul Conference 1  
-          </button>
-        </h2>
-        <div id="con-conten-1" class="accordion-collapse collapse" data-bs-parent="#conlist">
-          <div class="accordion-body">
-              <div class="col-lg-12 d-flex justify-content-center">
-              <div class="card">
-                <div class="card-body">
-                <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
+        @php
+            $no = 1;
+        @endphp
+        @foreach($allConference as $conference)
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-{{ $no }}">
+                        <span class="num">{{ $no }}. </span>
+                        {{ $conference->judul }}
+                    </button>
+                </h2>
+                <div id="con-conten-{{ $no }}" class="accordion-collapse collapse" data-bs-parent="#conlist">
+                    <div class="accordion-body">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="{{ asset('storage/conference/'.$conference->file) }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-2">
-            <span class="num">2. </span>
-              Judul Conference 2  
-          </button>
-        </h2>
-        <div id="con-conten-2" class="accordion-collapse collapse" data-bs-parent="#conlist">
-          <div class="accordion-body">
-          <div class="col-lg-12 d-flex justify-content-center">
-           <div class="card">
-            <div class="card-body">
-            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
             </div>
-           </div>
-          </div>
-          </div>
-        </div>
-      </div>
+            @php $no++; @endphp
+        @endforeach
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-3">
-            <span class="num">3. </span>
-              Judul Conference 3  
-          </button>
-        </h2>
-        <div id="con-conten-3" class="accordion-collapse collapse" data-bs-parent="#conlist">
-          <div class="accordion-body">
-          <div class="col-lg-12 d-flex justify-content-center">
-           <div class="card">
-            <div class="card-body">
-            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
-            </div>
-           </div>
-          </div>
-          </div>
-        </div>
-      </div>
+
+{{--      <div class="accordion-item">--}}
+{{--        <h2 class="accordion-header">--}}
+{{--          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-2">--}}
+{{--            <span class="num">2. </span>--}}
+{{--              Judul Conference 2  --}}
+{{--          </button>--}}
+{{--        </h2>--}}
+{{--        <div id="con-conten-2" class="accordion-collapse collapse" data-bs-parent="#conlist">--}}
+{{--          <div class="accordion-body">--}}
+{{--          <div class="col-lg-12 d-flex justify-content-center">--}}
+{{--           <div class="card">--}}
+{{--            <div class="card-body">--}}
+{{--            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">--}}
+{{--            </div>--}}
+{{--           </div>--}}
+{{--          </div>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </div>--}}
+
+{{--      <div class="accordion-item">--}}
+{{--        <h2 class="accordion-header">--}}
+{{--          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#con-conten-3">--}}
+{{--            <span class="num">3. </span>--}}
+{{--              Judul Conference 3  --}}
+{{--          </button>--}}
+{{--        </h2>--}}
+{{--        <div id="con-conten-3" class="accordion-collapse collapse" data-bs-parent="#conlist">--}}
+{{--          <div class="accordion-body">--}}
+{{--          <div class="col-lg-12 d-flex justify-content-center">--}}
+{{--           <div class="card">--}}
+{{--            <div class="card-body">--}}
+{{--            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">--}}
+{{--            </div>--}}
+{{--           </div>--}}
+{{--          </div>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </div>--}}
 
     </div>
   </div>

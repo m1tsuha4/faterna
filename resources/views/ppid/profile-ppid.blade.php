@@ -20,7 +20,7 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Breadcrumbs --> 
+    </div><!-- End Breadcrumbs -->
 
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -188,21 +188,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>asdasd</td>
-                                <td  width="25%">
-                                    <a href="#" class="btn btn-success btn-sm mt">Download</a>
-                                </td>
-                            </tr>
+                            @foreach($sop as $s)
+                                <tr>
+                                    <td>{{ $s->judul }}</td>
+                                    <td  width="25%">
+                                        <a href="{{ asset('storage/sop/' . $s->file) }}" target="_blank" class="btn btn-success btn-sm mt">Download</a>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
             </div>
-        
+
           </div>
-          
+
         </div>
     </section>
 
