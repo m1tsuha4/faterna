@@ -43,12 +43,23 @@
                                 <label for="" class="form-label">Email</label>
                                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="">
                             </div>
+
+                            <div class="input-group">
+                                <label class="input-group-text text-bg-primary"
+                                    for="inputGroupSelect01">Prodi</label>
+                                <select class="form-select" name="prodi" id="inputGroupSelect01">
+                                    <option value="S1-Padang" selected>S1-Padang</option>
+                                    <option value="S1-Payakumbuh">S1-Payakumbuh</option>
+                                    <option value="S2">S2</option>
+                                    <option value="S3">S3</option>
+                                </select>
+                            </div><br>
+
                             <div class="input-group">
                                 <label class="input-group-text text-bg-primary"
                                     for="inputGroupSelect01">Jabatan Akademik</label>
                                 <select class="form-select" name="jabatan_akademik" id="inputGroupSelect01">
-                                    <option selected>Select</option>
-                                    <option value="Guru Besar">Guru Besar</option>
+                                    <option value="Guru Besar" selected>Guru Besar</option>
                                     <option value="Lektor Kepala">Lektor Kepala</option>
                                     <option value="Asisten Ahli">Asisten Ahli</option>
                                     <option value="Lektor">Lektor</option>

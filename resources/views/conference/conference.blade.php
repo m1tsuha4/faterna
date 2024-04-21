@@ -47,8 +47,13 @@
         </h2>
         <div id="con-conten-1" class="accordion-collapse collapse" data-bs-parent="#conlist">
           <div class="accordion-body">
-            <p>Informasi detail terkait file atau dokumen tentang conference dapat di download dibawah ini</p>
-            <p><a href="#">Download</a></p>
+              <div class="col-lg-12 d-flex justify-content-center">
+              <div class="card">
+                <div class="card-body">
+                <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
@@ -62,8 +67,13 @@
         </h2>
         <div id="con-conten-2" class="accordion-collapse collapse" data-bs-parent="#conlist">
           <div class="accordion-body">
-            <p>Informasi detail terkait file atau dokumen tentang conference dapat di download dibawah ini</p>
-            <p><a href="#">Download</a></p>
+          <div class="col-lg-12 d-flex justify-content-center">
+           <div class="card">
+            <div class="card-body">
+            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
+            </div>
+           </div>
+          </div>
           </div>
         </div>
       </div>
@@ -77,8 +87,13 @@
         </h2>
         <div id="con-conten-3" class="accordion-collapse collapse" data-bs-parent="#conlist">
           <div class="accordion-body">
-            <p>Informasi detail terkait file atau dokumen tentang conference dapat di download dibawah ini</p>
-            <p><a href="#">Download</a></p>
+          <div class="col-lg-12 d-flex justify-content-center">
+           <div class="card">
+            <div class="card-body">
+            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
+            </div>
+           </div>
+          </div>
           </div>
         </div>
       </div>

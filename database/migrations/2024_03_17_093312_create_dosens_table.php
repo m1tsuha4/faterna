@@ -19,6 +19,7 @@ class CreateDosensTable extends Migration
             $table->string('nidn')->nullable();
             $table->string('departemen');
             $table->string('email')->unique();
+            $table->string('prodi');
             $table->string('jabatan_akademik');
             $table->string('edukasi_s1')->nullable();
             $table->string('edukasi_s2')->nullable();

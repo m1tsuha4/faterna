@@ -10345,6 +10345,7 @@ a:focus {
 
 .sidebar .nav-item.active .nav-link {
   font-weight: 700;
+  background-color: #093b29;
 }
 
 .sidebar .nav-item .collapse {

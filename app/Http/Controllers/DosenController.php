@@ -27,6 +27,7 @@ class DosenController extends Controller
         try {
             $validatedData = $request->validate([
                 'nama' => 'required',
+                'prodi' => 'required',
                 'nidn' => 'required',
                 'departemen' => 'required',
                 'email' => 'required',
@@ -39,6 +40,7 @@ class DosenController extends Controller
             $dosen->nidn = $request->nidn;
             $dosen->departemen = $request->departemen;
             $dosen->email = $request->email;
+            $dosen->prodi = $request->prodi;
             $dosen->jabatan_akademik = $request->jabatan_akademik;
             $dosen->edukasi_s1 = $request->edukasi_s1;
             $dosen->edukasi_s2 = $request->edukasi_s2;

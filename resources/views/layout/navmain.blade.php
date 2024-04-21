@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Faterna Universitas Andalas</title>
+  <meta content="Fakultas Peternakan Universitas Andalas adalah fakultas peternakan pertama yang berdiri di Indonesia" name="description">
+  <meta content="Faterna" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('assets/img/logo-unand.png')}}" rel="icon">
+  <link href="{{asset('assets/img/logo-unand.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,10 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/impact.css')}}" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   
 </head>
 
@@ -59,8 +63,8 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{ route('home') }}">Beranda</a></li>
-          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+        <li><a class="nav-link scrollto {{ \Route::is('home') ? 'active' : '' }}" href="{{ route('home') }}">Beranda</a></li>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('selayang-pandang', 'sejarah', 'struktur', 'profilgb', 'profildepartemen', 'fasilitas', 'akreditasi', 'infoalumni', 'dosen', 'tendik', 'zona') ? 'active' : '' }}" href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
             <!-- selayang pandang routenya dipake untuk VISI MISI, malas mau ganti hehe -->
               <li><a href="{{ route('selayang-pandang') }}">Visi Misi</a></li> 
@@ -76,11 +80,11 @@
               <li><a href="{{ route('zona') }}">Zona Integritas</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Akademik</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('pAkademik', 'infobeasiswa', 'kalenderakademik', 'kemahasiswaan', 's1-pdg', 's1-pyk', 's2', 's3') ? 'active' : '' }}" href="#"><span>Akademik</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
+                <li><a href="{{ route('pAkademik') }}">Panduan Akademik & Download Dokumen</a></li>
                   <li><a href="{{ route('infobeasiswa') }}">Beasiswa</a></li>
                   <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
                 </ul>
@@ -121,7 +125,7 @@
           </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="{{ route('profile-ppid') }}"><span>PPID</span> </a>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('profile-ppid') ? 'active' : '' }}" href="{{ route('profile-ppid') }}"><span>PPID</span> </a>
             <!-- <ul>
               <li><a href="{{ route('profile-ppid') }}">Profile</a></li>
               <li class="dropdown"><a href="#"><span>Layanan Informasi</span> <i class="bi bi-chevron-right"></i></a>
@@ -133,15 +137,15 @@
               </li>
             </ul> -->
           </li>
-          <li class="dropdown"><a href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('penelitian') }}">Penelitian</a></li>
               <li><a href="{{ route('pengabdian') }}">Pengabdian</a></li>
             </ul>
           </li>
-          <li><a class="" href="{{ route('kerjasama') }}">Kerjasama</a></li>
-          <li><a class="" href="{{ route('conference') }}">Conference</a></li>
-          <li class=""><a href="{{ route('dukacita') }}">Duka Cita</a></li>
+          <li><a class="nav-link scrollto {{ \Route::is('kerjasama') ? 'active' : '' }}" href="{{ route('kerjasama') }}">Kerjasama</a></li>
+          <li><a class="nav-link scrollto {{ \Route::is('konferensi') ? 'active' : '' }}" href="{{ route('konferensi') }}">Conference</a></li>
+          <li><a class="nav-link scrollto {{ \Route::is('dukacita') ? 'active' : '' }}" href="{{ route('dukacita') }}">Duka Cita</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -159,13 +163,14 @@
    <!-- ======= Footer ======= -->
    <footer id="footer" class="footer">
 
-<div class="container">
+   <div class="container">
   <div class="row gy-4">
     <div class="col-lg-5 col-md-12 footer-info">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <span>Impact</span>
+      <a href="" class="logo d-flex align-items-center">
+        <span>Faterna UNAND</span>
       </a>
-      <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+      <br>
+      <img width="300" src="{{asset('assets/img/footer-img.png')}}" alt="">
       <div class="social-links d-flex mt-4">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -177,33 +182,31 @@
     <div class="col-lg-2 col-6 footer-links">
       <h4>Useful Links</h4>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Terms of service</a></li>
-        <li><a href="#">Privacy policy</a></li>
+        <li><a href="{{route('home')}}">Home</a></li>
+        <li><a href="{{route('selayang-pandang')}}">About us</a></li>
+        <li><a href="{{route('allberita')}}">Berita</a></li>
+        <li><a href="{{route('allpengumuman')}}">Pengumuman</a></li>
       </ul>
     </div>
 
     <div class="col-lg-2 col-6 footer-links">
-      <h4>Our Services</h4>
+      <h4> </h4>
       <ul>
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">Product Management</a></li>
-        <li><a href="#">Marketing</a></li>
-        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
       </ul>
     </div>
 
     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
       <h4>Contact Us</h4>
       <p>
-        A108 Adam Street <br>
-        New York, NY 535022<br>
-        United States <br><br>
-        <strong>Phone:</strong> +1 5589 55488 55<br>
-        <strong>Email:</strong> info@example.com<br>
+        Limau Manis <br>
+        Padang<br>
+        Sumatera Barat <br><br>
+        <strong>Phone:</strong> <br>
+        <strong>Email:</strong> <br>
       </p>
 
     </div>
@@ -213,7 +216,7 @@
 
 <div class="container mt-4">
   <div class="copyright">
-    &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+    &copy; Copyright <strong><span>Impact x Faterna Unand Dev Team</span></strong>. All Rights Reserved
   </div>
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
@@ -231,6 +234,24 @@
 
 <div id="preloader"></div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var hero = document.getElementById('hero');
+  var images = ['/assets/img/unand.png', '/assets/img/cta-bg.jpg']; // Ganti dengan path gambar yang diinginkan
+  var currentIndex = 0;
+  var interval = 5000; // Interval perubahan gambar (ms)
+
+  function changeBackground() {
+    hero.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  changeBackground(); // Pertama kali memanggil untuk gambar awal
+
+  setInterval(changeBackground, interval);
+});
+</script>
+
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
   <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
@@ -240,6 +261,7 @@
   <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
   <script src="{{asset('assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
   <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+
 
 <!-- Template Main JS File -->
 <script src="{{asset('assets/js/impact.js')}}"></script>

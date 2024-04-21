@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //ini route Home
-Route::get('/', function () {
-    return view('home/main');
-})->name('home');
+//Route::get('/', function () {
+//    return view('home/main');
+//})->name('home');
+Route::get('/', [\App\Http\Controllers\Home\HomeController::class,'index'])->name('home');
 
 // ini route tentang kami
 Route::get('/selayang-pandang', function () {
@@ -34,9 +35,10 @@ Route::get('/pimpinan', function () {
     return view('about/pimpinan');
 })->name('pimpinan');
 
-Route::get('/dosen', function () {
-    return view('about/dosen');
-})->name('dosen');
+Route::get('/dosen', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
+//Route::get('/dosen', function () {
+//    return view('about/dosen');
+//})->name('dosen');
 
 Route::get('/tendik', function () {
     return view('about/tendik');
@@ -146,9 +148,9 @@ Route::get('/kerja-sama', function () {
 })->name('kerjasama');
 
 // ini route conference
-Route::get('/conference', function () {
+Route::get('/konferensi', function () {
     return view('conference/conference');
-})->name('conference');
+})->name('konferensi');
 
 // ini route conference
 Route::get('/berita-duka-cita', function () {
@@ -165,9 +167,11 @@ Route::get('/kalender-akademik', function () {
     return view('akademik/informasi/kalenderakademik');
 })->name('kalenderakademik');
 
-Route::get('/panduan-akademik', function () {
-    return view('akademik/informasi/pAkademik');
-})->name('pAkademik');
+Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\PanduanAkademikController::class,'index'])->name('pAkademik');
+
+//Route::get('/panduan-akademik', function () {
+//    return view('akademik/informasi/pAkademik');
+//})->name('pAkademik');
 
 
 Route::get('/kemahasiswaan', function () {
@@ -210,63 +214,21 @@ Route::get('/pengabdian', function () {
     return view('riset/pengabdian');
 })->name('pengabdian');
 
+
+Route::get('/all-berita', [\App\Http\Controllers\Berita\BeritaController::class,'allBerita'])->name('allberita');
+Route::get('/detail-berita/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailBerita'])->name('detailberita');
+
+Route::get('/all-kiprah', [\App\Http\Controllers\Berita\BeritaController::class,'allKiprah'])->name('allkiprah');
+Route::get('/detail-kiprah/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailKiprah'])->name('detailkiprah');
+
+Route::get('/all-pengumuman', [\App\Http\Controllers\Berita\BeritaController::class,'allPengumuman'])->name('allpengumuman');
+Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailPengumuman'])->name('detailpengumuman');
+
 // ini route Admin
 
 Route::get('/administrator', function () {
     return view('admin/login');
 })->name('administrator');
-
-Route::get('/judul-berita', function () {
-    return view('home/berita/berita');
-})->name('berita');
-
-//Route::get('/berita', function () {
-//    return view('admin/admindashboard');
-//})->name('dashboardadmin');
-//
-//Route::get('/addberita', function () {
-//    return view('admin/addberita');
-//})->name('addberita');
-//
-//Route::get('/editberita', function () {
-//    return view('admin/editberita');
-//})->name('editberita');
-//
-//Route::get('/dokumen', function () {
-//    return view('admin/dokumen');
-//})->name('dokumen');
-//
-//Route::get('/addokumen', function () {
-//    return view('admin/addokumen');
-//})->name('addokumen');
-//
-//Route::get('/dosen-admin', function () {
-//    return view('admin/dosen');
-//})->name('dosen-admin');
-//
-//Route::get('/addosen', function () {
-//    return view('admin/addosen');
-//})->name('addosen');
-//
-//Route::get('/editdosen', function () {
-//    return view('admin/editdosen');
-//})->name('editdosen');
-//
-//Route::get('/alumni', function () {
-//    return view('admin/alumni');
-//})->name('alumni');
-//
-//Route::get('/addalumni', function () {
-//    return view('admin/addalumni');
-//})->name('addalumni');
-//
-//Route::get('/beasiswa', function () {
-//    return view('admin/beasiswa');
-//})->name('beasiswa');
-//
-//Route::get('/addbeasiswa', function () {
-//    return view('admin/addbeasiswa');
-//})->name('addbeasiswa');
 
 Route::middleware('auth')->group(function (){
     //berita
@@ -316,6 +278,30 @@ Route::middleware('auth')->group(function (){
     Route::get('/addsop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'create'])->name('addsop-ppid');
     Route::post('/addsop-ppid', [\App\Http\Controllers\SopLayananPpidController::class,'store'])->name('add-sop-ppid');
     Route::get('/delete-sop-ppid/{id}', [\App\Http\Controllers\SopLayananPpidController::class,'destroy'])->name('delete-sop-ppid');
+
+    //Conference
+    Route::get('/conference', [\App\Http\Controllers\ConferenceController::class,'index'])->name('allconference');
+    Route::get('/add-conference', [\App\Http\Controllers\ConferenceController::class,'create'])->name('addconference');
+    Route::post('/add-conference', [\App\Http\Controllers\ConferenceController::class,'store'])->name('add-conference');
+    Route::get('/delete-conference/{id}', [\App\Http\Controllers\ConferenceController::class,'destroy'])->name('delete-conference');
+
+    //Fasilitas
+    Route::get('/allfasilitas', [\App\Http\Controllers\FasilitasController::class,'index'])->name('allfasilitas');
+    Route::get('/addfasilitas', [\App\Http\Controllers\FasilitasController::class,'create'])->name('addfasilitas');
+    Route::post('/add-fasilitas', [\App\Http\Controllers\FasilitasController::class,'store'])->name('add-fasilitas');
+    Route::get('/delete-fasilitas/{id}', [\App\Http\Controllers\FasilitasController::class,'destroy'])->name('delete-fasilitas');
+
+    //Kerjasama
+    Route::get('/allkerjasama', [\App\Http\Controllers\KerjasamaController::class,'index'])->name('allkerjasama');
+    Route::get('/addkerjasama', [\App\Http\Controllers\KerjasamaController::class,'create'])->name('addkerjasama');
+    Route::post('/add-kerjasama', [\App\Http\Controllers\KerjasamaController::class,'store'])->name('add-kerjasama');
+    Route::get('/delete-kerjasama/{id}', [\App\Http\Controllers\KerjasamaController::class,'destroy'])->name('delete-kerjasama');
+
+
+    //Faternma Dalam Angka
+    Route::get('/overview', [\App\Http\Controllers\OverviewController::class,'index'])->name('overview');
+    Route::get('/editoverview', [\App\Http\Controllers\OverviewController::class,'edit'])->name('editoverview');
+    Route::post('/edit-overview', [\App\Http\Controllers\OverviewController::class,'update'])->name('edit-overview');
 });
 
 
