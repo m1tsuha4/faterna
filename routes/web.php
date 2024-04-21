@@ -66,9 +66,11 @@ Route::get('/akreditasi', function () {
     return view('about/akreditasi');
 })->name('akreditasi');
 
-Route::get('/alumni-info', function () {
-    return view('about/alumni');
-})->name('infoalumni');
+Route::get('/alumni-info', [\App\Http\Controllers\Profile\ProfileController::class,'alumni'])->name('infoalumni');
+
+//Route::get('/alumni-info', function () {
+//    return view('about/alumni');
+//})->name('infoalumni');
 
 Route::get('/zona-integritas', function () {
     return view('about/zona');
