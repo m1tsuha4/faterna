@@ -167,9 +167,11 @@ Route::get('/kalender-akademik', function () {
     return view('akademik/informasi/kalenderakademik');
 })->name('kalenderakademik');
 
-Route::get('/panduan-akademik', function () {
-    return view('akademik/informasi/pAkademik');
-})->name('pAkademik');
+Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\PanduanAkademikController::class,'index'])->name('pAkademik');
+
+//Route::get('/panduan-akademik', function () {
+//    return view('akademik/informasi/pAkademik');
+//})->name('pAkademik');
 
 
 Route::get('/kemahasiswaan', function () {
