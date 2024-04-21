@@ -16,7 +16,7 @@ class ProfileController extends Controller
     }
 
     public function alumni(){
-        $alumni = alumni::all();
+        $alumni = alumni::orderBy('updated_at','desc')->get();
 
         return view('about/alumni',compact('alumni'));
     }

@@ -11,15 +11,15 @@ class HomeController extends Controller
 {
     public function index() {
         //section pengumuman
-        $pengumuman = berita::where('kategori','Pengumuman')->take(5)->get();
+        $pengumuman = berita::where('kategori','Pengumuman')->take(5)->orderBy('updated_at','desc')->get();
         //section faterna dalam angka
         $overview = Overview::where('id' ,1)->first();
         //section berita & informasi event
-        $berita = berita::where('kategori','Berita')->orWhere('kategori', 'Informasi Event')->take(3)->get();
+        $berita = berita::where('kategori','Berita')->orWhere('kategori', 'Informasi Event')->take(3)->orderBy('updated_at','desc')->get();
         //section kiprah
-        $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->take(6)->get();
+        $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->take(6)->orderBy('updated_at','desc')->get();
         //section galeri
-        $galeri = Galeri::take(6)->get();
+        $galeri = Galeri::take(6)->orderBy('updated_at','desc')->get();
 
         return view('home/main', compact('pengumuman','overview','berita','kiprah','galeri'));
     }

@@ -24,7 +24,7 @@
         </div>
         <div class="row">
         <div class="col-md-8 d-flex justify-content-end">  <div class="wrapper">
-          <header>      
+          <header>
             <div class="icons">
               <img id="prev" class="material-symbols-rounded" src="{{asset('assets/img/previous.svg')}}" alt="Previous">
               <p class="current-date"></p>
@@ -54,9 +54,9 @@
           <div class="ket-warna2"></div>
             <p class="ms-2" >: Hari Penting</p>
          </div>
-          
-        
-  
+
+
+
   </div>
       </section>
       </div>
@@ -79,15 +79,20 @@
               <td width="20%" >Judul</td>
               <td width="20%" >Link Download</td>
             </tr>
-            <tr>
-              <td width="5%" >1</td>
-              <td width="20%" >Ganjil 2023/2024</td>
-              <td width="20%" ><a href="#">Download</a></td>
-            </tr>
+            @php
+                $no = 1;
+            @endphp
+            @foreach($kalender as $k)
+                <tr>
+                    <td width="5%" >{{ $no++ }}</td>
+                    <td width="20%" >{{ $k->judul }}</td>
+                    <td width="20%" ><a href="{{ asset('storage/kalender/' . $k->file) }}" target="_blank">Download</a></td>
+                </tr>
+            @endforeach
         </tbody>
       </table>
     </div>
-  </div>  
+  </div>
 
   </div>
 </section>
@@ -120,7 +125,7 @@ const renderCalendar = () => {
 
     for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
         // adding active class to li if the current day, month, and year matched
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth()
                      && currYear === new Date().getFullYear() ? "active" : "";
         liTag += `<li class="${isToday}">${i}</li>`;
     }
