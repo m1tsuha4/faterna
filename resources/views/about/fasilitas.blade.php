@@ -43,116 +43,106 @@
                         </div>
                     </div>
                 </section>
-
-                <section class="px-5" id="fasilitas-content1">
-                    <div style="margin: 0" class="row  nama-fakultas">
-                        Fakultas Peternakan
-                    </div>
-                    <div style="margin: 0" class="row  nama-fasilitas">
-                        Laboratorium
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <div class="card d-flex justify-content-center align-items-center foto-fasilitas">
-                                <img class="img-fluid" src="{{ asset('assets/img/labor-contoh.jpeg') }}" alt="">
+                @php
+                    $no = 1;
+                @endphp
+                @foreach($allSarana as $sarana)
+                    @if($no % 2 != 0)
+                        <section class="px-5" id="fasilitas-content{{ $no }}">
+                            <div style="margin: 0" class="row  nama-fakultas">
+                                Fakultas Peternakan
                             </div>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center flex-column fasilitas-desc">
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur quasi officiis
-                                voluptate illo qui praesentium est facilis repudiandae reprehenderit provident nam soluta
-                                maiores, eum omnis dignissimos esse tempore? Explicabo!
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam itaque explicabo officia
-                                sapiente quae odit exercitationem, fugit qui delectus placeat quidem nobis voluptate
-                                pariatur necessitatibus nostrum perferendis inventore dolores corporis?</p>
-                            <!-- <button class="btn btn-first" data-bs-toggle="modal" data-bs-target="#exampleModal">Daftar
-                                Laboratorium</button>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-centered">
-                                    <div class="modal-content daftar-labor">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Laboratorium Faterna</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-4">1. list labor + gambar nanti</div>
-                                                <div class="col-md-4">2</div>
-                                                <div class="col-md-4">3</div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4">4</div>
-                                                <div class="col-md-4">5</div>
-                                                <div class="col-md-4">6</div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4">7</div>
-                                                <div class="col-md-4">8</div>
-                                                <div class="col-md-4">9</div>
-                                            </div>
-                                        </div>
-
+                            <div style="margin: 0" class="row  nama-fasilitas">
+                                {{ $sarana->nama }}
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <div class="card d-flex justify-content-center align-items-center foto-fasilitas">
+                                        <img class="img-fluid" src="{{ asset('storage/fasilitas/'.$sarana->file) }}" alt="">
                                     </div>
                                 </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </section>
-
-                <section class="px-5" id="fasilitas-content2">
-                   
-                    <div style="margin: 0" class="row d-flex justify-content-end nama-fasilitas">
-                        Fasilitas 2
-                    </div>
-                    <div class="row d-flex flex-row-reverse mt-3">
-                        <div class="col-md-6 d-flex justify-content-center d-flex justify-content-end">
-                            <div class="card d-flex justify-content-center align-items-center foto-fasilitas">
-                                <img class="img-fluid" src="{{ asset('assets/img/labor-contoh.jpeg') }}" alt="">
+                                <div class="col-md-6 d-flex justify-content-center flex-column fasilitas-desc">
+                                    <p> {{ $sarana->deskripsi }}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center flex-column fasilitas-desc">
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur quasi officiis
-                                voluptate illo qui praesentium est facilis repudiandae reprehenderit provident nam soluta
-                                maiores, eum omnis dignissimos esse tempore? Explicabo!
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam itaque explicabo officia
-                                sapiente quae odit exercitationem, fugit qui delectus placeat quidem nobis voluptate
-                                pariatur necessitatibus nostrum perferendis inventore dolores corporis?</p>
-                            <!-- <button class="btn btn-first" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Selengkapnya</button>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-centered">
-                                    <div class="modal-content daftar-labor">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Fasilitas2 Faterna</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-4">Gambar fasilitas</div>
-                                                <div class="col-md-4">2</div>
-                                                <div class="col-md-4">3</div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4">4</div>
-                                                <div class="col-md-4">5</div>
-                                                <div class="col-md-4">6</div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4">7</div>
-                                                <div class="col-md-4">8</div>
-                                                <div class="col-md-4">9</div>
-                                            </div>
-                                        </div>
+                        </section>
+                    @else
+                        <section class="px-5" id="fasilitas-content{{ $no }}">
 
+                            <div style="margin: 0" class="row d-flex justify-content-end nama-fasilitas">
+                                {{ $sarana->nama }}
+                            </div>
+                            <div class="row d-flex flex-row-reverse mt-3">
+                                <div class="col-md-6 d-flex justify-content-center d-flex justify-content-end">
+                                    <div class="card d-flex justify-content-center align-items-center foto-fasilitas">
+                                        <img class="img-fluid" src="{{ asset('storage/fasilitas/'.$sarana->file) }}" alt="">
                                     </div>
                                 </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </section>
+                                <div class="col-md-6 d-flex justify-content-center flex-column fasilitas-desc">
+                                    <p> {{ $sarana->deskripsi }}</p>
+                                </div>
+                            </div>
+                        </section>
+                    @endif
+
+                    @php
+                        $no++;
+                    @endphp
+                @endforeach
+
+{{--                <section class="px-5" id="fasilitas-content2">--}}
+
+{{--                    <div style="margin: 0" class="row d-flex justify-content-end nama-fasilitas">--}}
+{{--                        Fasilitas 2--}}
+{{--                    </div>--}}
+{{--                    <div class="row d-flex flex-row-reverse mt-3">--}}
+{{--                        <div class="col-md-6 d-flex justify-content-center d-flex justify-content-end">--}}
+{{--                            <div class="card d-flex justify-content-center align-items-center foto-fasilitas">--}}
+{{--                                <img class="img-fluid" src="{{ asset('assets/img/labor-contoh.jpeg') }}" alt="">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-md-6 d-flex justify-content-center flex-column fasilitas-desc">--}}
+{{--                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur quasi officiis--}}
+{{--                                voluptate illo qui praesentium est facilis repudiandae reprehenderit provident nam soluta--}}
+{{--                                maiores, eum omnis dignissimos esse tempore? Explicabo!--}}
+{{--                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam itaque explicabo officia--}}
+{{--                                sapiente quae odit exercitationem, fugit qui delectus placeat quidem nobis voluptate--}}
+{{--                                pariatur necessitatibus nostrum perferendis inventore dolores corporis?</p>--}}
+{{--                            <!-- <button class="btn btn-first" data-bs-toggle="modal"--}}
+{{--                                data-bs-target="#exampleModal">Selengkapnya</button>--}}
+{{--                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"--}}
+{{--                                aria-hidden="true">--}}
+{{--                                <div class="modal-dialog modal-lg modal-dialog-centered">--}}
+{{--                                    <div class="modal-content daftar-labor">--}}
+{{--                                        <div class="modal-header">--}}
+{{--                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Fasilitas2 Faterna</h1>--}}
+{{--                                            <button type="button" class="btn-close" data-bs-dismiss="modal"--}}
+{{--                                                aria-label="Close"></button>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="modal-body">--}}
+{{--                                            <div class="row">--}}
+{{--                                                <div class="col-md-4">Gambar fasilitas</div>--}}
+{{--                                                <div class="col-md-4">2</div>--}}
+{{--                                                <div class="col-md-4">3</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="row">--}}
+{{--                                                <div class="col-md-4">4</div>--}}
+{{--                                                <div class="col-md-4">5</div>--}}
+{{--                                                <div class="col-md-4">6</div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="row">--}}
+{{--                                                <div class="col-md-4">7</div>--}}
+{{--                                                <div class="col-md-4">8</div>--}}
+{{--                                                <div class="col-md-4">9</div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div> -->--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </section>--}}
             </div>
         </nav>
     </div>

@@ -36,15 +36,12 @@ Route::get('/pimpinan', function () {
 })->name('pimpinan');
 
 Route::get('/dosen', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
-//Route::get('/dosen', function () {
-//    return view('about/dosen');
-//})->name('dosen');
 
 Route::get('/tendik', function () {
     return view('about/tendik');
 })->name('tendik');
 
-
+Route::get('/all-gallery', [\App\Http\Controllers\Gallery\GalleryController::class,'allGallery'])->name('allgallery');
 
 Route::get('/struktur-organisasi', function () {
     return view('about/struktur');
@@ -58,19 +55,13 @@ Route::get('/profil-departemen', function () {
     return view('about/profildepartemen');
 })->name('profildepartemen');
 
-Route::get('/sarana-dan-prasarana', function () {
-    return view('about/fasilitas');
-})->name('fasilitas');
+Route::get('/sarana-dan-prasarana', [\App\Http\Controllers\Profile\ProfileController::class,'sarana'])->name('fasilitas');
 
 Route::get('/akreditasi', function () {
     return view('about/akreditasi');
 })->name('akreditasi');
 
 Route::get('/alumni-info', [\App\Http\Controllers\Profile\ProfileController::class,'alumni'])->name('infoalumni');
-
-//Route::get('/alumni-info', function () {
-//    return view('about/alumni');
-//})->name('infoalumni');
 
 Route::get('/zona-integritas', function () {
     return view('about/zona');
@@ -145,9 +136,7 @@ Route::get('/s3', function () {
 
 
 // ini route kerjasama
-Route::get('/kerja-sama', function () {
-    return view('kerjasama/kerjasama');
-})->name('kerjasama');
+Route::get('/kerja-sama', [\App\Http\Controllers\Kerjasama\KerjasamaController::class,'kerjaSama'])->name('kerjasama');
 
 // ini route conference
 Route::get('/konferensi', [\App\Http\Controllers\Conference\ConferenceController::class,'conference'])->name('konferensi');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Profile;
 use App\Http\Controllers\Controller;
 use App\Models\alumni;
 use App\Models\dosen;
+use App\Models\Fasilitas;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -19,5 +20,11 @@ class ProfileController extends Controller
         $alumni = alumni::orderBy('updated_at','desc')->get();
 
         return view('about/alumni',compact('alumni'));
+    }
+
+    public function sarana(){
+        $allSarana = Fasilitas::all();
+
+        return view('about/fasilitas',compact('allSarana'));
     }
 }

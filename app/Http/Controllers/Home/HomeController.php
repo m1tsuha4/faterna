@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use App\Models\berita;
 use App\Models\Galeri;
+use App\Models\Kerjasama;
 use App\Models\Overview;
 
 class HomeController extends Controller
@@ -20,8 +21,9 @@ class HomeController extends Controller
         $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->take(6)->orderBy('updated_at','desc')->get();
         //section galeri
         $galeri = Galeri::take(6)->orderBy('updated_at','desc')->get();
-
-        return view('home/main', compact('pengumuman','overview','berita','kiprah','galeri'));
+        //section kerjasama
+        $kerjasama = Kerjasama::all();
+        return view('home/main', compact('pengumuman','overview','berita','kiprah','galeri','kerjasama'));
     }
 
 }

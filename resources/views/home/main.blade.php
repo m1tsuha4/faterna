@@ -367,7 +367,7 @@
         <div class="col-sm-12 mt-3">
           <div class="d-flex justify-content-center">
                   <button style="background: #451952; color:#fff;" class="btn">
-                    <a style="color: white;" href="">Selengkapnya</a>
+                    <a style="color: white;" href="{{ route('allgallery') }}">Selengkapnya</a>
                   </button>
                 </div>
           </div>
@@ -379,18 +379,23 @@
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-out">
 
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
+            <div class="clients-slider swiper">
+
+              <div class="swiper-wrapper align-items-center">
+                  @foreach($kerjasama as $k)
+                      <div class="swiper-slide"><img src="{{ asset('storage/kerjasama/'.$k->file) }}" class="img-fluid" alt=""></div>
+                  @endforeach
+
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>--}}
+              </div>
+
+            </div>
 
       </div>
     </section><!-- End Clients Section -->
