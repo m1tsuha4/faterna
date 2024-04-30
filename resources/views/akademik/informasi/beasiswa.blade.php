@@ -6,7 +6,7 @@
     <div class="container position-relative">
       <div class="row d-flex justify-content-center">
         <div class="col-lg-6 text-center">
-          <h2>Informasi Beasiswa</h2> 
+          <h2>Informasi Beasiswa</h2>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
       </ol>
     </div>
   </nav>
-</div><!-- End Breadcrumbs --> 
+</div><!-- End Breadcrumbs -->
 <section id="beasiswa" class="beasiswa">
   <div class="container" data-aos="fade-up">
     <div style="margin-top: -50px;" class="row content">
@@ -38,52 +38,61 @@
   </div>
   <div class="container" data-aos="fade-up" style="margin-top: 30px">
     <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-            <span class="num">1.</span>
-            PENERIMAAN BEASISWA BANK INDONESIA
-          </button>
-        </h3>
-        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-          <div class="accordion-body">
-          <p>Penerima Beasiswa Bank Indonesia adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>
-          <a href="#">Selengkapnya</a>
-          </div>
-        </div>
-      </div><!-- # Faq item-->
+        @php
+            $no = 1;
+        @endphp
+        @foreach($beasiswa as $b)
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-{{ $no }}">
+                        <span class="num">{{ $no }}.</span>
+                        {{ $b->judul }}
+                    </button>
+                </h3>
+                <div id="faq-content-{{ $no }}" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                        <p>Penerima {{ $b->judul }} adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut. Deadline {{ $b->tanggal }}</p>
+                        <a href="{{ $b->link }}" target="_blank">Selengkapnya</a>
+                    </div>
+                </div>
+            </div><!-- # Faq item-->
+            @php
+                $no++;
+            @endphp
+        @endforeach
 
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-            <span class="num">2.</span>
-            PENERIMAAN BEASISWA KSE
-          </button>
-        </h3>
-        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-          <div class="accordion-body">
-            <p>Penerima Beasiswa Karya Salemba Empat adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>
-            <a href="#">Selengkapnya</a>
-          </div>
-        </div>
-      </div><!-- # Faq item-->
 
-      <div class="accordion-item">
-        <h3 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-            <span class="num">3.</span>
-            PENERIMAAN BEASISWA LPS
-          </button>
-        </h3>
-        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-          <div class="accordion-body">
-            <p>Penerima Beasiswa Lembaga Penjamin Simpanan adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>
-            <a href="#">Selengkapnya</a>
-          </div>
-        </div>
-      </div><!-- # Faq item-->
+{{--      <div class="accordion-item">--}}
+{{--        <h3 class="accordion-header">--}}
+{{--          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">--}}
+{{--            <span class="num">2.</span>--}}
+{{--            PENERIMAAN BEASISWA KSE--}}
+{{--          </button>--}}
+{{--        </h3>--}}
+{{--        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">--}}
+{{--          <div class="accordion-body">--}}
+{{--            <p>Penerima Beasiswa Karya Salemba Empat adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>--}}
+{{--            <a href="#">Selengkapnya</a>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </div><!-- # Faq item-->--}}
+
+{{--      <div class="accordion-item">--}}
+{{--        <h3 class="accordion-header">--}}
+{{--          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">--}}
+{{--            <span class="num">3.</span>--}}
+{{--            PENERIMAAN BEASISWA LPS--}}
+{{--          </button>--}}
+{{--        </h3>--}}
+{{--        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">--}}
+{{--          <div class="accordion-body">--}}
+{{--            <p>Penerima Beasiswa Lembaga Penjamin Simpanan adalah Mahasiswa yang memenuhi persyaratan antara lain sebagai berikut.</p>--}}
+{{--            <a href="#">Selengkapnya</a>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </div><!-- # Faq item-->--}}
     </div>
-  </div>     
+  </div>
   </div>
 </section><!-- End Frequently Asked Questions Section -->
 

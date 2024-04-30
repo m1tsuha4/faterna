@@ -20,9 +20,9 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Breadcrumbs -->  
+    </div><!-- End Breadcrumbs -->
 
-   
+
   <!-- ======= Recent Blog Posts Section ======= -->
   <section id="recent-posts" class="recent-posts">
       <div class="container" data-aos="fade-up">
@@ -30,86 +30,35 @@
         <div class="section-header">
           <h2>Berita & Informasi Event</h2>
         </div>
+          <div class="row gy-4">
+            @foreach($berita as $b)
+                      <div class="col-xl-4 col-md-6">
+                          <article>
 
-        <div class="row gy-4">
+                              <div class="post-img">
+                                  <img src="{{ asset('storage/berita/'. $b->file) }}" alt="" class="img-fluid">
+                              </div>
 
-          <div class="col-xl-4 col-md-6">
-            <article>
+                              <p class="post-category">{{ $b->kategori }}</p>
 
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
+                              <h2 class="title">
+                                  <a href="{{ route('detailberita', ['id' => $b->id]) }}">{{ $b->judul }}</a>
+                              </h2>
 
-              <p class="post-category">Berita</p>
+                              <div class="d-flex align-items-center">
 
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+                                  <div class="post-meta">
+                                      <p class="post-author">{{ $b->author }} Faterna</p>
+                                      <p class="post-date">
+                                          <time datetime="2022-01-01">{{ $b->tanggal }}</time>
+                                      </p>
+                                  </div>
+                              </div>
 
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
+                          </article>
+                      </div><!-- End post list item -->
+            @endforeach
 
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Berita</p>
-
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Berita</p>
-
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
 
         </div><!-- End recent posts list -->
 

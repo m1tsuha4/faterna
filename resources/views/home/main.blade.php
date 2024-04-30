@@ -12,7 +12,7 @@
           <h2>Fakultas Peternakan Universitas Andalas</h2>
           <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            
+
         </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -103,46 +103,15 @@
                 <h3 class="sidebar-title">Pengumuman</h3>
 
                 <div class="mt-3">
-
-                  <div class="post-item mt-3">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                  <img src="{{asset('assets/img/berita/blog-1.jpg')}}" alt="">
-                    <div>
-                      <h4><a href="{{route('detailpengumuman')}}">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
+                    @foreach($pengumuman as $p)
+                        <div class="post-item mt-3">
+                            <img style="width: 50px" src="{{ asset('storage/berita/'.$p->file) }}" alt="">
+                            <div>
+                                <h4><a href="{{ route('detailpengumuman',['id' => $p->id]) }}">{{ $p->judul }}</a></h4>
+                                <time datetime="2020-01-01">{{ $p->tanggal }}</time>
+                            </div>
+                        </div><!-- End recent post item-->
+                    @endforeach
 
                 </div>
 
@@ -225,28 +194,28 @@
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->mahasiswa ?? 1500 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Mahasiswa</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->prodi ?? 3 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Prodi</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->dosen ?? 100 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Dosen</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ $overview->labor ?? 10 }}" data-purecounter-duration="2" class="purecounter"></span>
               <p>Laboratorium</p>
             </div>
           </div>
@@ -274,86 +243,34 @@
         </div>
 
         <div class="row gy-4">
+            @foreach($berita as $b)
+                <div class="col-xl-4 col-md-6">
+                    <article>
 
-          <div class="col-xl-4 col-md-6">
-            <article>
+                        <div class="post-img">
+                            <img src="{{ asset('storage/berita/'. $b->file) }}" alt="" class="img-fluid">
+                        </div>
 
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
+                        <p class="post-category">{{ $b->kategori }}</p>
 
-              <p class="post-category">Berita</p>
+                        <h2 class="title">
+                            <a href="{{route('detailberita', ['id' => $b->id]) }}">{{ $b->judul }}</a>
+                        </h2>
 
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
+                        <div class="d-flex align-items-center">
 
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
+                            <div class="post-meta">
+                                <p class="post-author">{{ $b->author }} Faterna</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">{{ $b->tanggal }}</time>
+                                </p>
+                            </div>
+                        </div>
 
-            </article>
-          </div><!-- End post list item -->
+                    </article>
+                </div><!-- End post list item -->
+            @endforeach
 
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Berita</p>
-
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="{{asset('assets/img/berita/berita1.jpg')}}" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Berita</p>
-
-              <h2 class="title">
-                <a href="{{route('detailberita')}}">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                
-                <div class="post-meta">
-                  <p class="post-author">Admin Faterna</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
 
    <div class="col-sm-12 mt-3">
    <div class="d-flex justify-content-center">
@@ -367,98 +284,50 @@
     </section><!-- End Recent Blog Posts Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
+      <section id="testimonials" class="testimonials">
+          <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Kiprah Civitas Akademika</h2>
-        </div>
-
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
-                  </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
+              <div class="section-header">
+                  <h2>Kiprah Civitas Akademika</h2>
               </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
+              <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                      @foreach($kiprah as $k)
+                          <div class="swiper-slide">
+                              <div class="testimonial-wrap">
+                                  <div class="testimonial-item">
+                                      <div class="d-flex align-items-center">
+                                          <img src="{{ asset('storage/berita/'. $k->file) }}" class="testimonial-img flex-shrink-0" alt="">
+                                          <div>
+                                              <h3><a href="{{ route('detailkiprah',['id' => $k->id]) }}">{{ $k->judul }}</a></h3>
+                                          </div>
+                                      </div>
+                                      <p>
+                                          {{ $k->deskripsi }}
+                                      </p>
+                                  </div>
+                              </div>
+                          </div><!-- End testimonial item -->
+                      @endforeach
+
+
                   </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
+                  <div class="swiper-pagination"></div>
               </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
+              <div class="col-sm-12 mt-3">
+                  <div class="d-flex justify-content-center">
+                      <button style="background: #451952; color:#fff;" class="btn">
+                          <a style="color: white;" href="{{ route('allkiprah') }}">Selengkapnya</a>
+                      </button>
                   </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{{asset('assets/img/team/team-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3><a href="{{route('detailkiprah')}}">Judul Post</a></h3>
-                    </div>
-                  </div>
-                  <p>
-                      Meraih medali perunggu dari lomba lari melawan kuda
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
 
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
+      </section><!-- End Testimonials Section -->
 
-        <div class="col-sm-12 mt-3">
-          <div class="d-flex justify-content-center">
-                  <button style="background: #451952; color:#fff;" class="btn">
-                    <a style="color: white;" href="{{route('allkiprah')}}">Selengkapnya</a>
-                  </button>
-                </div>
-          </div>
-
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Portfolio Section ======= -->
+      <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio sections-bg">
       <div class="container" data-aos="fade-up">
 
@@ -479,66 +348,17 @@
           </div> -->
 
           <div class="row gy-4 portfolio-container">
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{asset('assets/img/gallery/gallery1.jpg')}}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{asset('assets/img/gallery/gallery1.jpg')}}" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4>Judul</h4>
-                  <p>Deskripsi</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+            @foreach($galeri as $g)
+                  <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                          <a href="{{ asset('storage/galeri/'. $g->file) }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('storage/galeri/'. $g->file) }}" class="img-fluid" alt=""></a>
+                          <div class="portfolio-info">
+                              <h4>{{ $g->judul }}</h4>
+                              <p>{{ $g->deskripsi }}</p>
+                          </div>
+                      </div>
+                  </div><!-- End Portfolio Item -->
+            @endforeach
 
           </div><!-- End Portfolio Container -->
 
@@ -547,7 +367,7 @@
         <div class="col-sm-12 mt-3">
           <div class="d-flex justify-content-center">
                   <button style="background: #451952; color:#fff;" class="btn">
-                    <a style="color: white;" href="">Selengkapnya</a>
+                    <a style="color: white;" href="{{ route('allgallery') }}">Selengkapnya</a>
                   </button>
                 </div>
           </div>
@@ -559,18 +379,23 @@
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-out">
 
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
+            <div class="clients-slider swiper">
+
+              <div class="swiper-wrapper align-items-center">
+                  @foreach($kerjasama as $k)
+                      <div class="swiper-slide"><img src="{{ asset('storage/kerjasama/'.$k->file) }}" class="img-fluid" alt=""></div>
+                  @endforeach
+
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>--}}
+              </div>
+
+            </div>
 
       </div>
     </section><!-- End Clients Section -->

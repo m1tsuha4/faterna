@@ -16,22 +16,22 @@
             <div class="card-body">
             <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Mahasiswa</label>
-                            <input value="1" type="number" name="jumlah_mahasiswa" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                            <input value="{{ $overview->mahasiswa ?? '1'}}" type="number" name="jumlah_mahasiswa" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
                         </div>
 
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Prodi</label>
-                            <input value="1" type="number" name="jumlah_prodi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                            <input value="{{ $overview->prodi ?? '1'}}" type="number" name="jumlah_prodi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
                         </div>
 
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Dosen</label>
-                            <input value="1" type="number" name="jumlah_dosen" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                            <input value="{{ $overview->dosen ?? '1'}}" type="number" name="jumlah_dosen" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
                         </div>
 
                         <div class="mb-3">
                             <label for="mahasiswa" class="form-label">Jumlah Laboratorium</label>
-                            <input value="1" type="number" name="jumlah_lab" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                            <input value="{{ $overview->labor ?? '1'}}" type="number" name="jumlah_lab" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
                         </div>
             </div>
         </div>

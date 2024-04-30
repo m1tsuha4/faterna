@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //ini route Home
-Route::get('/', function () {
-    return view('home/main');
-})->name('home');
+//Route::get('/', function () {
+//    return view('home/main');
+//})->name('home');
+Route::get('/', [\App\Http\Controllers\Home\HomeController::class,'index'])->name('home');
 
 // ini route tentang kami
 Route::get('/selayang-pandang', function () {
@@ -34,15 +35,13 @@ Route::get('/pimpinan', function () {
     return view('about/pimpinan');
 })->name('pimpinan');
 
-Route::get('/dosen', function () {
-    return view('about/dosen');
-})->name('dosen');
+Route::get('/dosen', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
 
 Route::get('/tendik', function () {
     return view('about/tendik');
 })->name('tendik');
 
-
+Route::get('/all-gallery', [\App\Http\Controllers\Gallery\GalleryController::class,'allGallery'])->name('allgallery');
 
 Route::get('/struktur-organisasi', function () {
     return view('about/struktur');
@@ -56,17 +55,13 @@ Route::get('/profil-departemen', function () {
     return view('about/profildepartemen');
 })->name('profildepartemen');
 
-Route::get('/sarana-dan-prasarana', function () {
-    return view('about/fasilitas');
-})->name('fasilitas');
+Route::get('/sarana-dan-prasarana', [\App\Http\Controllers\Profile\ProfileController::class,'sarana'])->name('fasilitas');
 
 Route::get('/akreditasi', function () {
     return view('about/akreditasi');
 })->name('akreditasi');
 
-Route::get('/alumni-info', function () {
-    return view('about/alumni');
-})->name('infoalumni');
+Route::get('/alumni-info', [\App\Http\Controllers\Profile\ProfileController::class,'alumni'])->name('infoalumni');
 
 Route::get('/zona-integritas', function () {
     return view('about/zona');
@@ -141,33 +136,20 @@ Route::get('/s3', function () {
 
 
 // ini route kerjasama
-Route::get('/kerja-sama', function () {
-    return view('kerjasama/kerjasama');
-})->name('kerjasama');
+Route::get('/kerja-sama', [\App\Http\Controllers\Kerjasama\KerjasamaController::class,'kerjaSama'])->name('kerjasama');
 
 // ini route conference
-Route::get('/konferensi', function () {
-    return view('conference/conference');
-})->name('konferensi');
+Route::get('/konferensi', [\App\Http\Controllers\Conference\ConferenceController::class,'conference'])->name('konferensi');
 
 // ini route conference
-Route::get('/berita-duka-cita', function () {
-    return view('dukacita/dukacita');
-})->name('dukacita');
+Route::get('/berita-duka-cita', [\App\Http\Controllers\Berita\BeritaController::class,'dukaCita'])->name('dukacita');
 
 // ini route akademik
 
-Route::get('/beasiswa-info', function () {
-    return view('akademik/informasi/beasiswa');
-})->name('infobeasiswa');
+Route::get('/beasiswa-info', [\App\Http\Controllers\Akademik\AkademikController::class,'beasiswa'])->name('infobeasiswa');
+Route::get('/kalender-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'kalender'])->name('kalenderakademik');
+Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'panduan'])->name('pAkademik');
 
-Route::get('/kalender-akademik', function () {
-    return view('akademik/informasi/kalenderakademik');
-})->name('kalenderakademik');
-
-Route::get('/panduan-akademik', function () {
-    return view('akademik/informasi/pAkademik');
-})->name('pAkademik');
 
 
 Route::get('/kemahasiswaan', function () {
@@ -184,9 +166,7 @@ Route::get('/panduan-dan-sop-ta', function () {
 })->name('sopTA');
 
 //ini route PPID
-Route::get('/profile', function () {
-    return view('ppid/profile-ppid');
-})->name('profile-ppid');
+Route::get('/profile', [\App\Http\Controllers\Ppid\ProfilePPIDController::class,'dokumen'])->name('profile-ppid');
 
 Route::get('/tata-cara-permohonan-informasi', function () {
     return view('ppid/layananinfo/tata-cara-permohonan');
@@ -210,83 +190,21 @@ Route::get('/pengabdian', function () {
     return view('riset/pengabdian');
 })->name('pengabdian');
 
+
+Route::get('/all-berita', [\App\Http\Controllers\Berita\BeritaController::class,'allBerita'])->name('allberita');
+Route::get('/detail-berita/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailBerita'])->name('detailberita');
+
+Route::get('/all-kiprah', [\App\Http\Controllers\Berita\BeritaController::class,'allKiprah'])->name('allkiprah');
+Route::get('/detail-kiprah/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailKiprah'])->name('detailkiprah');
+
+Route::get('/all-pengumuman', [\App\Http\Controllers\Berita\BeritaController::class,'allPengumuman'])->name('allpengumuman');
+Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\Berita\BeritaController::class,'detailPengumuman'])->name('detailpengumuman');
+
 // ini route Admin
 
 Route::get('/administrator', function () {
     return view('admin/login');
 })->name('administrator');
-
-Route::get('/all-berita', function () {
-    return view('home/berita/allberita');
-})->name('allberita');
-
-Route::get('/detail-berita', function () {
-    return view('home/berita/detail-berita');
-})->name('detailberita');
-
-Route::get('/all-kipraah', function () {
-    return view('home/kiprah/allkiprah');
-})->name('allkiprah');
-
-Route::get('/detail-kipraah', function () {
-    return view('home/kiprah/detailkiprah');
-})->name('detailkiprah');
-
-Route::get('/all-pengumuman', function () {
-    return view('home/pengumuman/allpengumuman');
-})->name('allpengumuman');
-
-Route::get('/detail-pengumuman', function () {
-    return view('home/pengumuman/detailpengumuman');
-})->name('detailpengumuman');
-
-//Route::get('/berita', function () {
-//    return view('admin/admindashboard');
-//})->name('dashboardadmin');
-//
-//Route::get('/addberita', function () {
-//    return view('admin/addberita');
-//})->name('addberita');
-//
-//Route::get('/editberita', function () {
-//    return view('admin/editberita');
-//})->name('editberita');
-//
-//Route::get('/dokumen', function () {
-//    return view('admin/dokumen');
-//})->name('dokumen');
-//
-//Route::get('/addokumen', function () {
-//    return view('admin/addokumen');
-//})->name('addokumen');
-//
-//Route::get('/dosen-admin', function () {
-//    return view('admin/dosen');
-//})->name('dosen-admin');
-//
-//Route::get('/addosen', function () {
-//    return view('admin/addosen');
-//})->name('addosen');
-//
-//Route::get('/editdosen', function () {
-//    return view('admin/editdosen');
-//})->name('editdosen');
-//
-//Route::get('/alumni', function () {
-//    return view('admin/alumni');
-//})->name('alumni');
-//
-//Route::get('/addalumni', function () {
-//    return view('admin/addalumni');
-//})->name('addalumni');
-//
-//Route::get('/beasiswa', function () {
-//    return view('admin/beasiswa');
-//})->name('beasiswa');
-//
-//Route::get('/addbeasiswa', function () {
-//    return view('admin/addbeasiswa');
-//})->name('addbeasiswa');
 
 Route::middleware('auth')->group(function (){
     //berita
@@ -348,7 +266,7 @@ Route::middleware('auth')->group(function (){
     Route::get('/addfasilitas', [\App\Http\Controllers\FasilitasController::class,'create'])->name('addfasilitas');
     Route::post('/add-fasilitas', [\App\Http\Controllers\FasilitasController::class,'store'])->name('add-fasilitas');
     Route::get('/delete-fasilitas/{id}', [\App\Http\Controllers\FasilitasController::class,'destroy'])->name('delete-fasilitas');
-    
+
     //Kerjasama
     Route::get('/allkerjasama', [\App\Http\Controllers\KerjasamaController::class,'index'])->name('allkerjasama');
     Route::get('/addkerjasama', [\App\Http\Controllers\KerjasamaController::class,'create'])->name('addkerjasama');

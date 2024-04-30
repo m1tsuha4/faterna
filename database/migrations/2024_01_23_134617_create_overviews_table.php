@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Tabelfaternadalamangka extends Migration
+class CreateOverviewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class Tabelfaternadalamangka extends Migration
      */
     public function up()
     {
-        Schema::create('angka_faternas', function (Blueprint $table) {
+        Schema::create('overviews', function (Blueprint $table) {
             $table->id();
-            $table->string('mahasiswa');
-            $table->string('prodi');
-            $table->string('dosen');
-            $table->string('labor');
+            $table->integer('mahasiswa');
+            $table->integer('prodi');
+            $table->integer('dosen');
+            $table->integer('labor');
             $table->string('author')->default('Admin');
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ class Tabelfaternadalamangka extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('angka_faternas');
+        Schema::dropIfExists('overviews');
     }
 }
