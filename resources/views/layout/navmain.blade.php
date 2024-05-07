@@ -42,14 +42,11 @@
   <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>0751 71464</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.youtube.com/@faternaunand342/featured" class="facebook"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com/faterna.unand/" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </section><!-- End Top Bar -->
@@ -70,13 +67,13 @@
               <li><a href="{{ route('selayang-pandang') }}">Visi Misi</a></li> 
               <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
               <li><a href="{{ route('struktur') }}">Struktur Organisasi</a></li>
-              <li><a href="{{ route('profilgb') }}">Profil Guru Besar</a></li>
-              <li><a href="{{ route('profildepartemen') }}">Profil Departemen</a></li>
+              {{-- <li><a href="{{ route('profilgb') }}">Profil Guru Besar</a></li>
+              <li><a href="{{ route('profildepartemen') }}">Profil Departemen</a></li> --}}
               <li><a href="{{ route('fasilitas') }}">Sarana & Prasarana</a></li>
               <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
               <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
               <li><a href="{{ route('dosen') }}">Dosen</a></li>
-              <li><a href="{{ route('tendik') }}">Tendik</a></li>
+              {{-- <li><a href="{{ route('tendik') }}">Tendik</a></li> --}}
               <li><a href="{{ route('zona') }}">Zona Integritas</a></li>
             </ul>
           </li>
@@ -172,10 +169,8 @@
       <br>
       <img width="300" src="{{asset('assets/img/footer-img.png')}}" alt="">
       <div class="social-links d-flex mt-4">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com/@faternaunand342/featured" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/faterna.unand/" class="linkedin"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
 
@@ -205,7 +200,7 @@
         Limau Manis <br>
         Padang<br>
         Sumatera Barat <br><br>
-        <strong>Phone:</strong> <br>
+        <strong>Phone: 0751 71464</strong> <br>
         <strong>Email:</strong> <br>
       </p>
 
@@ -237,12 +232,13 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   var hero = document.getElementById('hero');
-  var images = ['/assets/img/unand.png', '/assets/img/cta-bg.jpg']; // Ganti dengan path gambar yang diinginkan
+  var images = ['/assets/img/unand.png', '/assets/img/hero2.png', '/assets/img/hero3.png', '/assets/img/hero4.png', '/assets/img/hero5.png']; // Ganti dengan path gambar yang diinginkan
   var currentIndex = 0;
   var interval = 5000; // Interval perubahan gambar (ms)
 
   function changeBackground() {
     hero.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    hero.style.backgroundSize = 'cover'; // Menambah gaya box-fit
     currentIndex = (currentIndex + 1) % images.length;
   }
 

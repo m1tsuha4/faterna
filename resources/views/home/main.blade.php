@@ -10,7 +10,7 @@
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>Fakultas Peternakan Universitas Andalas</h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <p>Fakultas Peternakan Pertama yang Bardiri di Indonesia Sejak September 1963</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
 
         </div>
@@ -87,8 +87,7 @@
                     <div class="card-body">
                       <h1>Selamat Datang</h1>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe laudantium mollitia ea quod quam possimus deleniti accusantium in quis. Doloremque magni nemo unde ducimus facere fugit, neque tempora quisquam nobis minus eius illo soluta mollitia, voluptatem voluptate adipisci, reprehenderit iusto suscipit nesciunt incidunt nam! Autem expedita dicta minus recusandae!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, perspiciatis. Quisquam maxime amet ea illum illo ratione maiores, laboriosam, eaque eligendi itaque expedita est nemo, aut fugit. Sunt ipsum reprehenderit corrupti ipsa tempore porro facere ratione? Cumque repellat vel in fugiat quibusdam accusamus sequi possimus nihil libero nulla molestias, ut ratione similique nemo aliquam amet. Dolore atque voluptatem numquam ab!</p>
-                      </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -228,9 +227,9 @@
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action" class="call-to-action">
       <div class="container text-center" data-aos="zoom-out">
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+        <a href="https://youtu.be/aHR_5KJPN4s?si=uBfeWunl5-XOX1Wm" class="glightbox play-btn"></a>
         <h3>Profile FATERNA UNAND</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Video Profile Fakultas Peternakan Universitas Andalas</p>
       </div>
     </section><!-- End Call To Action Section -->
 
@@ -411,15 +410,15 @@
 
         <div class="row gy-4 align-items-center">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
           <div class=" d-flex justify-content-center">
             <div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="100" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.31216182081!2d100.45721277568806!3d-0.9126598353334003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b7d677bf6b29%3A0xdf595f19d5116928!2sFakultas%20Peternakan!5e0!3m2!1sid!2sid!4v1715068801271!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           </div>
 
-          <div class="col-lg-6">
+          {{-- <div class="col-lg-6">
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
@@ -434,9 +433,11 @@
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="68" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Tahun Berdiri</strong></p>
-            </div><!-- End Stats Item -->
+            </div><!-- End Stats Item --> --}}
 
-          </div>
+            {{-- <p>Total Visitors: {{ $totalVisitors }}</p> --}}
+
+          {{-- </div> --}}
 
         </div>
 

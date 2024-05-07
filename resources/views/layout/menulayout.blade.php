@@ -67,13 +67,13 @@
               <li><a href="{{ route('selayang-pandang') }}">Visi Misi</a></li> 
               <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
               <li><a href="{{ route('struktur') }}">Struktur Organisasi</a></li>
-              <li><a href="{{ route('profilgb') }}">Profil Guru Besar</a></li>
-              <li><a href="{{ route('profildepartemen') }}">Profil Departemen</a></li>
+              {{-- <li><a href="{{ route('profilgb') }}">Profil Guru Besar</a></li>
+              <li><a href="{{ route('profildepartemen') }}">Profil Departemen</a></li> --}}
               <li><a href="{{ route('fasilitas') }}">Sarana & Prasarana</a></li>
               <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
               <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
               <li><a href="{{ route('dosen') }}">Dosen</a></li>
-              <li><a href="{{ route('tendik') }}">Tendik</a></li>
+              {{-- <li><a href="{{ route('tendik') }}">Tendik</a></li> --}}
               <li><a href="{{ route('zona') }}">Zona Integritas</a></li>
             </ul>
           </li>

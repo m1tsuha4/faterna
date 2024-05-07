@@ -41,6 +41,8 @@
                                         <option value="Berita" {{ $berita->kategori === 'Berita' ? 'selected' : '' }}>Berita</option>
                                         <option value="Informasi Event" {{ $berita->kategori === 'Informasi Event' ? 'selected' : '' }}>Informasi Event</option>
                                         <option value="Kiprah Civitas Akademika" {{ $berita->kategori === 'Kiprah Civitas Akademika' ? 'selected' : '' }}>Kiprah Civitas Akademika</option>
+                                        <option value="Pengumuman" {{ $berita->kategori === 'Pengumuman' ? 'selected' : '' }}>Pengumuman</option>
+                                        <option value="Duka Cita" {{ $berita->kategori === 'Duka Cita' ? 'selected' : '' }}>Duka Cita</option>
                                     </select>
                                 </div> <br>
                                 <div class="mb-3">
