@@ -40,7 +40,7 @@ class BeritaController extends Controller
             if ($request->hasFile('file')) {
                 $file = $request->file('file');
                 $fileName = $file->hashName(); // atur nama file sesuai kebutuhan
-                $file->storeAs('public/berita', $fileName); // path_to_store adalah path untuk menyimpan file
+                $file->store('public/berita', $fileName); // path_to_store adalah path untuk menyimpan file
                 $berita->file = $fileName;
             }
 

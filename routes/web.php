@@ -18,6 +18,47 @@ use Illuminate\Support\Facades\Route;
 //})->name('home');
 Route::get('/', [\App\Http\Controllers\Home\HomeController::class,'index'])->name('home');
 
+
+Route::get('/create-storage-link', function () {
+    $target = '/home/faterna_baru/faterna/storage/app/public'; // Path absolut ke direktori storage
+    $link = '/home/faterna_baru/public_html/storage'; // Path absolut ke direktori public_html
+
+    // Cek apakah direktori target ada
+    if (!file_exists($target)) {
+        return 'Direktori target tidak ditemukan: ' . $target;
+    }
+
+    // Cek apakah direktori public_html ada
+    if (!is_dir(dirname($link))) {
+        return 'Direktori public_html tidak ditemukan atau path salah: ' . dirname($link);
+    }
+
+    // Membuat symlink jika belum ada
+    if (!file_exists($link)) {
+        symlink($target, $link);
+        return 'Storage link berhasil dibuat dari: ' . $target . ' ke ' . $link;
+    } else {
+        return 'Storage link sudah ada di: ' . $link;
+    }
+});
+
+
+Route::get('/delete-storage-link', function () {
+    $link = '/home/faterna_baru/public_html/storage'; // Path absolut ke symlink
+
+    if (file_exists($link)) {
+        if (is_link($link)) {
+            unlink($link); // Hapus symlink
+            return 'Storage symlink berhasil dihapus dari: ' . $link;
+        } else {
+            return 'Path yang diberikan bukan symlink, melainkan direktori biasa: ' . $link;
+        }
+    } else {
+        return 'Symlink tidak ditemukan di: ' . $link;
+    }
+});
+
+
 // ini route tentang kami
 Route::get('/selayang-pandang', function () {
     return view('about/selayang-pandang');
