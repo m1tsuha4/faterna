@@ -35,10 +35,16 @@
                                 <label  for="" class="form-label">NIDN</label>
                                 <input type="text" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="">
                             </div>
-                            <div class="mb-3">
-                                <label  for="" class="form-label">Departemen</label>
-                                <input type="text" name="departemen" class="form-control" id="exampleInputEmail1" aria-describedby="">
-                            </div>
+                            <div class="input-group">
+                                <label class="input-group-text text-bg-primary"
+                                    for="inputGroupSelect01">Departemen</label>
+                                <select class="form-select" name="departemen" id="inputGroupSelect01">
+                                    <option value="Teknologi Produksi Ternak" selected>Teknologi Produksi Ternak</option>
+                                    <option value="Ilmu Nutrisi dan Teknologi Pakan">Ilmu Nutrisi dan Teknologi Pakan</option>
+                                    <option value="Teknologi Pengolahan Hasil Ternak">Teknologi Pengolahan Hasil Ternak</option>
+                                    <option value="Pembangunan dan Bisnis Peternakan">Pembangunan dan Bisnis Peternakan</option>
+                                </select>
+                            </div> <br>
                             <div class="mb-3">
                                 <label for="" class="form-label">Email</label>
                                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="">

@@ -61,6 +61,27 @@ h6 {
   }
 }
 
+
+body > .goog-te-banner-frame  {
+  display: none !important;
+}
+
+.goog-te-banner-frame
+
+/* body {
+  top: 0px !important;
+} */
+
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
+
+select.goog-te-combo {
+  visibility: visible !important;
+  display: inline-block !important;
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

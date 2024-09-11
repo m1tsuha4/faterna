@@ -7,7 +7,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>PPID</h2>
+              <h2>Pejabat Pengelola Informasi dan Dokumentasi (PPID)</h2>
             </div>
           </div>
         </div>
@@ -21,52 +21,6 @@
         </div>
       </nav>
     </div><!-- End Breadcrumbs -->
-
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div style="margin-top: -50px;" class="row content">
-          <div class="col-lg-6 d-flex justify-content-start">
-            <img width="500" src="{{asset('assets/img/hero-img.png')}}" alt="image">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <div class="section-title ppid d-flex justify-content-start">
-              <h1>Pejabat Pengelola Informasi dan Dokumentasi (PPID)</h1>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-
-    <section id="about" class="about sections-bg ">
-      <div class="container" data-aos="fade-up">
-
-        <div style="margin-top: -50px;" class="row content">
-          <div class="col-lg-4 d-flex justify-content-start">
-            <div class="card">
-              <div class="card-body">
-              <img width="300" src="{{asset('assets/img/pimpinan/dekan.jpg')}}" alt="image">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6  pt-lg-0">
-            <div class="section-title ppid d-flex justify-content-start">
-              <h1>Sambutan Ketua PPID Faterna</h1>
-            </div>
-            <p>
-              Puji dan Syukur kita haturkan Pada Allah SWT atas segala rahmat dan karuniaNya kepada diberikan kepada kita. Sholawat dan salam tercurah kepada Nabi Muhammad SAW atas perjuangan beliau sehingga kita bisa menikmati ilmu pengetahuan hingga saat ini.
-            </p>
-              <br>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, magnam perferendis odit sequi quam cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorum tempore vero iure sint ipsum ea adipisci quas necessitatibus natus!
-              </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
 
     <section  class="profile-ppid about" id="profile-ppid about">
       <div class="container" data-aos="fade-up">
@@ -84,20 +38,169 @@
               <strong><i>Selamat Datang di Layanan Informasi Publik Universitas Andalas (UNAND).</i></strong>
             </p>
             </div>
-          <div style="margin-bottom:20px;" class="col-lg-12 d-flex justify-content-start">
+          <div class="col-lg-12 d-flex justify-content-start">
             <p>
               Sesuai amanat UU No. 14 Tahun 2008 Tentang Keterbukaan Informasi Publik (KIP), UNAND sebagai badan publik memenuhi kebutuhan informasi dengan membuat Layanan Informasi Publik. Pembentukan Pejabat Pengelola Informasi dan Dokumentasi (PPID) Universitas Andalas Pertama Kalinya Tahun 2015 Melalui Surat Keputusan Rektor Universitas Andalas Nomor : 456/XIII/A/UNAND-2015. Layanan Informasi Publik UNAND juga disediakan untuk memudahkan publik mendapatkan informasi tentang UNAND. Publik berhak mengajukan informasi publik yang dikelola oleh UNAND sesuai ketentuan-ketentuan yang berlaku. UNAND melayani seluruh permohonan informasi melalui Layanan Informasi Publik secara online, dan juga secara offline (datang langsung, surat elektronik, telepon, dll).
             </p>
           </div>
-          <div class="col-lg-12 d-flex justify-content-center">
-           <div class="card">
-            <div class="card-body">
-            <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
-            </div>
-           </div>
           </div>
-          </div>
+
+        
     </section>
+
+    <section id="portfolio" class="portfolio d-flex justify-content-center">
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+          <div>
+            <ul class="portfolio-flters">
+              <li data-filter=".filter-visi-misi">Visi & Misi</li>
+              <li data-filter=".filter-tugas-fungsi">Tugas Dan Fungsi</li>
+              <li data-filter=".filter-maklumat">Maklumat</li>
+              <li data-filter=".filter-komitmen">Komitmen PPID</li>
+              <li data-filter=".filter-sop-layanan">Standar Layanan</li>
+            </ul>
+          </div>
+
+          <div class="portfolio-container d-flex justify-content-center">
+            <div class="portfolio-item filter-visi-misi">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Visi</h5>
+                        <p class="card-text">PPID Universitas Andalas Garda Terdepan dalam Pelayanan Prima Keterbukaan Informasi Publik Untuk Mewujudkan Universitas Terkemuka dan Bermartabat.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Misi</h5>
+                        <ol class="card-text">
+                          <li>Berorientasi Informasi dan Visualisasi Berbasis Digitalisasi</li>
+                          <li>Pelayanan yang Profesional, Transparan, dan Akuntabel</li>
+                          <li>Pelayanan Prima terhadap Publik Internal dan Eksternal</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item filter-tugas-fungsi">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">Tugas Pejabat Pengelola Informasi dan Dokumentasi Pelaksana di Lingkungan Universitas Andalas Tahun 2020 – 2023</h6>
+                        <ol class="card-text">
+                          <li>Menyediakan, menyimpan, mendokumentasikan dan mengamankan informasi publik;</li>
+                          <li>Memberikan pelayanan informasi sesuai dengan aturan yang berlaku;</li>
+                          <li>Memberikan pelayanan informasi publik yang cepat, tepat, dan sederhana;</li>
+                          <li>Memberikan prosedur operasional penyebarluasan informasi publik;</li>
+                          <li>Mengklarifikasi informasi dan/atau pengubahannya;</li>
+                          <li>Menetapkan informasi yang dikecualikan yang telah habis jangka waktu pengecualiannya sebagai informasi publik yang dapat diakses; dan</li>
+                          <li>Menetapkan pertimbangan tertulis atas setiap kebijakan yang diambil untuk memenuhi hak setiap orang atas informasi publik.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item filter-maklumat">
+             <div class="row">
+               <!-- Konten untuk filter lain -->
+               <div class="col-lg-12 d-flex justify-content-center">
+                <div class="card">
+                 <div class="card-body">
+                 <center>
+                  <img src="{{asset('assets/img/maklumat-ppid.jpg')}}" alt="">
+                 </center>
+                 </div>
+                </div>
+               </div>
+             </div>
+            </div>
+            <div class="portfolio-item filter-komitmen">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <ol style="color: black" class="card-text">
+                          <li>Menetapkan strategi dan metode pembinaan, pengawasan, evaluasi, dan monitoring atas pelaksanaan kebijakan Informasi Publik yang dilakukan oleh PPID Pelaksana Pejabat Fungsional dan/atau Petugas Pelayanan Informasi.</li>
+                          <li>Melakukan pembinaan, pengawasan, evaluasi, dan monitoring atas pelaksanaan kebijakan Informasi Publik yang dilakukan oleh PPID dan PPID Pelaksana</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item filter-sop-layanan">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Waktu Layanan</h5>
+                        <ul>
+                          <li>Senin - Kamis : 08:00 - 16:00 WIB</li>
+                          <li>Jum'at : 08:00 - 16:30 WIB</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Waktu Istirahat</h5>
+                        <ul>
+                          <li>Senin - Kamis : 12:00 - 13:00 WIB</li>
+                          <li>Jum'at : 12:30 - 13:30 WIB</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Media Sosial</h5>
+                        <ul>
+                          <li>Instagram : @faterna.unand</li>
+                          <li>Facebook : Faterna Unand</li>
+                          <li>Youtube : Faterna UNAND</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Kontak</h5>
+                        <ul>
+                          <li>Telepon : 0751 71464</li>
+                          <li>Email : Faterna Unand</li>
+                          <li>Website : https://faterna.unand.ac.id</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Elemen konten lainnya -->
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Portfolio Section -->
 
     <section  class="profile-ppid about sections-bg" id="profile-ppid about ">
       <div class="container" data-aos="fade-up">
@@ -117,6 +220,93 @@
             </div>
         </div>
     </section>
+
+     <!-- ======= Frequently Asked Questions Section ======= -->
+   <section id="faq" class="faq">
+    <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+        <h2>PPID Faterna UNAND</h2>
+      </div>
+
+      <div style="margin-top: -60px;" class="section-title ppid d-flex justify-content-center">
+        <h1 style="font-weight: 700; color:#87566e"> Layanan Informasi</h1>
+      </div>
+
+      <div style="margin-top: 20px;" class="row gy-4">
+
+        <div class="col-lg-4">
+          <div class="content px-xl-5">
+            <img width="500" src="{{asset('assets/img/why-us.png')}}" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+
+          <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                  <span class="num">1.</span>
+                  Informasi Yang Wajib Disediakan (Berkala)
+                </button>
+              </h3>
+              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                <a href="{{route('info-publik')}}">Selengkapnya</a>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                  <span class="num">2.</span>
+                  Informasi yang Wajib Tersedia Setiap Saat
+                </button>
+              </h3>
+              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  <a href="{{route('info-setiap-saat')}}">Selengkapnya</a>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                  <span class="num">3.</span>
+                  Informasi Serta Merta
+                </button>
+              </h3>
+              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  <a href="{{route('info-sertamerta')}}">Selengkapnya</a>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                  <span class="num">4.</span>
+                  Informasi Dikecualikan
+                </button>
+              </h3>
+              <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                 <a href="{{route('info-dikecualikan')}}">Selengkapnya</a>
+                </div>
+              </div>
+            </div><!-- # Faq item-->
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Frequently Asked Questions Section -->
 
 
     <section  class="profile-ppid faq" id="profile-ppid alur">
@@ -208,93 +398,6 @@
         </div>
     </section>
 
-   <!-- ======= Frequently Asked Questions Section ======= -->
-   <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-          <h2>PPID Faterna UNAND</h2>
-        </div>
-
-        <div style="margin-top: -60px;" class="section-title ppid d-flex justify-content-center">
-          <h1 style="font-weight: 700; color:#87566e"> Layanan Informasi</h1>
-        </div>
-
-        <div style="margin-top: 20px;" class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="content px-xl-5">
-              <img width="500" src="{{asset('assets/img/why-us.png')}}" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-
-            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <span class="num">1.</span>
-                    Informasi Yang Wajib Disediakan (Berkala)
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  <a href="{{route('info-dikecualikan')}}">Selengkapnya</a>
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <span class="num">2.</span>
-                    Informasi yang Wajib Tersedia Setiap Saat
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    <a href="{{route('info-publik')}}">Selengkapnya</a>
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    <span class="num">3.</span>
-                    Informasi Serta Merta
-                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                    <span class="num">4.</span>
-                    Informasi Dikecualikan
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                   <a href="{{route('info-dikecualikan')}}">Selengkapnya</a>
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
 
     <section  class="profile-ppid faq" id="profile-ppid alur">
       <div class="container-fluid" data-aos="fade-up">
@@ -329,3 +432,36 @@
     </section>
 @endsection
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const filterContainer = document.querySelector('.portfolio-isotope');
+  const filterItems = filterContainer.querySelectorAll('.portfolio-flters li');
+
+  // Hilangkan semua filter aktif
+  filterItems.forEach(item => {
+    item.classList.remove('filter-active');
+  });
+
+  // Temukan dan tambahkan kelas filter-active pada filter "S1 Padang"
+  const s1PadangFilter = filterContainer.querySelector('[data-filter=".filter-visi-misi"]');
+  if (s1PadangFilter) {
+    s1PadangFilter.classList.add('filter-active');
+  }
+
+  // Tampilkan item yang sesuai dengan filter "S1 Padang"
+  const isotopeGrid = document.querySelector('.portfolio-container');
+  if (isotopeGrid && s1PadangFilter) {
+    const iso = new Isotope(isotopeGrid, {
+      itemSelector: '.portfolio-item',
+      filter: '.filter-visi-misi'
+    });
+  }
+
+  // Menghapus tab "All"
+  const allFilter = filterContainer.querySelector('[data-filter="*"]');
+  if (allFilter) {
+    allFilter.remove();
+  }
+});
+
+</script>

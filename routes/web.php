@@ -107,6 +107,16 @@ Route::get('/alumni-info', [\App\Http\Controllers\Profile\ProfileController::cla
 Route::get('/zona-integritas', function () {
     return view('about/zona');
 })->name('zona');
+
+// Ini Route Departemen
+
+Route::get('/produksi-ternak', [\App\Http\Controllers\Profile\ProfileController::class,'produksi_ternak'])->name('dep.prod.ternak');
+Route::get('/teknologi-pakan', [\App\Http\Controllers\Profile\ProfileController::class,'teknologi_pakan'])->name('dep.nutrisi.pakan');
+Route::get('/pengelolaan-hasil-ternak', [\App\Http\Controllers\Profile\ProfileController::class,'pengelolaan_hasil_ternak'])->name('dep.pengelolaan.hasil.ternak');
+Route::get('/bisnis-peternakan', [\App\Http\Controllers\Profile\ProfileController::class,'bisnis_peternakan'])->name('dep.bisnis.peternakan');
+
+
+
 // ini route prodi
 Route::get('/sejarah-prodi-pdg', function () {
     return view('prodi/s1-pdg/sejarah-prodi-s1pdg');
@@ -186,7 +196,6 @@ Route::get('/konferensi', [\App\Http\Controllers\Conference\ConferenceController
 Route::get('/berita-duka-cita', [\App\Http\Controllers\Berita\BeritaController::class,'dukaCita'])->name('dukacita');
 
 // ini route akademik
-
 Route::get('/beasiswa-info', [\App\Http\Controllers\Akademik\AkademikController::class,'beasiswa'])->name('infobeasiswa');
 Route::get('/kalender-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'kalender'])->name('kalenderakademik');
 Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'panduan'])->name('pAkademik');
@@ -209,17 +218,21 @@ Route::get('/panduan-dan-sop-ta', function () {
 //ini route PPID
 Route::get('/profile', [\App\Http\Controllers\Ppid\ProfilePPIDController::class,'dokumen'])->name('profile-ppid');
 
-Route::get('/tata-cara-permohonan-informasi', function () {
-    return view('ppid/layananinfo/tata-cara-permohonan');
-})->name('tata-cara-permohonan');
+Route::get('/informasi-setiap-saat', function () {
+    return view('ppid/layananinfo/informasi_setiap_saat');
+})->name('info-setiap-saat');
 
 Route::get('/informasi-publik', function () {
-    return view('ppid/layananinfo/info-publik');
+    return view('ppid/layananinfo/informasi_berkala');
 })->name('info-publik');
 
 Route::get('/informasi-dikecualikan', function () {
     return view('ppid/layananinfo/info-dikecualikan');
 })->name('info-dikecualikan');
+
+Route::get('/informasi-serta-merta', function () {
+    return view('ppid/layananinfo/informasi_serta_merta');
+})->name('info-sertamerta');
 
 //ini route riset
 

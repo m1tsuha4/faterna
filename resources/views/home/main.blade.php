@@ -80,13 +80,13 @@
             <div class="row no-gutters">
                 <div class="col-sm-4">
                     <div class="post-img">
-                        <img width="300" src="{{asset('assets/img/adrizal-dekan.jpg')}}" alt="" class="img-fluid">
+                        <img width="300" src="{{asset('assets/img/pimpinan/dekan.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <div class="card-body">
+                    <div class="card-body text-justify">
                       <h1>Selamat Datang</h1>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe laudantium mollitia ea quod quam possimus deleniti accusantium in quis. Doloremque magni nemo unde ducimus facere fugit, neque tempora quisquam nobis minus eius illo soluta mollitia, voluptatem voluptate adipisci, reprehenderit iusto suscipit nesciunt incidunt nam! Autem expedita dicta minus recusandae!</p>
+                        <p class="card-text ">Selamat datang di website Fakultas Peternakan Universitas Andalas. Kami berkomitmen untuk menjadi institusi unggul dalam pengembangan ilmu peternakan, dengan mencetak lulusan yang inovatif, berintegritas, dan siap berkontribusi di tingkat nasional maupun internasional. Melalui platform ini, kami menyajikan informasi terkait kegiatan akademik, penelitian, dan pengabdian masyarakat, serta membuka kesempatan untuk kerja sama demi mewujudkan sektor peternakan yang berkelanjutan. Terima kasih atas kunjungan Anda, semoga website ini bermanfaat.</p>
                         </div>
                 </div>
             </div>
@@ -139,9 +139,9 @@
         <div class="section-header">
           <h2>Pimpinan</h2>
           <div class="col-sm-12 d-flex justify-content-center">
-        <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+        <div class="col-xl-3 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="{{asset('assets/img/pimpinan/dekan.jpg')}}" class="img-fluid" alt="">
+              <img src="{{asset('assets/img/pimpinan/dekan.png')}}" class="img-fluid" alt="">
               <h4>Dr.Ir. Adrizal, M.Si</h4>
               <span>Dekan</span>
             </div>
@@ -151,15 +151,23 @@
 
         <div class="row gy-3">
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="">
+              <img src="" class="img-fluid" alt="">
+              <h4></h4>
+              <span></span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="{{asset('assets/img/pimpinan/wd1.jpg')}}" class="img-fluid" alt="">
-              <h4>Dr. Rusfidra, S.Pt, MP</h4>
+              <img style="100px" src="{{asset('assets/img/pimpinan/wd3.jpg')}}" class="img-fluid" alt="">
+              <h4>Dr.Ir. Rusmana Wijaya Setia Ningrat, M.Rur.Sc</h4>
               <span>Wakil Dekan I</span>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd2.jpg')}}" class="img-fluid" alt="">
               <h4>Dr.Ir. Firda Arlina, M.Si</h4>
@@ -167,11 +175,11 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="{{asset('assets/img/pimpinan/wd3.jpg')}}" class="img-fluid" alt="">
-              <h4>Dr.Ir. Rusmana Wijaya Setia Ningrat, M.Rur.Sc</h4>
-              <span>Wakil Dekan III</span>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="">
+              <img src="" class="img-fluid" alt="">
+              <h4></h4>
+              <span></span>
             </div>
           </div><!-- End Team Member -->
 

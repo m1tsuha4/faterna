@@ -10,11 +10,29 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    public function dosen(){
-        $dosen = dosen::all();
-
-        return view('about/dosen',compact('dosen'));
+    public function produksi_ternak(){
+        $dosen_produksi_ternak = dosen::where('departemen', 'Teknologi Produksi Ternak')->get();
+       
+        return view('about/dep_produksi_ternak',compact('dosen_produksi_ternak'));
     }
+    public function teknologi_pakan(){
+        $dosen_teknologi_pakan = dosen::where('departemen', 'Ilmu Nutrisi dan Teknologi Pakan')->get();
+      
+        return view('about/dep_nutrisi_pakan',compact('dosen_teknologi_pakan'));
+    }
+    public function pengelolaan_hasil_ternak(){
+        $pengelolaan_hasil_ternak = dosen::where('departemen', 'Teknologi Pengolahan Hasil Ternak')->get();
+      
+        return view('about/dep_pengelolaan_hasil_ternak',compact('pengelolaan_hasil_ternak'));
+    }
+    public function bisnis_peternakan(){
+        $bisnis_peternakan = dosen::where('departemen', 'Pembangunan dan Bisnis Peternakan')->get();
+        
+        return view('about/dep_bisnis_peternakan',compact('bisnis_peternakan'));
+    }
+    
+    
+    
 
     public function alumni(){
         $alumni = alumni::orderBy('updated_at','desc')->get();

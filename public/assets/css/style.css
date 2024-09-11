@@ -1048,8 +1048,10 @@ tr:nth-child(even) {
 }
 
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
+  
 }
+
 
 .portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
@@ -1942,3 +1944,4 @@ tr:nth-child(even) {
     padding-top: 4px;
   }
 }
+

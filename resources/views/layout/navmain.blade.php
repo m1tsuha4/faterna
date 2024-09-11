@@ -33,23 +33,41 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  {{-- <div id="google_translate_element"></div>
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
+
   
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>0751 71464</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>0751 71464</span></i>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://www.youtube.com/@faternaunand342/featured" class="facebook"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.instagram.com/faterna.unand/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <div class="d-flex ms-auto align-items-center">
+        <!-- Social Links -->
+        <div class="social-links d-flex align-items-center">
+          <a href="https://www.youtube.com/@faternaunand342/featured" class="facebook"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/faterna.unand/" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+        <!-- Language Selector -->
+        <div class="language-selector d-flex align-items-center ms-4">
+          <img width="30" src="{{asset('assets/img/ina.png')}}" alt="Indonesian" id="indonesian" class="flag-icon">
+          <img width="30" src="{{asset('assets/img/eng.png')}}" alt="English" id="english" class="flag-icon ms-2">
+        </div>
       </div>
     </div>
-  </section><!-- End Top Bar -->
+  </section>
+  
+  
 
   <header id="header" class="header d-flex align-items-center">
 
@@ -72,7 +90,14 @@
               <li><a href="{{ route('fasilitas') }}">Sarana & Prasarana</a></li>
               <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
               <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
-              <li><a href="{{ route('dosen') }}">Dosen</a></li>
+              <li class="dropdown"><a href="#"><span>Departemen</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                <li><a href="{{ route('dep.prod.ternak') }}">Teknologi Produksi Ternak</a></li>
+                  <li><a href="{{ route('dep.nutrisi.pakan') }}">Ilmu Nutrisi dan Teknologi Pakan</a></li>
+                  <li><a href="{{ route('dep.pengelolaan.hasil.ternak') }}">Teknologi Pengelolaan Hasil Ternak</a></li>
+                  <li><a href="{{ route('dep.bisnis.peternakan') }}">Pembangunan dan Bisnis Peternakan</a></li>
+                </ul>
+              </li>
               {{-- <li><a href="{{ route('tendik') }}">Tendik</a></li> --}}
               <li><a href="{{ route('zona') }}">Zona Integritas</a></li>
             </ul>
@@ -89,7 +114,7 @@
               <li><a href="{{ route('kemahasiswaan') }}"><span>Kemahasiswaan</span></a>
               </li>
               <li class="dropdown"><a href="#"><span>Program Studi</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
+            <ul>
             <li class="dropdown"><a href="{{ route('s1-pdg') }}"><span>S1 Padang</span></a>
                 <!-- <ul>
                   <li><a href="{{ route('sejarah-prodi-pdg') }}">Sejarah</a></li>
@@ -261,6 +286,31 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('assets/js/impact.js')}}"></script>
+
+
+<script>
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'id', includedLanguages: 'id,en'}, 'google_translate_element');
+}
+
+document.getElementById('indonesian').addEventListener('click', function() {
+  var selectField = document.querySelector("#google_translate_element select");
+  selectField.selectedIndex = 0; // Pilih Indonesia
+  selectField.dispatchEvent(new Event('change'));
+});
+
+document.getElementById('english').addEventListener('click', function() {
+  var selectField = document.querySelector("#google_translate_element select");
+  selectField.selectedIndex = 1; // Pilih Inggris
+  selectField.dispatchEvent(new Event('change'));
+});
+
+</script>
+
+ <div id="google_translate_element" style="display:none;"></div>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 
 </body>
 

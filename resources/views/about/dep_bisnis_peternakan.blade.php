@@ -22,12 +22,78 @@
       </nav>
     </div><!-- End Breadcrumbs -->
 
+    <section id="faq" class="faq" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-6">
+            <!-- Table 1 -->
+            <div class="mb-4">
+              <div class="text-center">
+                <h5>Laboratorium Produksi Ternak Unggas 1</h5>
+              </div>
+              <div class="post-content table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nama Dosen</th>
+                      <th>NIDN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Wisuda</td>
+                      <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Column 2 -->
+          <div class="col-md-6">
+            <!-- Table 3 -->
+            <div class="mb-4">
+              <div class="text-center">
+                <h5>Laboratorium Produksi Ternak Unggas 3</h5>
+              </div>
+              <div class="post-content table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nama Dosen</th>
+                      <th>NIDN</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Wisuda</td>
+                      <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-          <div>
+          {{-- <div>
             <ul class="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-S1-Padang">S1 Padang</li>
@@ -35,11 +101,11 @@
               <li data-filter=".filter-S2">S2</li>
               <li data-filter=".filter-S3">S3</li>
             </ul>
-          </div>
+          </div> --}}
 
           <div class="row gy-4 portfolio-container">
-            @foreach($dosen as $d)
-                  <div class="col-xl-6 col-md-6 portfolio-item filter-{{ $d->prodi }}">
+            @foreach($bisnis_peternakan as $d)
+              <div class="col-xl-6 col-md-6 portfolio-item filter-active">
                       <div class="portfolio-wrap">
                           <div class="dosen">
                               <div class="member d-flex align-items-start">

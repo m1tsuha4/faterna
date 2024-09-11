@@ -48,25 +48,6 @@
                     <td width="20%" ><a href="{{ asset('storage/alumni/' . $a->file) }}" target="_blank">Download</a></td>
                 </tr>
             @endforeach
-
-{{--            <tr>--}}
-{{--              <td width="5%" >2</td>--}}
-{{--              <td width="20%" >Wisuda 1</td>--}}
-{{--              <td width="10%" >2020</td>--}}
-{{--              <td width="20%" ><a href="#">Download</a></td>--}}
-{{--            </tr>--}}
-{{--            <tr>--}}
-{{--              <td width="5%" >2</td>--}}
-{{--              <td width="20%" >Wisuda 1</td>--}}
-{{--              <td width="10%" >2021</td>--}}
-{{--              <td width="20%" ><a href="#">Download</a></td>--}}
-{{--            </tr>--}}
-{{--            <tr>--}}
-{{--              <td width="5%" >3</td>--}}
-{{--              <td width="20%" >Wisuda 1</td>--}}
-{{--              <td width="10%" >2022</td>--}}
-{{--              <td width="20%" ><a href="#">Download</a></td>--}}
-{{--            </tr>--}}
         </tbody>
       </table>
     </div>
