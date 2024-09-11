@@ -44,84 +44,75 @@
                   <tr>
                     <td>1</td>
                     <td>drh. Yuherman., MS., Ph.D</td>
-                    <td></td>
+                    <td>0024115902</td>
                   </tr>
                   <tr>
                   <tr>
                     <td>2</td>
-                    <td></td>
-                    <td></td>
+                    <td>Dr. Indri Juliyarsi., S.P., MP</td>
+                    <td>0015077606</td>
                   </tr>
                   <tr>
                   <tr>
                     <td>3</td>
-                    <td></td>
-                    <td></td>
+                    <td>Dr. Sri Melia., S.TP., MP</td>
+                    <td>0004067502</td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td></td>
-                    <td></td>
+                    <td>Deni Novia., ST.P., MP</td>
+                    <td>0030117703</td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td></td>
-                    <td></td>
+                    <td>Afriani Sandra., S.Pt., M.Sc</td>
+                    <td>0010048204</td>
                   </tr>
                   <tr>
                     <td>6</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ely Vebriyanti., S.Pt., MP</td>
+                    <td>0011027906</td>
                   </tr>
                   <tr>
                     <td>7</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ade Rakhmadi., S.Pt., MP</td>
+                    <td>0004058003</td>
                   </tr>
                   <tr>
                     <td>8</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ade Sukma., S.Pt., MP, Ph.D</td>
+                    <td>0017078502</td>
                   </tr>
                   <tr>
                     <td>9</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ferawati., S.Pt., M.Si</td>
+                    <td>0014118302</td>
                   </tr>
                   <tr>
                     <td>10</td>
-                    <td></td>
-                    <td></td>
+                    <td>El Latifa Sri Suharto., S.Pt., M.Si</td>
+                    <td>0021019004</td>
                   </tr>
                   <tr>
                     <td>11</td>
-                    <td></td>
-                    <td></td>
+                    <td>Yudi Rahmadian., S.Pt., M.Sc</td>
+                    <td>0008119205</td>
                   </tr>
-                  <tr>
-                    <td>10</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>11</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
+                    
                   <tr>
                     <td>12</td>
-                    <td></td>
-                    <td></td>
+                    <td>Aronal Arief Putra., S.Pt., M.Sc, Ph.D</td>
+                    <td>0023088301</td>
                   </tr>
                   <tr>
                     <td>13</td>
-                    <td></td>
-                    <td></td>
+                    <td>Rizki Dwi Setiawan., S.TP., M.Si</td>
+                    <td>0028049006</td>
                   </tr>
                   <tr>
                     <td>14</td>
-                    <td></td>
-                    <td></td>
+                    <td>Yulianti Fitri Kurnia., S.PT., M.Si</td>
+                    <td>8829330017</td>
                   </tr>
                   <!-- Add more rows as needed -->
                 </tbody>

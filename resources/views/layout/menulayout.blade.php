@@ -269,6 +269,11 @@ document.getElementById('english').addEventListener('click', function() {
 
 </script>
 
+ <div id="google_translate_element" style="display:none;"></div>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   var hero = document.getElementById('hero');

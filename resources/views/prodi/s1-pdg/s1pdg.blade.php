@@ -32,14 +32,13 @@
             <div class="section-title ppid d-flex justify-content-start">
               <h1>Program Studi Sarjana S1 Peternakan</h1>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, magnam perferendis odit sequi quam cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorum tempore vero iure sint ipsum ea adipisci quas necessitatibus natus!
+            <p style="text-align: justify">
+              Fakultas Peternakan Unand memiliki satu Program Studi S-1 yaitu Program Studi Peternakan dengan dua tempat yaitu kampus padang dan Kampus payakumbuh. Program Pendidikan dirancang menyesuaikan dengan kurikulum Outcome-based education (OBE) menggunakan metode pembelajaran yang berpusat pada mahasiswa (student center learning) dengan menyediakan kesempatan untuk implementasi Program Merdeka Belajar-Kampus Merdeka (MB-KM). Disamping itu, secara berkelanjutan pembelajaran yang berbasis pada hasil-hasil penelitian yang mutakhir terus ditingkatkan, dengan harapan lulusan menguasai dasar-dasar ilmiah dan pengetahuan serta teknologi, sehingga dapat bersikap kreatif, adaptif, mandiri, mempunyai jiwa kewirausahaan dan menguasai teknologi selaras dengan era 4.0 untuk dapat berperan sebagai pemberi solusi (problem solver). Setelah menyelesaikan Pendidikan di Fakultas Peternakan dan memenuhi semua persyaratan maka diberikan gelar kesarjanaan yaitu Sarjana Peternakan (S.Pt).
               </p>
           </div>
         </div>
-
       </div>
-    </section>
+</section>
     <section id="hero" class="hero">
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
@@ -96,9 +95,12 @@
               <h1>Informasi Penerimaan Mahasiswa Baru</h1>
             </div>
             <p>
-            Terdiri dari berbagai jenjang pendidikan, Fakultas Peternakan Universitas Andalas memiliki berbagai jalur masuk yang bervariasi, berikut informasi terkait penerimaan mahasiswa baru di lingkungan Fakultas Peternakan Universitas Andalas :
+              Penerimaan mahasiswa dilakukan sekali dalam setahun yang dilakukan pada setiap awal tahun akademik. Penerimaan calon mahasiswa baru sejak tahun akademik 2020/2021 dilakukan melalui tiga jalur, yaitu jalur undangan yang diseleksi melalui SNMPTN (Seleksi Nasional Masuk Perguruan Tinggi Negeri), Ujian Tulis Berbasis Komputer (UTBK) yang diseleksi melalui SBMPTN (Seleksi Bersama Masuk Perguruan Tinggi Negeri) dan Seleksi Mandiri. Mahasiswa yang diterima dari ketiga jalur seleksi penerimaan jika secara  finansial dinilai tidak mampu maka memiliki kesempatan mendaftar untuk mendapatkan beasiswa Bidikmisi
+            </p>
+            <br>
 
-</p>
+            <p>Kurikulum dan Sinopsis Program dapat di akses disini</p>
+            <button class="btn btn-primary"><a href="{{ asset('doc/Silabus dan Sinopsis S1.pdf') }}">Download</a></button>
           </div>
         </div>
 
