@@ -30,9 +30,7 @@
 
     <div class="row content">
       <div class="col-lg-12 d-flex justify-content-start">
-        <p>
-          <strong><i>Selamat Datang di Layanan Informasi Publik Universitas Andalas (UNAND).</i></strong>
-        </p>
+        
         </div>
       <div class="col-lg-12 d-flex justify-content-start">
         <p>
