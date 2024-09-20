@@ -324,28 +324,37 @@
           <div class="faq-list mb-10">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-             <h5>Formulir Permohonan Informasi Publik</h5>
+              <a style="color: white; font-weight:400; font-size:24px" href="https://forms.gle/WEie8wmF5abCCSnG6">Formulir Permohonan Informasi Publik</a>
             </li>
             <li data-aos="fade-up" data-aos-delay="200">
-              <h5>Tata Cara Permohonan Informasi</h5>
+              <a style="color: white; font-weight:400; font-size:24px" href="https://forms.gle/5yc7tXzK92nEf4SG9">Formulir Pengajuan Keberatan</a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="300">
-              <h5>Kompetensi Pelaksanaan/Petugas Layanan</h5>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/tata-cara-permohonan-informasi/">Tata Cara Permohonan Informasi</a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="400">
-              <h5>Hasil Survei Indeks Kepuasan</h5>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/kompetensi-pelaksanaan-petugas-layanan/">Kompetensi Pelaksanaan Petugas dan Layanan</a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="500">
-              <h5>Laporan Layanan Informasi</h5>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/hasil-survei-indeks-kepuasan/">Hasil Survei Indeks Kepuasan</a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="600">
-              <h5>Tata Cara Pengajuan Keberatan</h5>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/laporan-layanan-informasi/">Laporan Layana Informasi</a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="700">
-              <h5>Tata Cara Penyelesaian Sengketa Informasi</h5>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/tata-cara-pengajuan-keberatan/">Tata Cara Pengajuan Keberatan</a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="700">
-              <h5>FAQs</h5>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/tata-cara-penyelesaian-sengketa-informasi/">Tata Cara Penyelesaian Sengketa Informasi</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://forms.gle/UZtyKA5QnpWYnPR36">Kritik,Saran, Masuk dan Pengaduan</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/tata-cara-pengaduan-penyalahgunaan-wewenang/">Tata Cara Penyelesaian Sengketa Informasi</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/faqs/">FAQs</a>
             </li>
           </ul>
         </div>
@@ -414,16 +423,16 @@
           <div class="faq-list mb-10">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-             <h5>Regulasi</h5>
+              <a style="color: white; font-weight:400; font-size:24px" href="">Regulasi</a>
             </li>
             <li data-aos="fade-up" data-aos-delay="200">
-              <h5>Peraturan Majelis Wali Amanat (MWA)</h5>
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/peraturan-majelis-wali-amanat-mwa/">Peraturan Majelis Wali Amanat (MWA)</a>
             </li>
             <li data-aos="fade-up" data-aos-delay="300">
-              <h5>Peraturan Rektor</h5>
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/peraturan-rektor/">Peraturan Rektor</a>
             </li>
             <li data-aos="fade-up" data-aos-delay="400">
-              <h5>Surat Edaran</h5>
+              <a style="color: white; font-weight:400; font-size:24px" href="https://ppid.unand.ac.id/surat-edaran/">Surat Edaran</a>
             </li>
           </ul>
         </div>
@@ -465,3 +474,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 </script>
+
+

@@ -34,7 +34,7 @@
             <article class="blog-details">
 
               <div class="post-img d-flex justify-content-center">
-                <img src="{{ asset('storage/berita/'. $berita->file)}}" alt="" class="img-fluid">
+                <img width="800" src="{{ asset('storage/berita/'. $berita->file)}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="title">{{ $berita->judul }}</h2>
@@ -47,11 +47,10 @@
               </div><!-- End meta top -->
 
               <div class="content">
-                <p>
-                    {{ $berita->deskripsi }}
-                </p>
-
-              </div><!-- End post content -->
+                <div class="description-text">
+                    {!! nl2br(e($berita->deskripsi)) !!}
+                </div>
+            </div><!-- End post content -->
             </article><!-- End blog post -->
           </div>
 

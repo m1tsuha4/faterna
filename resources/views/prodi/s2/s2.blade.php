@@ -33,8 +33,8 @@
               <h1>Program Studi Magister S2 Ilmu Peternakan </h1>
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, magnam perferendis odit sequi quam cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorum tempore vero iure sint ipsum ea adipisci quas necessitatibus natus!
-              </p>
+              Program Studi S2 Ilmu Peternakan Universitas Andalas merupakan institusi pendidikan yang menyelenggarakan pendidikan dan pembelajaran terhadap mahasiswa strata 2 (S2).  Keberadaan program Magister Peternakan dirasa penting dalam pembangunan peternakan di Indonesia.  Peternakan sangat erat hubungan dengan ketahanan pangan terutama kebutuhan akan daging, telur, susu sebagai sumber protein hewani. Disamping itu bidang peternakan berkaitan juga sumber daya manusia dalam mencerdaskan masyarakat Indonesia. Program Magister Ilmu Peternakan Fakultas Peternakan Universitas Andalas sangat strategis, karena berada  pada Fakultas Peternakan yang tertua di luar pulau Jawa yang mempunyai sumber daya alam dan sumber daya manusia yang cukup
+            </p>
           </div>
         </div>
 
@@ -96,9 +96,12 @@
               <h1>Informasi Penerimaan Mahasiswa Baru</h1>
             </div>
             <p>
-            Terdiri dari berbagai jenjang pendidikan, Fakultas Peternakan Universitas Andalas memiliki berbagai jalur masuk yang bervariasi, berikut informasi terkait penerimaan mahasiswa baru di lingkungan Fakultas Peternakan Universitas Andalas :
+              Penerimaan mahasiswa dilakukan sekali dalam setahun yang dilakukan pada setiap awal tahun akademik. Penerimaan calon mahasiswa baru sejak tahun akademik 2020/2021 dilakukan melalui tiga jalur, yaitu jalur undangan yang diseleksi melalui SNMPTN (Seleksi Nasional Masuk Perguruan Tinggi Negeri), Ujian Tulis Berbasis Komputer (UTBK) yang diseleksi melalui SBMPTN (Seleksi Bersama Masuk Perguruan Tinggi Negeri) dan Seleksi Mandiri. Mahasiswa yang diterima dari ketiga jalur seleksi penerimaan jika secara  finansial dinilai tidak mampu maka memiliki kesempatan mendaftar untuk mendapatkan beasiswa Bidikmisi
+            </p>
+            <br>
 
-</p>
+            <p>Kurikulum dan Sinopsis Program dapat di akses disini</p>
+            <button class="btn btn-primary"><a href="{{ asset('doc/Matkul dan Sinopsis S2.pdf') }}">Download</a></button>
           </div>
         </div>
 

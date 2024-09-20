@@ -142,7 +142,7 @@
         <div class="col-xl-3 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/dekan.png')}}" class="img-fluid" alt="">
-              <h4>Dr.Ir. Adrizal, M.Si</h4>
+              <h4>Prof. Dr. Ir. Mardiati Zain </h4>
               <span>Dekan</span>
             </div>
           </div><!-- End Team Member -->
