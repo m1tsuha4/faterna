@@ -76,7 +76,9 @@ Route::get('/pimpinan', function () {
     return view('about/pimpinan');
 })->name('pimpinan');
 
-Route::get('/dosen', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
+Route::get('/dosen', function () {
+    return view('about/dosen');
+})->name('dosen');
 
 Route::get('/tendik', function () {
     return view('about/tendik');
@@ -116,6 +118,9 @@ Route::get('/pengelolaan-hasil-ternak', [\App\Http\Controllers\Profile\ProfileCo
 Route::get('/bisnis-peternakan', [\App\Http\Controllers\Profile\ProfileController::class,'bisnis_peternakan'])->name('dep.bisnis.peternakan');
 
 
+Route::get('/layanan-digital', function () {
+    return view('home/layanandigital');
+})->name('layanandigital');
 
 // ini route prodi
 Route::get('/sejarah-prodi-pdg', function () {

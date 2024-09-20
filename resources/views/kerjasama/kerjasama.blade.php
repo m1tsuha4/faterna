@@ -33,9 +33,7 @@
         <div class="section-title d-flex justify-content-start" style="margin-top:-80px ">
           <h1>Kerja Sama</h1>
         </div>
-        <p style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dolor sed necessitatibus quibusdam laborum, alias nobis accusantium odio adipisci?
-          Tempore dolor dignissimos aspernatur vitae non ratione accusamus labore quia, eum sunt.</p>
+        <p style="text-align: justify">Fakultas Peternakan Universitas Andalas (FATERNA UNAND) menjalin berbagai kerja sama dengan institusi nasional maupun internasional. Tujuan dari kerja sama ini adalah untuk meningkatkan kualitas pendidikan, penelitian, serta pengabdian kepada masyarakat di bidang peternakan. Dengan adanya kolaborasi ini, FATERNA UNAND berkomitmen untuk terus berinovasi dan memberikan kontribusi nyata dalam pengembangan ilmu peternakan yang berkelanjutan. Program kerja sama mencakup pertukaran mahasiswa dan dosen, penelitian bersama, serta pelatihan dan pengembangan kapasitas di sektor peternakan.</p>
       </div>
     </div>
   </div>
