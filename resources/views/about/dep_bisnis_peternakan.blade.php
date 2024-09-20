@@ -250,36 +250,17 @@
                       <div class="portfolio-wrap">
                           <div class="dosen">
                               <div class="member d-flex align-items-start">
-                                  <div class="pic"><img src="{{ asset('storage/dosen/'.$d->file) }}" class="img-fluid" alt=""></div>
+                                  <div class="pic"><img width="200" src="{{ asset('storage/dosen/'.$d->file) }}" class="img-fluid" alt=""></div>
                                   <div class="member-info">
                                       <h4>{{ $d->nama }}</h4>
                                       <span>
                                           <p class="card-text"><strong>NIDN:</strong> {{ $d->nidn }}</p>
-                                          <p class="card-text" style="text-align: justify;"><strong>Deskripsi Diri : </strong>Dosen Fakultas Peternakan Unand dengan bidang keahlian Ilmu Nutrisi Ternak Unggas dengan fokus 
-                                            kajian penelitian pada pemanfaatan dan pengolahan rumput laut coklat sebagai bahan pakan ternak unggas. Selain menjadi dosen juga aktif pada 
-                                            kegiatan olahraga baik dalam kampus maupun diluar kampus, yang berfokus pada pembinaan olahraga dibidang sepakbola, futsal dan street soccer 
-                                            pada mahasiswa, pelajar dan umum</p>
                                           <p class="card-text"><strong>Depertement:</strong> {{ $d->departemen }}</p>
                                           <p class="card-text"><strong>Jabatan:</strong> {{ $d->jabatan_akademik }}</p>
                                           <p class="card-text"><strong>S1:</strong> {{ $d->edukasi_s1 }}</p>
                                           <p class="card-text"><strong>S2:</strong> {{ $d->edukasi_s2 }}</p>
                                           <p class="card-text"><strong>S3:</strong> {{ $d->edukasi_s3 }}</p>
                                           <p class="card-text"><strong>Email:</strong> {{ $d->email }}</p>
-                                          <p class="card-text"><strong>Mata Kuliah : </strong>
-                                            1.
-                                            2.
-                                            3.
-                                          </p>
-                                          <p class="card-text"><strong>Bidang Keahlian : </strong>
-                                            1.
-                                            2.
-                                            3.
-                                          </p>
-                                          <p class="card-text"><strong>Riset Internal : </strong>
-                                            1.
-                                            2.
-                                            3.
-                                          </p>
                                       </span>
                                       <br>
                                       <div class="row">
