@@ -7,7 +7,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Dosen Faterna</h2>
+              <h2>Departemen Teknologi Produksi Ternak</h2>
             </div>
           </div>
         </div>
@@ -16,7 +16,7 @@
         <div class="container">
           <ol>
             <li><a href="{{ route('home') }}">Home</a></li>
-            <li>Dosen</li>
+            <li>Departemen Teknologi Produksi Ternak</li>
           </ol>
         </div>
       </nav>
@@ -359,6 +359,7 @@
 
           <div class="row gy-4 portfolio-container">
             @foreach($dosen_produksi_ternak as $d)
+            <a href="{{ route('dosen') }}">
                   <div class="col-xl-6 col-md-6 portfolio-item filter-active">
                       <div class="portfolio-wrap">
                           <div class="dosen">
@@ -367,18 +368,37 @@
                                   <div class="member-info">
                                       <h4>{{ $d->nama }}</h4>
                                       <span>
-                            <p class="card-text"><strong>NIDN:</strong> {{ $d->nidn }}</p>
-                            <p class="card-text"><strong>Depertement:</strong> {{ $d->departemen }}</p>
-                            <p class="card-text"><strong>Jabatan:</strong> {{ $d->jabatan_akademik }}</p>
-                            <p class="card-text"><strong>S1:</strong> {{ $d->edukasi_s1 }}</p>
-                            <p class="card-text"><strong>S2:</strong> {{ $d->edukasi_s2 }}</p>
-                            <p class="card-text"><strong>S3:</strong> {{ $d->edukasi_s3 }}</p>
-                            <p class="card-text"><strong>Email:</strong> {{ $d->email }}</p>
-                        </span>
+                                          <p class="card-text"><strong>NIDN:</strong> {{ $d->nidn }}</p>
+                                          <p class="card-text" style="text-align: justify;"><strong>Deskripsi Diri : </strong>Dosen Fakultas Peternakan Unand dengan bidang keahlian Ilmu Nutrisi Ternak Unggas dengan fokus 
+                                            kajian penelitian pada pemanfaatan dan pengolahan rumput laut coklat sebagai bahan pakan ternak unggas. Selain menjadi dosen juga aktif pada 
+                                            kegiatan olahraga baik dalam kampus maupun diluar kampus, yang berfokus pada pembinaan olahraga dibidang sepakbola, futsal dan street soccer 
+                                            pada mahasiswa, pelajar dan umum</p>
+                                          <p class="card-text"><strong>Depertement:</strong> {{ $d->departemen }}</p>
+                                          <p class="card-text"><strong>Jabatan:</strong> {{ $d->jabatan_akademik }}</p>
+                                          <p class="card-text"><strong>S1:</strong> {{ $d->edukasi_s1 }}</p>
+                                          <p class="card-text"><strong>S2:</strong> {{ $d->edukasi_s2 }}</p>
+                                          <p class="card-text"><strong>S3:</strong> {{ $d->edukasi_s3 }}</p>
+                                          <p class="card-text"><strong>Email:</strong> {{ $d->email }}</p>
+                                          <p class="card-text"><strong>Mata Kuliah : </strong>
+                                            1.
+                                            2.
+                                            3.
+                                          </p>
+                                          <p class="card-text"><strong>Bidang Keahlian : </strong>
+                                            1.
+                                            2.
+                                            3.
+                                          </p>
+                                          <p class="card-text"><strong>Riset Internal : </strong>
+                                            1.
+                                            2.
+                                            3.
+                                          </p>
+                                      </span>
                                       <br>
                                       <div class="row">
                                           <div class="col-md-4">
-                                              <a href="{{ $d->link_sinta }}"> <img width="70" src="{{ asset('assets/img/inta.png') }}" alt=""></a>
+                                              <a href="{{ $d->link_sinta }}"> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
                                           </div>
                                           <div class="col-md-4">
                                               <a href="{{ $d->link_scopus }}"><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
@@ -392,6 +412,7 @@
                           </div>
                       </div>
                   </div><!-- End Portfolio Item -->
+                </a>
             @endforeach
 
 
