@@ -74,28 +74,28 @@
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="icon-box">
-                <div class="icon"><img src="{{asset('assets/img/img.jpg')}}" alt="" width="100%"></div>
+                <div class="icon"><img src="{{asset('assets/img/TekProduksiTernak.PNG')}}" alt="" width="100%"></div>
                 <h4 class="title"><a href="{{route('dep.prod.ternak')}}" class="stretched-link">Teknologi Produksi Ternak</a></h4>
               </div>
             </div><!--End Icon Box -->
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="icon-box">
-                <div class="icon"><img src="{{asset('assets/img/img.jpg')}}" alt="" width="100%"></div>
+                <div class="icon"><img src="{{asset('assets/img/NutrisiMakananTernak.PNG')}}" alt="" width="100%"></div>
                 <h4 class="title"><a href="{{route('dep.nutrisi.pakan')}}" class="stretched-link">Ilmu Nutrisi dan Teknologi Pakan</a></h4>
               </div>
             </div><!--End Icon Box -->
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div class="icon-box">
-                <div class="icon"><img src="{{asset('assets/img/img.jpg')}}" alt="" width="100%"></div>
+                <div class="icon"><img src="{{asset('assets/img/HasilTernak.PNG')}}" alt="" width="100%"></div>
                 <h4 class="title"><a href="{{route('dep.pengelolaan.hasil.ternak')}}" class="stretched-link">Teknologi Pengelolaan Hasil Ternak</a></h4>
               </div>
             </div><!--End Icon Box -->
   
             <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
               <div class="icon-box">
-                <div class="icon"><img src="{{asset('assets/img/img.jpg')}}" alt="" width="100%"></div>
+                <div class="icon"><img src="{{asset('assets/img/PembangunandanBisnis.PNG')}}" alt="" width="100%"></div>
                 <h4 class="title"><a href="{{route('dep.bisnis.peternakan')}}" class="stretched-link">Pembangunan dan Bisnis Peternakan </a></h4>
               </div>
             </div><!--End Icon Box -->
