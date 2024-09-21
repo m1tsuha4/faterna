@@ -35,6 +35,10 @@
                                 <label  for="" class="form-label">NIDN</label>
                                 <input type="text" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="">
                             </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Deskripsi Diri</label>
+                                <textarea class="form-control" id="deskripsi" name="profile" rows="5"></textarea>
+                            </div>
                             <div class="input-group">
                                 <label class="input-group-text text-bg-primary"
                                     for="inputGroupSelect01">Departemen</label>
@@ -86,15 +90,27 @@
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Link Sinta</label>
-                                <textarea class="form-control" id="deskripsi" name="publikasi" rows="1"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="link_sinta" rows="1"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Link Scopus</label>
-                                <textarea class="form-control" id="deskripsi" name="penelitian" rows="1"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="link_scopus" rows="1"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Link Google Scholar</label>
-                                <textarea class="form-control" id="deskripsi" name="scholar" rows="1"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="link_scholar" rows="1"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Mata Kuliah yang Diampu</label>
+                                <textarea class="form-control" id="deskripsi" name="mata_kuliah" rows="5"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Bidang Keahlian</label>
+                                <textarea class="form-control" id="deskripsi" name="bidang_keahlian" rows="5"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Riset Interest</label>
+                                <textarea class="form-control" id="deskripsi" name="riset_interest" rows="5"></textarea>
                             </div>
                                 <button type="submit" class="btn btn-primary">Tambah</button>
                             </form>

@@ -32,12 +32,23 @@ class DosenController extends Controller
                 'departemen' => 'required',
                 'email' => 'required',
                 'jabatan_akademik' => 'required',
+                'edukasi_s1' => 'sometimes',
+                'edukasi_s2' => 'sometimes',
+                'edukasi_s3' => 'sometimes',
+                'link_sinta' => 'sometimes',
+                'link_scopus' => 'sometimes',
+                'link_scholar' => 'sometimes',
                 'file' => 'required|file',
+                'profile' => 'sometimes',
+                'mata_kuliah' => 'sometimes',
+                'bidang_keahlian' => 'sometimes',
+                'riset_interest' => 'sometimes',
             ]);
 
             $dosen = new dosen();
             $dosen->nama = $request->nama;
             $dosen->nidn = $request->nidn;
+            $dosen->profile = $request->profile;
             $dosen->departemen = $request->departemen;
             $dosen->email = $request->email;
             $dosen->prodi = $request->prodi;
@@ -45,9 +56,12 @@ class DosenController extends Controller
             $dosen->edukasi_s1 = $request->edukasi_s1;
             $dosen->edukasi_s2 = $request->edukasi_s2;
             $dosen->edukasi_s3 = $request->edukasi_s3;
-            $dosen->link_sinta = $request->publikasi;
-            $dosen->link_scopus = $request->penelitian;
-            $dosen->link_scholar = $request->scholar;
+            $dosen->link_sinta = $request->link_sinta;
+            $dosen->link_scopus = $request->link_scopus;
+            $dosen->link_scholar = $request->link_scholar;
+            $dosen->mata_kuliah = $request->mata_kuliah;
+            $dosen->bidang_keahlian = $request->bidang_keahlian;
+            $dosen->riset_interest = $request->riset_interest;
 
 
             if ($request->hasFile('file')) {
@@ -115,15 +129,20 @@ class DosenController extends Controller
 
             $dosen->nama = $request->nama;
             $dosen->nidn = $request->nidn;
+            $dosen->profile = $request->profile;
             $dosen->departemen = $request->departemen;
             $dosen->email = $request->email;
+            $dosen->prodi = $request->prodi;
             $dosen->jabatan_akademik = $request->jabatan_akademik;
             $dosen->edukasi_s1 = $request->edukasi_s1;
             $dosen->edukasi_s2 = $request->edukasi_s2;
             $dosen->edukasi_s3 = $request->edukasi_s3;
-            $dosen->link_sinta = $request->publikasi;
-            $dosen->link_scopus = $request->penelitian;
-            $dosen->link_scholar = $request->scholar;
+            $dosen->link_sinta = $request->link_sinta;
+            $dosen->link_scopus = $request->link_scopus;
+            $dosen->link_scholar = $request->link_scholar;
+            $dosen->mata_kuliah = $request->mata_kuliah;
+            $dosen->bidang_keahlian = $request->bidang_keahlian;
+            $dosen->riset_interest = $request->riset_interest;
 
 
             if ($request->hasFile('file')) {

@@ -27,7 +27,11 @@ class CreateDosensTable extends Migration
             $table->string('link_sinta')->nullable();
             $table->string('link_scopus')->nullable();
             $table->string('link_scholar')->nullable();
-            $table->string('file');
+            $table->string('file')->nullable();
+            $table->text('profile')->nullable();
+            $table->text('mata_kuliah')->nullable();
+            $table->text('bidang_keahlian')->nullable();
+            $table->text('riset_interest')->nullable();
             $table->string('author')->default('Admin');
             $table->timestamps();
         });
