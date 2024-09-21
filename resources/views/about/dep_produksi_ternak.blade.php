@@ -359,7 +359,7 @@
 
           <div class="row gy-4 portfolio-container">
             @foreach($dosen_produksi_ternak as $d)
-            <a href="{{ route('dosen') }}">
+            <a href="/dosen/{{ $d->id }}">
                   <div class="col-xl-6 col-md-6 portfolio-item filter-active">
                       <div class="portfolio-wrap">
                           <div class="dosen">

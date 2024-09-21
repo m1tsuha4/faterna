@@ -45,4 +45,10 @@ class ProfileController extends Controller
 
         return view('about/fasilitas',compact('allSarana'));
     }
+
+    public function dosen($dosen){
+        $dosen = Dosen::where('id',$dosen)->first();
+
+        return view('about/dosen',compact('dosen'));
+    }
 }

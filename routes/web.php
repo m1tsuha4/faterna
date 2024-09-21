@@ -76,9 +76,10 @@ Route::get('/pimpinan', function () {
     return view('about/pimpinan');
 })->name('pimpinan');
 
-Route::get('/dosen', function () {
-    return view('about/dosen');
-})->name('dosen');
+// Route::get('/dosen', function () {
+//     return view('about/dosen');
+// })->name('dosen');
+Route::get('/dosen/{dosen}', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
 
 Route::get('/tendik', function () {
     return view('about/tendik');

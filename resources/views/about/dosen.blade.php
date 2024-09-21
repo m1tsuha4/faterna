@@ -29,47 +29,38 @@
             <div class="portfolio-wrap">
               <div class="dosen1">
                 <div class="member d-flex align-items-center">
-                  <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                  <div class="pic"><img src="{{ asset('storage/dosen/'.$dosen->file) }}" class="img-fluid" alt=""></div>
                   <div class="member-info">
-                    <h4>Elandra Maulana</h4>
+                    <h4>{{ $dosen->nama }}</h4>
                     <span>
-                      <p class="card-text"><strong>NIDN : </strong> Teknik Komputer</p>
-                      <p class="card-text" style="text-align: justify;"><strong>Deskripsi Diri : </strong>Dosen Fakultas Peternakan Unand dengan bidang keahlian Ilmu Nutrisi Ternak Unggas dengan fokus 
-                        kajian penelitian pada pemanfaatan dan pengolahan rumput laut coklat sebagai bahan pakan ternak unggas. Selain menjadi dosen juga aktif pada 
-                        kegiatan olahraga baik dalam kampus maupun diluar kampus, yang berfokus pada pembinaan olahraga dibidang sepakbola, futsal dan street soccer 
-                        pada mahasiswa, pelajar dan umum</p>
-                      <p class="card-text"><strong>Depertement : </strong> Teknik Komputer</p>
-                      <p class="card-text"><strong>Jabatan : </strong> Lektor</p>
-                      <p class="card-text"><strong>Email : </strong> elandramaulana81@gmail.com</p>
-                      <p class="card-text"><strong>Edukasi S1 : </strong></p>
-                      <p class="card-text"><strong>Edukasi S2 : </strong></p>
-                      <p class="card-text"><strong>Edukasi S3 : </strong></p>
-                      <p class="card-text"><strong>Mata Kuliah : </strong>
-                        1.
-                        2.
-                        3.
+                      <p class="card-text"><strong>NIDN : </strong> {{ $dosen->nidn }}</p>
+                      <p class="card-text" style="text-align: justify;"><strong>Deskripsi Diri : </strong> {{ $dosen->profile }}</p>
+                      <p class="card-text"><strong>Depertement : </strong> {{ $dosen->departmen }}</p>
+                      <p class="card-text"><strong>Jabatan : </strong> {{ $dosen->jabatan_akademik }}</p>
+                      <p class="card-text"><strong>Email : </strong> {{ $dosen->email }}</p>
+                      <p class="card-text"><strong>Edukasi S1 : {{ $dosen->edukasi_s1 }}</strong></p>
+                      <p class="card-text"><strong>Edukasi S2 : {{ $dosen->edukasi_s2 }}</strong></p>
+                      <p class="card-text"><strong>Edukasi S3 : {{ $dosen->edukasi_s3 }}</strong></p>
+                      <p class="card-text"><strong>Mata Kuliah : </strong> <br>
+                        {!! nl2br(e($dosen->mata_kuliah)) !!}
+                      </p>                    
+                      <p class="card-text"><strong>Bidang Keahlian : </strong> <br>
+                        {!! nl2br(e($dosen->bidang_keahlian)) !!}
                       </p>
-                      <p class="card-text"><strong>Bidang Keahlian : </strong>
-                        1.
-                        2.
-                        3.
-                      </p>
-                      <p class="card-text"><strong>Riset Internal : </strong>
-                        1.
-                        2.
-                        3.
+                      <p class="card-text"><strong>Riset Internal : </strong> <br>
+                        {!! nl2br(e($dosen->riset_interest)) !!}
                       </p>
                     </span>
                     <br>
                     <div class="row">
                       <div class="col-md-4">
-                        <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
+                        <a href="{{ $dosen->link_sinta }}"> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
                       </div>
                       <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
+                        <a href="{{ $dosen->link_scopus }}"><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
                       </div>
                       <div class="col-md-4">
-                        <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
+                        <a href="{{ $dosen->link_scholar }}"><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
                       </div>
                     </div>
                   </div>
