@@ -7,7 +7,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Dosen Faterna</h2>
+              <h2>Departemen Teknologi Pengelolaan Hasil Ternak</h2>
             </div>
           </div>
         </div>
@@ -16,7 +16,7 @@
         <div class="container">
           <ol>
             <li><a href="{{ route('home') }}">Home</a></li>
-            <li>Dosen</li>
+            <li>Departemen Teknologi Pengelolaan Hasil Ternak</li>
           </ol>
         </div>
       </nav>
@@ -44,84 +44,75 @@
                   <tr>
                     <td>1</td>
                     <td>drh. Yuherman., MS., Ph.D</td>
-                    <td></td>
+                    <td>0024115902</td>
                   </tr>
                   <tr>
                   <tr>
                     <td>2</td>
-                    <td></td>
-                    <td></td>
+                    <td>Dr. Indri Juliyarsi., S.P., MP</td>
+                    <td>0015077606</td>
                   </tr>
                   <tr>
                   <tr>
                     <td>3</td>
-                    <td></td>
-                    <td></td>
+                    <td>Dr. Sri Melia., S.TP., MP</td>
+                    <td>0004067502</td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td></td>
-                    <td></td>
+                    <td>Deni Novia., ST.P., MP</td>
+                    <td>0030117703</td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td></td>
-                    <td></td>
+                    <td>Afriani Sandra., S.Pt., M.Sc</td>
+                    <td>0010048204</td>
                   </tr>
                   <tr>
                     <td>6</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ely Vebriyanti., S.Pt., MP</td>
+                    <td>0011027906</td>
                   </tr>
                   <tr>
                     <td>7</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ade Rakhmadi., S.Pt., MP</td>
+                    <td>0004058003</td>
                   </tr>
                   <tr>
                     <td>8</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ade Sukma., S.Pt., MP, Ph.D</td>
+                    <td>0017078502</td>
                   </tr>
                   <tr>
                     <td>9</td>
-                    <td></td>
-                    <td></td>
+                    <td>Ferawati., S.Pt., M.Si</td>
+                    <td>0014118302</td>
                   </tr>
                   <tr>
                     <td>10</td>
-                    <td></td>
-                    <td></td>
+                    <td>El Latifa Sri Suharto., S.Pt., M.Si</td>
+                    <td>0021019004</td>
                   </tr>
                   <tr>
                     <td>11</td>
-                    <td></td>
-                    <td></td>
+                    <td>Yudi Rahmadian., S.Pt., M.Sc</td>
+                    <td>0008119205</td>
                   </tr>
-                  <tr>
-                    <td>10</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>11</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
+                    
                   <tr>
                     <td>12</td>
-                    <td></td>
-                    <td></td>
+                    <td>Aronal Arief Putra., S.Pt., M.Sc, Ph.D</td>
+                    <td>0023088301</td>
                   </tr>
                   <tr>
                     <td>13</td>
-                    <td></td>
-                    <td></td>
+                    <td>Rizki Dwi Setiawan., S.TP., M.Si</td>
+                    <td>0028049006</td>
                   </tr>
                   <tr>
                     <td>14</td>
-                    <td></td>
-                    <td></td>
+                    <td>Yulianti Fitri Kurnia., S.PT., M.Si</td>
+                    <td>8829330017</td>
                   </tr>
                   <!-- Add more rows as needed -->
                 </tbody>
@@ -150,6 +141,7 @@
 
           <div class="row gy-4 portfolio-container">
             @foreach($pengelolaan_hasil_ternak as $d)
+            <a href="{{ route('dosen') }}">
                    <div class="col-xl-6 col-md-6 portfolio-item filter-active">
                       <div class="portfolio-wrap">
                           <div class="dosen">
@@ -158,18 +150,18 @@
                                   <div class="member-info">
                                       <h4>{{ $d->nama }}</h4>
                                       <span>
-                            <p class="card-text"><strong>NIDN:</strong> {{ $d->nidn }}</p>
-                            <p class="card-text"><strong>Depertement:</strong> {{ $d->departemen }}</p>
-                            <p class="card-text"><strong>Jabatan:</strong> {{ $d->jabatan_akademik }}</p>
-                            <p class="card-text"><strong>S1:</strong> {{ $d->edukasi_s1 }}</p>
-                            <p class="card-text"><strong>S2:</strong> {{ $d->edukasi_s2 }}</p>
-                            <p class="card-text"><strong>S3:</strong> {{ $d->edukasi_s3 }}</p>
-                            <p class="card-text"><strong>Email:</strong> {{ $d->email }}</p>
-                        </span>
+                                          <p class="card-text"><strong>NIDN:</strong> {{ $d->nidn }}</p>
+                                          <p class="card-text"><strong>Depertement:</strong> {{ $d->departemen }}</p>
+                                          <p class="card-text"><strong>Jabatan:</strong> {{ $d->jabatan_akademik }}</p>
+                                          <p class="card-text"><strong>S1:</strong> {{ $d->edukasi_s1 }}</p>
+                                          <p class="card-text"><strong>S2:</strong> {{ $d->edukasi_s2 }}</p>
+                                          <p class="card-text"><strong>S3:</strong> {{ $d->edukasi_s3 }}</p>
+                                          <p class="card-text"><strong>Email:</strong> {{ $d->email }}</p>
+                                      </span>
                                       <br>
                                       <div class="row">
                                           <div class="col-md-4">
-                                              <a href="{{ $d->link_sinta }}"> <img width="70" src="{{ asset('assets/img/inta.png') }}" alt=""></a>
+                                              <a href="{{ $d->link_sinta }}"> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
                                           </div>
                                           <div class="col-md-4">
                                               <a href="{{ $d->link_scopus }}"><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
@@ -183,6 +175,7 @@
                           </div>
                       </div>
                   </div><!-- End Portfolio Item -->
+            </a>
             @endforeach
 
 

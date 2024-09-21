@@ -159,12 +159,12 @@
               </li>
             </ul> -->
           </li>
-          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
+          {{-- <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('penelitian') }}">Penelitian</a></li>
               <li><a href="{{ route('pengabdian') }}">Pengabdian</a></li>
             </ul>
-          </li>
+          </li> --}}
           <li><a class="nav-link scrollto {{ \Route::is('kerjasama') ? 'active' : '' }}" href="{{ route('kerjasama') }}">Kerjasama</a></li>
           <li><a class="nav-link scrollto {{ \Route::is('konferensi') ? 'active' : '' }}" href="{{ route('konferensi') }}">Conference</a></li>
           <li><a class="nav-link scrollto {{ \Route::is('dukacita') ? 'active' : '' }}" href="{{ route('dukacita') }}">Duka Cita</a></li>

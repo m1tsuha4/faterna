@@ -54,7 +54,7 @@
                         <div class="col-lg-12 d-flex justify-content-center">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="{{ asset('storage/conference/'.$conference->file) }}" alt="">
+                                    <img width="400" src="{{ asset('storage/conference/'.$conference->file) }}" alt="">
                                 </div>
                             </div>
                         </div>

@@ -57,7 +57,7 @@
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/dekan.jpg')}}" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>Dr.Ir. Adrizal, M.Si</h4>
+                <h4>Prof. Dr. Ir. Mardiati Zain </h4>
                 <span>Dekan</span>
                 <p>
                   Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut

@@ -20,5 +20,21 @@
     </div>
   </nav>
 </div>
+
+
+<section  class="profile-ppid about" id="profile-ppid about">
+  <div class="container" data-aos="fade-up">
+    <div style="" class="section-title ppid d-flex justify-content-start">
+      <h1> Struktur Organisasi Faterna</h1>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <img src="{{asset('assets/img/struktur.png')}}" alt="">
+
+      </div>
+  </div>
+</div>
+</section>
 @endsection
 

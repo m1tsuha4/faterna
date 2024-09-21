@@ -34,6 +34,13 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+  <style>
+    .description-text {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    </style> 
+
 </head>
 
 <body>
@@ -96,7 +103,7 @@
             <ul>
               <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="{{ route('pAkademik') }}">Panduan Akademik</a></li>
+                  <li><a href="{{ route('pAkademik') }}">Panduan Akademik & Download Dokumen</a></li>
                   <li><a href="{{ route('infobeasiswa') }}">Beasiswa</a></li>
                   <li><a href="{{ route('kalenderakademik') }}">Kalender Akademik</a></li>
                 </ul>
@@ -149,12 +156,12 @@
               </li>
             </ul> -->
           </li>
-          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
+          {{-- <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('penelitian') }}">Penelitian</a></li>
               <li><a href="{{ route('pengabdian') }}">Pengabdian</a></li>
             </ul>
-          </li>
+          </li> --}}
           <li><a class="nav-link scrollto {{ \Route::is('kerjasama') ? 'active' : '' }}" href="{{ route('kerjasama') }}">Kerjasama</a></li>
           <li><a class="nav-link scrollto {{ \Route::is('konferensi') ? 'active' : '' }}" href="{{ route('konferensi') }}">Conference</a></li>
           <li><a class="nav-link scrollto {{ \Route::is('dukacita') ? 'active' : '' }}" href="{{ route('dukacita') }}">Duka Cita</a></li>
@@ -268,6 +275,11 @@ document.getElementById('english').addEventListener('click', function() {
 });
 
 </script>
+
+ <div id="google_translate_element" style="display:none;"></div>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {

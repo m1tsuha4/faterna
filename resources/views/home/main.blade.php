@@ -28,14 +28,14 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Layanan Digital</a></h4>
+              <h4 class="title"><a href="{{route('layanandigital')}}" class="stretched-link">Layanan Digital</a></h4>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Single Sign On Unand</a></h4>
+              <h4 class="title"><a href="https://sso.unand.ac.id/dashboard" class="stretched-link">Single Sign On Unand</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -49,7 +49,7 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Tracer Study</a></h4>
+              <h4 class="title"><a href="https://karir.unand.ac.id/content/view?id=590&t=tracer-study-alumni-unand-lulusan-2023" class="stretched-link">Tracer Study</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -63,6 +63,46 @@
 
   <main id="main">
 
+    <section style="margin-top: -50px;" id="departemen" class="departemen">
+
+      <div class="section-header">
+          <h2>Departemen</h2>
+      </div>
+      <div class="icon-boxes position-relative">
+        <div class="container position-relative">
+          <div class="row gy-4 mt-5">
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/TekProduksiTernak.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.prod.ternak')}}" class="stretched-link">Teknologi Produksi Ternak</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/NutrisiMakananTernak.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.nutrisi.pakan')}}" class="stretched-link">Ilmu Nutrisi dan Teknologi Pakan</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/HasilTernak.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.pengelolaan.hasil.ternak')}}" class="stretched-link">Teknologi Pengelolaan Hasil Ternak</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/PembangunandanBisnis.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.bisnis.peternakan')}}" class="stretched-link">Pembangunan dan Bisnis Peternakan </a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+          </div>
+        </div>
+    </section><!-- End Blog Details Section -->
       <!-- ======= About Us Section ======= -->
       <section style="margin-top: -100px;" id="blog" class="blog">
 
@@ -142,7 +182,7 @@
         <div class="col-xl-3 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/dekan.png')}}" class="img-fluid" alt="">
-              <h4>Dr.Ir. Adrizal, M.Si</h4>
+              <h4>Prof. Dr. Ir. Mardiati Zain </h4>
               <span>Dekan</span>
             </div>
           </div><!-- End Team Member -->

@@ -58,20 +58,20 @@ Fakultas Peternakan Universitas Andalas memiliki 4 Program Studi yang telah tera
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
                     <span class="num">1.</span>
-                   Akreditasi Sarjana (S1) Peternakan
+                   Akreditasi Sarjana (S1) Peternakan Padang dan Payakumbuha
                   </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                  <a href="#">Selengkapnya</a>
+                  <a href="{{asset('doc\Akreditasi Program studi S-1.pdf')}}">Selengkapnya</a>
                   </div>
                 </div>
               </div>
-                    <div class="accordion-item">
+              <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
                     <span class="num">2.</span>
-                    Akreditasi Sarjana (S1) Peternakan (Kampus II Payakumbuh)
+                    Akreditasi Magister (S2) Ilmu Peternakan
                   </button>
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -84,24 +84,12 @@ Fakultas Peternakan Universitas Andalas memiliki 4 Program Studi yang telah tera
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
                     <span class="num">3.</span>
-                    Akreditasi Magister (S2) Ilmu Peternakan 
+                    Akreditasi Doktor (S3) Ilmu Peternakan
                   </button>
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                <div class="accordion-body">
-                    <a href="#">Selengkapnya</a>
-                  </div>
-              </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                    <span class="num">4.</span>
-                    Akreditasi Doktor (S3) Ilmu Peternakan 
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                   <a href="#">Selengkapnya</a>
+                    <a href="#">Selengkapnya</a>
                   </div>
                 </div>
               </div>
