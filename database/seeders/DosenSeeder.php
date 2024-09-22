@@ -14,7 +14,7 @@ class DosenSeeder extends Seeder
      */
     public function run()
     {
-        $jsonData = file_get_contents('D:\Tugas Iqbal\Unand\Neo\Project\faterna\dosen.json');
+        $jsonData = file_get_contents('E:\laravel\faterna\dosen.json');
         $data = json_decode($jsonData, true);
 
         foreach ($data as $user) {

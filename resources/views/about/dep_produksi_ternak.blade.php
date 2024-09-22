@@ -360,11 +360,11 @@
           <div class="row gy-4 portfolio-container">
             @foreach($dosen_produksi_ternak as $d)
             <a href="/dosen/{{ $d->id }}">
-                  <div class="col-xl-6 col-md-6 portfolio-item filter-active">
+              <div class="col-xl-6 col-md-6 portfolio-item filter-active">
                       <div class="portfolio-wrap">
                           <div class="dosen">
                               <div class="member d-flex align-items-start">
-                                  <div class="pic"><img src="{{ asset('storage/dosen/'.$d->file) }}" class="img-fluid" alt=""></div>
+                                  <div class="pic"><img width="200" src="{{ asset('storage/dosen/'.$d->file) }}" class="img-fluid" alt=""></div>
                                   <div class="member-info">
                                       <h4>{{ $d->nama }}</h4>
                                       <span>

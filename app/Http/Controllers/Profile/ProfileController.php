@@ -11,25 +11,73 @@ use Illuminate\Http\Request;
 class ProfileController extends Controller
 {
     public function produksi_ternak(){
-        $dosen_produksi_ternak = dosen::where('departemen', 'Teknologi Produksi Ternak')->get();
-       
-        return view('about/dep_produksi_ternak',compact('dosen_produksi_ternak'));
-    }
-    public function teknologi_pakan(){
-        $dosen_teknologi_pakan = dosen::where('departemen', 'Ilmu Nutrisi dan Teknologi Pakan')->get();
-      
-        return view('about/dep_nutrisi_pakan',compact('dosen_teknologi_pakan'));
-    }
-    public function pengelolaan_hasil_ternak(){
-        $pengelolaan_hasil_ternak = dosen::where('departemen', 'Teknologi Pengolahan Hasil Ternak')->get();
-      
-        return view('about/dep_pengelolaan_hasil_ternak',compact('pengelolaan_hasil_ternak'));
-    }
-    public function bisnis_peternakan(){
-        $bisnis_peternakan = dosen::where('departemen', 'Pembangunan dan Bisnis Peternakan')->get();
+        $dosen_produksi_ternak = dosen::where('departemen', 'Teknologi Produksi Ternak')
+            ->orderByRaw("
+                CASE 
+                    WHEN jabatan_akademik = 'Guru Besar' THEN 1
+                    WHEN jabatan_akademik = 'Lektor Kepala' THEN 2
+                    WHEN jabatan_akademik = 'Lektor' THEN 3
+                    WHEN jabatan_akademik = 'Asisten Ahli' THEN 4
+                    WHEN jabatan_akademik = 'Tendik' THEN 5
+                    ELSE 6 
+                END
+            ")
+            ->get();
         
-        return view('about/dep_bisnis_peternakan',compact('bisnis_peternakan'));
+        return view('about/dep_produksi_ternak', compact('dosen_produksi_ternak'));
     }
+    
+    public function teknologi_pakan(){
+        $dosen_teknologi_pakan = dosen::where('departemen', 'Ilmu Nutrisi dan Teknologi Pakan')
+            ->orderByRaw("
+                CASE 
+                    WHEN jabatan_akademik = 'Guru Besar' THEN 1
+                    WHEN jabatan_akademik = 'Lektor Kepala' THEN 2
+                    WHEN jabatan_akademik = 'Lektor' THEN 3
+                    WHEN jabatan_akademik = 'Asisten Ahli' THEN 4
+                    WHEN jabatan_akademik = 'Tendik' THEN 5
+                    ELSE 6 
+                END
+            ")
+            ->get();
+        
+        return view('about/dep_nutrisi_pakan', compact('dosen_teknologi_pakan'));
+    }
+    
+    public function pengelolaan_hasil_ternak(){
+        $pengelolaan_hasil_ternak = dosen::where('departemen', 'Teknologi Pengolahan Hasil Ternak')
+            ->orderByRaw("
+                CASE 
+                    WHEN jabatan_akademik = 'Guru Besar' THEN 1
+                    WHEN jabatan_akademik = 'Lektor Kepala' THEN 2
+                    WHEN jabatan_akademik = 'Lektor' THEN 3
+                    WHEN jabatan_akademik = 'Asisten Ahli' THEN 4
+                    WHEN jabatan_akademik = 'Tendik' THEN 5
+                    ELSE 6 
+                END
+            ")
+            ->get();
+        
+        return view('about/dep_pengelolaan_hasil_ternak', compact('pengelolaan_hasil_ternak'));
+    }
+    
+    public function bisnis_peternakan(){
+        $bisnis_peternakan = dosen::where('departemen', 'Pembangunan dan Bisnis Peternakan')
+            ->orderByRaw("
+                CASE 
+                    WHEN jabatan_akademik = 'Guru Besar' THEN 1
+                    WHEN jabatan_akademik = 'Lektor Kepala' THEN 2
+                    WHEN jabatan_akademik = 'Lektor' THEN 3
+                    WHEN jabatan_akademik = 'Asisten Ahli' THEN 4
+                    WHEN jabatan_akademik = 'Tendik' THEN 5
+                    ELSE 6 
+                END
+            ")
+            ->get();
+        
+        return view('about/dep_bisnis_peternakan', compact('bisnis_peternakan'));
+    }
+    
     
     
     
