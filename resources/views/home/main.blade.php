@@ -10,7 +10,7 @@
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>Fakultas Peternakan Universitas Andalas</h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <p>Fakultas Peternakan Pertama yang Bardiri di Indonesia Sejak September 1963</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
 
         </div>
@@ -28,14 +28,14 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Layanan Digital</a></h4>
+              <h4 class="title"><a href="{{route('layanandigital')}}" class="stretched-link">Layanan Digital</a></h4>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Single Sign On Unand</a></h4>
+              <h4 class="title"><a href="https://sso.unand.ac.id/dashboard" class="stretched-link">Single Sign On Unand</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -49,7 +49,7 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Tracer Study</a></h4>
+              <h4 class="title"><a href="https://karir.unand.ac.id/content/view?id=590&t=tracer-study-alumni-unand-lulusan-2023" class="stretched-link">Tracer Study</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -63,6 +63,46 @@
 
   <main id="main">
 
+    <section style="margin-top: -50px;" id="departemen" class="departemen">
+
+      <div class="section-header">
+          <h2>Departemen</h2>
+      </div>
+      <div class="icon-boxes position-relative">
+        <div class="container position-relative">
+          <div class="row gy-4 mt-5">
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/TekProduksiTernak.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.prod.ternak')}}" class="stretched-link">Teknologi Produksi Ternak</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/NutrisiMakananTernak.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.nutrisi.pakan')}}" class="stretched-link">Ilmu Nutrisi dan Teknologi Pakan</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/HasilTernak.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.pengelolaan.hasil.ternak')}}" class="stretched-link">Teknologi Pengelolaan Hasil Ternak</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <div class="icon"><img src="{{asset('assets/img/PembangunandanBisnis.PNG')}}" alt="" width="100%"></div>
+                <h4 class="title"><a href="{{route('dep.bisnis.peternakan')}}" class="stretched-link">Pembangunan dan Bisnis Peternakan </a></h4>
+              </div>
+            </div><!--End Icon Box -->
+  
+          </div>
+        </div>
+    </section><!-- End Blog Details Section -->
       <!-- ======= About Us Section ======= -->
       <section style="margin-top: -100px;" id="blog" class="blog">
 
@@ -80,15 +120,14 @@
             <div class="row no-gutters">
                 <div class="col-sm-4">
                     <div class="post-img">
-                        <img width="300" src="{{asset('assets/img/adrizal-dekan.jpg')}}" alt="" class="img-fluid">
+                        <img width="300" src="{{asset('assets/img/pimpinan/dekan.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <div class="card-body">
+                    <div class="card-body text-justify">
                       <h1>Selamat Datang</h1>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe laudantium mollitia ea quod quam possimus deleniti accusantium in quis. Doloremque magni nemo unde ducimus facere fugit, neque tempora quisquam nobis minus eius illo soluta mollitia, voluptatem voluptate adipisci, reprehenderit iusto suscipit nesciunt incidunt nam! Autem expedita dicta minus recusandae!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, perspiciatis. Quisquam maxime amet ea illum illo ratione maiores, laboriosam, eaque eligendi itaque expedita est nemo, aut fugit. Sunt ipsum reprehenderit corrupti ipsa tempore porro facere ratione? Cumque repellat vel in fugiat quibusdam accusamus sequi possimus nihil libero nulla molestias, ut ratione similique nemo aliquam amet. Dolore atque voluptatem numquam ab!</p>
-                      </div>
+                        <p class="card-text ">Selamat datang di website Fakultas Peternakan Universitas Andalas. Kami berkomitmen untuk menjadi institusi unggul dalam pengembangan ilmu peternakan, dengan mencetak lulusan yang inovatif, berintegritas, dan siap berkontribusi di tingkat nasional maupun internasional. Melalui platform ini, kami menyajikan informasi terkait kegiatan akademik, penelitian, dan pengabdian masyarakat, serta membuka kesempatan untuk kerja sama demi mewujudkan sektor peternakan yang berkelanjutan. Terima kasih atas kunjungan Anda, semoga website ini bermanfaat.</p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -140,10 +179,10 @@
         <div class="section-header">
           <h2>Pimpinan</h2>
           <div class="col-sm-12 d-flex justify-content-center">
-        <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+        <div class="col-xl-3 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="{{asset('assets/img/pimpinan/dekan.jpg')}}" class="img-fluid" alt="">
-              <h4>Dr.Ir. Adrizal, M.Si</h4>
+              <img src="{{asset('assets/img/pimpinan/dekan.png')}}" class="img-fluid" alt="">
+              <h4>Prof. Dr. Ir. Mardiati Zain </h4>
               <span>Dekan</span>
             </div>
           </div><!-- End Team Member -->
@@ -152,15 +191,23 @@
 
         <div class="row gy-3">
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="">
+              <img src="" class="img-fluid" alt="">
+              <h4></h4>
+              <span></span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="{{asset('assets/img/pimpinan/wd1.jpg')}}" class="img-fluid" alt="">
-              <h4>Dr. Rusfidra, S.Pt, MP</h4>
+              <img style="100px" src="{{asset('assets/img/pimpinan/wd3.jpg')}}" class="img-fluid" alt="">
+              <h4>Dr.Ir. Rusmana Wijaya Setia Ningrat, M.Rur.Sc</h4>
               <span>Wakil Dekan I</span>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <img src="{{asset('assets/img/pimpinan/wd2.jpg')}}" class="img-fluid" alt="">
               <h4>Dr.Ir. Firda Arlina, M.Si</h4>
@@ -168,11 +215,11 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="{{asset('assets/img/pimpinan/wd3.jpg')}}" class="img-fluid" alt="">
-              <h4>Dr.Ir. Rusmana Wijaya Setia Ningrat, M.Rur.Sc</h4>
-              <span>Wakil Dekan III</span>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="">
+              <img src="" class="img-fluid" alt="">
+              <h4></h4>
+              <span></span>
             </div>
           </div><!-- End Team Member -->
 
@@ -228,9 +275,9 @@
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action" class="call-to-action">
       <div class="container text-center" data-aos="zoom-out">
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+        <a href="https://youtu.be/aHR_5KJPN4s?si=uBfeWunl5-XOX1Wm" class="glightbox play-btn"></a>
         <h3>Profile FATERNA UNAND</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Video Profile Fakultas Peternakan Universitas Andalas</p>
       </div>
     </section><!-- End Call To Action Section -->
 
@@ -367,7 +414,7 @@
         <div class="col-sm-12 mt-3">
           <div class="d-flex justify-content-center">
                   <button style="background: #451952; color:#fff;" class="btn">
-                    <a style="color: white;" href="">Selengkapnya</a>
+                    <a style="color: white;" href="{{ route('allgallery') }}">Selengkapnya</a>
                   </button>
                 </div>
           </div>
@@ -379,18 +426,23 @@
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-out">
 
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
+            <div class="clients-slider swiper">
+
+              <div class="swiper-wrapper align-items-center">
+                  @foreach($kerjasama as $k)
+                      <div class="swiper-slide"><img src="{{ asset('storage/kerjasama/'.$k->file) }}" class="img-fluid" alt=""></div>
+                  @endforeach
+
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>--}}
+{{--                <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>--}}
+              </div>
+
+            </div>
 
       </div>
     </section><!-- End Clients Section -->
@@ -406,15 +458,15 @@
 
         <div class="row gy-4 align-items-center">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
           <div class=" d-flex justify-content-center">
             <div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="100" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.31216182081!2d100.45721277568806!3d-0.9126598353334003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b7d677bf6b29%3A0xdf595f19d5116928!2sFakultas%20Peternakan!5e0!3m2!1sid!2sid!4v1715068801271!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           </div>
 
-          <div class="col-lg-6">
+          {{-- <div class="col-lg-6">
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
@@ -429,9 +481,11 @@
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="68" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Tahun Berdiri</strong></p>
-            </div><!-- End Stats Item -->
+            </div><!-- End Stats Item --> --}}
 
-          </div>
+            {{-- <p>Total Visitors: {{ $totalVisitors }}</p> --}}
+
+          {{-- </div> --}}
 
         </div>
 

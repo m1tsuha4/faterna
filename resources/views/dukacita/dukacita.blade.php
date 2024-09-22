@@ -31,56 +31,55 @@
   </div>
 </section>
 <section id="duka" class="duka" style="margin-top: -80px">
-  <div class="container" data-aos="fade-up">
-    <ul>
-      <li>
-        <div class="section-title duka">
-          <h1>Judul Berita</h1>
+    @foreach($allDukaCita as $dukaCita)
+        <div class="container" data-aos="fade-up">
+            <ul>
+                <li>
+                    <div class="section-title duka">
+                        <h1>{{ $dukaCita->judul }}</h1>
+                    </div>
+                    <span class="rss-date">{{ $dukaCita->tanggal }}</span>
+                    <div class="row content">
+                        <div class="col-lg-6 d-flex justify-content-start" style="text-align: justify; margin-top: 10px">
+                            <p>{{ $dukaCita->deskripsi }}</p>
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item ruangbaca" style="margin-top:-90px ">
+                            <a href="{{ asset('storage/berita/'.$dukaCita->file) }}" data-gallery="portfolio-gallery-ruangbaca" class="glightbox"><img src="{{ asset('storage/berita/'.$dukaCita->file) }}" width="500" class="img-fluid" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <span class="rss-date">16 November 2023</span>
-        <div class="row content">
-          <div class="col-lg-6 d-flex justify-content-start" style="text-align: justify; margin-top: 10px">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
-              culpa assumenda quas eos a accusantium fuga laboriosam odio? Doloremque sequi 
-              corporis pariatur temporibus nemo. At facere harum illum. Voluptas, amet?. Lorem 
-              ipsum dolor sit amet consectetur adipisicing elit. At maxime deleniti aspernatur 
-              nulla ipsum quaerat consectetur, ullam aut aliquid reiciendis quidem beatae laborum itaque eos.
-              Laborum suscipit fuga unde fugit.</p>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item ruangbaca" style="margin-top:-90px ">
-            <a href="{{asset('assets/img/ruangbaca.jpg')}}" data-gallery="portfolio-gallery-ruangbaca" class="glightbox"><img src="{{asset('assets/img/ruangbaca.jpg')}}" width="500" class="img-fluid" alt=""></a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+        <br>
+        <br>
+    @endforeach
 
-  <br>
-  <br>
 
-  <div class="container" data-aos="fade-up">
-    <ul>
-      <li>
-        <div class="section-title duka">
-          <h1>Judul Berita2</h1>
-        </div>
-        <span class="rss-date">16 November 2023</span>
-        <div class="row content">
-          <div class="col-lg-6 d-flex justify-content-start" style="text-align: justify; margin-top: 10px">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
-              culpa assumenda quas eos a accusantium fuga laboriosam odio? Doloremque sequi 
-              corporis pariatur temporibus nemo. At facere harum illum. Voluptas, amet?. Lorem 
-              ipsum dolor sit amet consectetur adipisicing elit. At maxime deleniti aspernatur 
-              nulla ipsum quaerat consectetur, ullam aut aliquid reiciendis quidem beatae laborum itaque eos.
-              Laborum suscipit fuga unde fugit.</p>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item ruangbaca" style="margin-top:-90px ">
-            <a href="{{asset('assets/img/ruangbaca.jpg')}}" data-gallery="portfolio-gallery-ruangbaca" class="glightbox"><img src="{{asset('assets/img/ruangbaca.jpg')}}" width="500" class="img-fluid" alt=""></a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+
+
+{{--  <div class="container" data-aos="fade-up">--}}
+{{--    <ul>--}}
+{{--      <li>--}}
+{{--        <div class="section-title duka">--}}
+{{--          <h1>Judul Berita2</h1>--}}
+{{--        </div>--}}
+{{--        <span class="rss-date">16 November 2023</span>--}}
+{{--        <div class="row content">--}}
+{{--          <div class="col-lg-6 d-flex justify-content-start" style="text-align: justify; margin-top: 10px">--}}
+{{--            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, --}}
+{{--              culpa assumenda quas eos a accusantium fuga laboriosam odio? Doloremque sequi --}}
+{{--              corporis pariatur temporibus nemo. At facere harum illum. Voluptas, amet?. Lorem --}}
+{{--              ipsum dolor sit amet consectetur adipisicing elit. At maxime deleniti aspernatur --}}
+{{--              nulla ipsum quaerat consectetur, ullam aut aliquid reiciendis quidem beatae laborum itaque eos.--}}
+{{--              Laborum suscipit fuga unde fugit.</p>--}}
+{{--          </div>--}}
+{{--          <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item ruangbaca" style="margin-top:-90px ">--}}
+{{--            <a href="{{asset('assets/img/ruangbaca.jpg')}}" data-gallery="portfolio-gallery-ruangbaca" class="glightbox"><img src="{{asset('assets/img/ruangbaca.jpg')}}" width="500" class="img-fluid" alt=""></a>--}}
+{{--          </div>--}}
+{{--        </div>--}}
+{{--      </li>--}}
+{{--    </ul>--}}
+{{--  </div>--}}
 </section>
 @endsection
 

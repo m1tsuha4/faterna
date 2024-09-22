@@ -22,102 +22,55 @@
       </nav>
     </div><!-- End Breadcrumbs -->
 
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-
-          <div>
-            <ul class="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-S1-Padang">S1 Padang</li>
-              <li data-filter=".filter-S1-Payakumbuh">S1 Payakumbuh</li>
-              <li data-filter=".filter-S2">S2</li>
-              <li data-filter=".filter-S3">S3</li>
-            </ul>
-          </div>
-
-          <div class="row gy-4 portfolio-container">
-            @foreach($dosen as $d)
-                  <div class="col-xl-6 col-md-6 portfolio-item filter-{{ $d->prodi }}">
-                      <div class="portfolio-wrap">
-                          <div class="dosen">
-                              <div class="member d-flex align-items-start">
-                                  <div class="pic"><img src="{{ asset('storage/dosen/'.$d->file) }}" class="img-fluid" alt=""></div>
-                                  <div class="member-info">
-                                      <h4>{{ $d->nama }}</h4>
-                                      <span>
-                            <p class="card-text"><strong>NIDN:</strong> {{ $d->nidn }}</p>
-                            <p class="card-text"><strong>Depertement:</strong> {{ $d->departemen }}</p>
-                            <p class="card-text"><strong>Jabatan:</strong> {{ $d->jabatan_akademik }}</p>
-                            <p class="card-text"><strong>Email:</strong> {{ $d->email }}</p>
-                            <p class="card-text"><strong>Edukasi S1:</strong> {{ $d->edukasi_s1 }}</p>
-                            <p class="card-text"><strong>Edukasi S2:</strong> {{ $d->edukasi_s2 }}</p>
-                            <p class="card-text"><strong>Edukasi S3:</strong> {{ $d->edukasi_s3 }}</p>
-                        </span>
-                                      <br>
-                                      <div class="row">
-                                          <div class="col-md-4">
-                                              <a href="{{ $d->link_sinta }}"> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
-                                          </div>
-                                          <div class="col-md-4">
-                                              <a href="{{ $d->link_scopus }}"><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
-                                          </div>
-                                          <div class="col-md-4">
-                                              <a href="{{ $d->link_scholar }}"><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+    <section id="portfolio1" class="portfolio1">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row">
+          <div class="col-xl-12 col-md-12 portfolio-item">
+            <div class="portfolio-wrap">
+              <div class="dosen1">
+                <div class="member d-flex align-items-center">
+                  <div class="pic"><img src="{{ asset('storage/dosen/'.$dosen->file) }}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>{{ $dosen->nama }}</h4>
+                    <span>
+                      <p class="card-text"><strong>NIDN : </strong> {{ $dosen->nidn }}</p>
+                      <p class="card-text" style="text-align: justify;"><strong>Deskripsi Diri : </strong> {{ $dosen->profile }}</p>
+                      <p class="card-text"><strong>Depertement : </strong> {{ $dosen->departmen }}</p>
+                      <p class="card-text"><strong>Jabatan : </strong> {{ $dosen->jabatan_akademik }}</p>
+                      <p class="card-text"><strong>Email : </strong> {{ $dosen->email }}</p>
+                      <p class="card-text"><strong>Edukasi S1 : {{ $dosen->edukasi_s1 }}</strong></p>
+                      <p class="card-text"><strong>Edukasi S2 : {{ $dosen->edukasi_s2 }}</strong></p>
+                      <p class="card-text"><strong>Edukasi S3 : {{ $dosen->edukasi_s3 }}</strong></p>
+                      <p class="card-text"><strong>Mata Kuliah : </strong> <br>
+                        {!! nl2br(e($dosen->mata_kuliah)) !!}
+                      </p>                    
+                      <p class="card-text"><strong>Bidang Keahlian : </strong> <br>
+                        {!! nl2br(e($dosen->bidang_keahlian)) !!}
+                      </p>
+                      <p class="card-text"><strong>Riset Internal : </strong> <br>
+                        {!! nl2br(e($dosen->riset_interest)) !!}
+                      </p>
+                    </span>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="{{ $dosen->link_sinta }}"> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>
                       </div>
-                  </div><!-- End Portfolio Item -->
-            @endforeach
-
-
-{{--            <div class="col-xl-6 col-md-6 portfolio-item filter-s1-pyk">--}}
-{{--              <div class="portfolio-wrap">--}}
-{{--                  <div class="dosen">--}}
-{{--                  <div class="member d-flex align-items-start">--}}
-{{--                      <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>--}}
-{{--                      <div class="member-info">--}}
-{{--                        <h4>Elandra Maulana</h4>--}}
-{{--                        <span>--}}
-{{--                            <p class="card-text"><strong>NIDN:</strong> Teknik Komputer</p>--}}
-{{--                            <p class="card-text"><strong>Depertement:</strong> Teknik Komputer</p>--}}
-{{--                            <p class="card-text"><strong>Jabatan:</strong>Lektor</p>--}}
-{{--                            <p class="card-text"><strong>Email:</strong> elandramaulana81@gmail.com</p>--}}
-{{--                            <p class="card-text"><strong>Edukasi S1:</strong></p>--}}
-{{--                            <p class="card-text"><strong>Edukasi S2:</strong></p>--}}
-{{--                            <p class="card-text"><strong>Edukasi S3:</strong></p>--}}
-{{--                        </span>--}}
-{{--                        <br>--}}
-{{--                        <div class="row">--}}
-{{--                            <div class="col-md-4">--}}
-{{--                                <a href=""> <img width="70" src="{{ asset('assets/img/sinta.png') }}" alt=""></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-md-4">--}}
-{{--                                <a href=""><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-md-4">--}}
-{{--                                <a href=""><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                      </div>--}}
-{{--                    </div>--}}
-{{--                  </div>--}}
-{{--              </div>--}}
-{{--            </div><!-- End Portfolio Item -->--}}
-
-
-          </div><!-- End Portfolio Container -->
-
+                      <div class="col-md-4">
+                        <a href="{{ $dosen->link_scopus }}"><img width="70" src="{{ asset('assets/img/scopus.png') }}" alt=""></a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="{{ $dosen->link_scholar }}"><img width="70" src="{{ asset('assets/img/schoolar.png') }}" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
       </div>
-    </section><!-- End Portfolio Section -->
-
+    </section>
 
 @endsection
 

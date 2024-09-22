@@ -42,13 +42,32 @@
                                     <input type="text" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="" value="{{ $dosen->nidn }}">
                                 </div>
                                 <div class="mb-3">
-                                    <label  for="" class="form-label">Departemen</label>
-                                    <input type="text" name="departemen" class="form-control" id="exampleInputEmail1" aria-describedby="" value="{{ $dosen->departemen }}">
+                                    <label for="" class="form-label">Deskripsi Diri</label>
+                                    <textarea class="form-control" id="deskripsi" name="profile" rows="5">{{ $dosen->profile }}</textarea>
+                                </div>
+                                <div class="input-group">
+                                    <label  for="inputGroupSelect01" class="input-group-text text-bg-primary">Departemen</label>
+                                    <select class="form-select" name="departemen" id="inputGroupSelect01">
+                                        <option value="Teknologi Produksi Ternak" {{ $dosen->departemen === "Teknologi Produksi Ternak" ? 'selected' : '' }}>Teknologi Produksi Ternak</option>
+                                        <option value="Ilmu Nutrisi dan Teknologi Pakan" {{ $dosen->departemen === "Ilmu Nutrisi dan Teknologi Pakan" ? 'selected' : '' }}>Ilmu Nutrisi dan Teknologi Pakan</option>
+                                        <option value="Teknologi Pengolahan Hasil Ternak" {{ $dosen->departemen === "Teknologi Pengolahan Hasil Ternak" ? 'selected' : '' }}>Teknologi Pengolahan Hasil Ternak</option>
+                                        <option value="Pembangunan dan Bisnis Peternakan" {{ $dosen->departemen === "Pembangunan dan Bisnis Peternakan" ? 'selected' : '' }}>Pembangunan dan Bisnis Peternakan</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Email</label>
                                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="" value="{{ $dosen->email }}">
                                 </div>
+                                <div class="input-group">
+                                    <label class="input-group-text text-bg-primary"
+                                        for="inputGroupSelect01">Prodi</label>
+                                    <select class="form-select" name="prodi" id="inputGroupSelect01">
+                                        <option value="S1-Padang" {{ $dosen->prodi === "S1-Padang" ? 'selected' : '' }}>S1-Padang</option>
+                                        <option value="S1-Payakumbuh" {{ $dosen->prodi === "S1-Payakumbuh" ? 'selected' : '' }}>S1-Payakumbuh</option>
+                                        <option value="S2" {{ $dosen->prodi === "S2" ? 'selected' : '' }}>S2</option>
+                                        <option value="S3" {{ $dosen->prodi === "S3" ? 'selected' : '' }}>S3</option>
+                                    </select>
+                                </div><br>
                                 <div class="input-group">
                                     <label class="input-group-text text-bg-primary"
                                         for="inputGroupSelect01">Jabatan Akademik</label>
@@ -74,15 +93,27 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Link Sinta</label>
-                                    <textarea class="form-control" id="deskripsi" name="publikasi" rows="5">{{ $dosen->link_sinta }}</textarea>
+                                    <textarea class="form-control" id="deskripsi" name="link_sinta" rows="5">{{ $dosen->link_sinta }}</textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Link Scopus</label>
-                                    <textarea class="form-control" id="deskripsi" name="penelitian" rows="5">{{ $dosen->link_scopus }}</textarea>
+                                    <textarea class="form-control" id="deskripsi" name="link_scopus" rows="5">{{ $dosen->link_scopus }}</textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Link Google Scholar</label>
-                                    <textarea class="form-control" id="deskripsi" name="scholar" rows="5">{{ $dosen->link_scholar }}</textarea>
+                                    <textarea class="form-control" id="deskripsi" name="link_scholar" rows="5">{{ $dosen->link_scholar }}</textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Mata Kuliah yang Diampu</label>
+                                    <textarea class="form-control" id="deskripsi" name="mata_kuliah" rows="5">{{ $dosen->mata_kuliah }}</textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Bidang Keahlian</label>
+                                    <textarea class="form-control" id="deskripsi" name="bidang_keahlian" rows="5">{{ $dosen->bidang_keahlian }}</textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Riset Interest</label>
+                                    <textarea class="form-control" id="deskripsi" name="riset_interest" rows="5">{{ $dosen->riset_interest }}</textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Simpan</button>
                             </form>

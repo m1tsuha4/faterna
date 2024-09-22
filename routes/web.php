@@ -18,6 +18,47 @@ use Illuminate\Support\Facades\Route;
 //})->name('home');
 Route::get('/', [\App\Http\Controllers\Home\HomeController::class,'index'])->name('home');
 
+
+Route::get('/create-storage-link', function () {
+    $target = '/home/faterna_baru/faterna/storage/app/public'; // Path absolut ke direktori storage
+    $link = '/home/faterna_baru/public_html/storage'; // Path absolut ke direktori public_html
+
+    // Cek apakah direktori target ada
+    if (!file_exists($target)) {
+        return 'Direktori target tidak ditemukan: ' . $target;
+    }
+
+    // Cek apakah direktori public_html ada
+    if (!is_dir(dirname($link))) {
+        return 'Direktori public_html tidak ditemukan atau path salah: ' . dirname($link);
+    }
+
+    // Membuat symlink jika belum ada
+    if (!file_exists($link)) {
+        symlink($target, $link);
+        return 'Storage link berhasil dibuat dari: ' . $target . ' ke ' . $link;
+    } else {
+        return 'Storage link sudah ada di: ' . $link;
+    }
+});
+
+
+Route::get('/delete-storage-link', function () {
+    $link = '/home/faterna_baru/public_html/storage'; // Path absolut ke symlink
+
+    if (file_exists($link)) {
+        if (is_link($link)) {
+            unlink($link); // Hapus symlink
+            return 'Storage symlink berhasil dihapus dari: ' . $link;
+        } else {
+            return 'Path yang diberikan bukan symlink, melainkan direktori biasa: ' . $link;
+        }
+    } else {
+        return 'Symlink tidak ditemukan di: ' . $link;
+    }
+});
+
+
 // ini route tentang kami
 Route::get('/selayang-pandang', function () {
     return view('about/selayang-pandang');
@@ -35,16 +76,16 @@ Route::get('/pimpinan', function () {
     return view('about/pimpinan');
 })->name('pimpinan');
 
-Route::get('/dosen', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
-//Route::get('/dosen', function () {
-//    return view('about/dosen');
-//})->name('dosen');
+// Route::get('/dosen', function () {
+//     return view('about/dosen');
+// })->name('dosen');
+Route::get('/dosen/{dosen}', [\App\Http\Controllers\Profile\ProfileController::class,'dosen'])->name('dosen');
 
 Route::get('/tendik', function () {
     return view('about/tendik');
 })->name('tendik');
 
-
+Route::get('/all-gallery', [\App\Http\Controllers\Gallery\GalleryController::class,'allGallery'])->name('allgallery');
 
 Route::get('/struktur-organisasi', function () {
     return view('about/struktur');
@@ -58,21 +99,30 @@ Route::get('/profil-departemen', function () {
     return view('about/profildepartemen');
 })->name('profildepartemen');
 
-Route::get('/sarana-dan-prasarana', function () {
-    return view('about/fasilitas');
-})->name('fasilitas');
+Route::get('/sarana-dan-prasarana', [\App\Http\Controllers\Profile\ProfileController::class,'sarana'])->name('fasilitas');
 
 Route::get('/akreditasi', function () {
     return view('about/akreditasi');
 })->name('akreditasi');
 
-Route::get('/alumni-info', function () {
-    return view('about/alumni');
-})->name('infoalumni');
+Route::get('/alumni-info', [\App\Http\Controllers\Profile\ProfileController::class,'alumni'])->name('infoalumni');
 
 Route::get('/zona-integritas', function () {
     return view('about/zona');
 })->name('zona');
+
+// Ini Route Departemen
+
+Route::get('/produksi-ternak', [\App\Http\Controllers\Profile\ProfileController::class,'produksi_ternak'])->name('dep.prod.ternak');
+Route::get('/teknologi-pakan', [\App\Http\Controllers\Profile\ProfileController::class,'teknologi_pakan'])->name('dep.nutrisi.pakan');
+Route::get('/pengelolaan-hasil-ternak', [\App\Http\Controllers\Profile\ProfileController::class,'pengelolaan_hasil_ternak'])->name('dep.pengelolaan.hasil.ternak');
+Route::get('/bisnis-peternakan', [\App\Http\Controllers\Profile\ProfileController::class,'bisnis_peternakan'])->name('dep.bisnis.peternakan');
+
+
+Route::get('/layanan-digital', function () {
+    return view('home/layanandigital');
+})->name('layanandigital');
+
 // ini route prodi
 Route::get('/sejarah-prodi-pdg', function () {
     return view('prodi/s1-pdg/sejarah-prodi-s1pdg');
@@ -143,35 +193,19 @@ Route::get('/s3', function () {
 
 
 // ini route kerjasama
-Route::get('/kerja-sama', function () {
-    return view('kerjasama/kerjasama');
-})->name('kerjasama');
+Route::get('/kerja-sama', [\App\Http\Controllers\Kerjasama\KerjasamaController::class,'kerjaSama'])->name('kerjasama');
 
 // ini route conference
-Route::get('/konferensi', function () {
-    return view('conference/conference');
-})->name('konferensi');
+Route::get('/konferensi', [\App\Http\Controllers\Conference\ConferenceController::class,'conference'])->name('konferensi');
 
 // ini route conference
-Route::get('/berita-duka-cita', function () {
-    return view('dukacita/dukacita');
-})->name('dukacita');
+Route::get('/berita-duka-cita', [\App\Http\Controllers\Berita\BeritaController::class,'dukaCita'])->name('dukacita');
 
 // ini route akademik
+Route::get('/beasiswa-info', [\App\Http\Controllers\Akademik\AkademikController::class,'beasiswa'])->name('infobeasiswa');
+Route::get('/kalender-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'kalender'])->name('kalenderakademik');
+Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\AkademikController::class,'panduan'])->name('pAkademik');
 
-Route::get('/beasiswa-info', function () {
-    return view('akademik/informasi/beasiswa');
-})->name('infobeasiswa');
-
-Route::get('/kalender-akademik', function () {
-    return view('akademik/informasi/kalenderakademik');
-})->name('kalenderakademik');
-
-Route::get('/panduan-akademik', [\App\Http\Controllers\Akademik\PanduanAkademikController::class,'index'])->name('pAkademik');
-
-//Route::get('/panduan-akademik', function () {
-//    return view('akademik/informasi/pAkademik');
-//})->name('pAkademik');
 
 
 Route::get('/kemahasiswaan', function () {
@@ -188,21 +222,23 @@ Route::get('/panduan-dan-sop-ta', function () {
 })->name('sopTA');
 
 //ini route PPID
-Route::get('/profile', function () {
-    return view('ppid/profile-ppid');
-})->name('profile-ppid');
+Route::get('/profile', [\App\Http\Controllers\Ppid\ProfilePPIDController::class,'dokumen'])->name('profile-ppid');
 
-Route::get('/tata-cara-permohonan-informasi', function () {
-    return view('ppid/layananinfo/tata-cara-permohonan');
-})->name('tata-cara-permohonan');
+Route::get('/informasi-setiap-saat', function () {
+    return view('ppid/layananinfo/informasi_setiap_saat');
+})->name('info-setiap-saat');
 
 Route::get('/informasi-publik', function () {
-    return view('ppid/layananinfo/info-publik');
+    return view('ppid/layananinfo/informasi_berkala');
 })->name('info-publik');
 
 Route::get('/informasi-dikecualikan', function () {
     return view('ppid/layananinfo/info-dikecualikan');
 })->name('info-dikecualikan');
+
+Route::get('/informasi-serta-merta', function () {
+    return view('ppid/layananinfo/informasi_serta_merta');
+})->name('info-sertamerta');
 
 //ini route riset
 

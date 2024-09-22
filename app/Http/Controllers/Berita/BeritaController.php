@@ -10,7 +10,7 @@ class BeritaController extends Controller
 {
     //Pengumuman
     public function allPengumuman(){
-        $pengumuman = berita::where('kategori','Pengumuman')->get();
+        $pengumuman = berita::where('kategori','Pengumuman')->orderBy('updated_at','desc')->get();
 
         return view('home/pengumuman/allpengumuman',compact('pengumuman'));
     }
@@ -22,7 +22,7 @@ class BeritaController extends Controller
 
     //Berita & Informasi Event
     public function allBerita(){
-        $berita = berita::where('kategori','Berita')->orWhere('kategori', 'Informasi Event')->get();
+        $berita = berita::where('kategori','Berita')->orWhere('kategori', 'Informasi Event')->orderBy('updated_at','desc')->get();
 
         return view('home/berita/allberita',compact('berita'));
     }
@@ -34,7 +34,7 @@ class BeritaController extends Controller
 
     //Kiprah Civitas Akademika
     public function allKiprah(){
-        $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->get();
+        $kiprah = berita::where('kategori','Kiprah Civitas Akademika')->orderBy('updated_at','desc')->get();
 
         return view('home/kiprah/allkiprah',compact('kiprah'));
     }
@@ -42,5 +42,12 @@ class BeritaController extends Controller
         $kiprah = berita::where('id', $id)->first();
 
         return view('home/kiprah/detailkiprah',compact('kiprah'));
+    }
+
+    //Duka Cita
+    public function dukaCita(){
+        $allDukaCita = berita::where('kategori','Duka Cita')->orderBy('updated_at','desc')->get();
+
+        return view('dukacita/dukacita', compact('allDukaCita'));
     }
 }

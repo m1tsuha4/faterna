@@ -40,9 +40,9 @@
               <li><i class="ri-check-double-line"></i> Menerapkan organisasi yang efisien dalam menunjang suasana yang kondusif untuk pendidikan, penelitian dan pengabdian kepada masyarakat.</li>
             </ul>
             <!-- Button trigger modal -->
-        <a type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        {{-- <a type="button" class="more-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Selengkapnya
-        </a>
+        </a> --}}
 
         <!-- Modal -->
         <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

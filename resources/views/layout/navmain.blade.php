@@ -33,26 +33,41 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  {{-- <div id="google_translate_element"></div>
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
+
   
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>0751 71464</span></i>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      <div class="d-flex ms-auto align-items-center">
+        <!-- Social Links -->
+        <div class="social-links d-flex align-items-center">
+          <a href="https://www.youtube.com/@faternaunand342/featured" class="facebook"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/faterna.unand/" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+        <!-- Language Selector -->
+        <div class="language-selector d-flex align-items-center ms-4">
+          <img width="30" src="{{asset('assets/img/ina.png')}}" alt="Indonesian" id="indonesian" class="flag-icon">
+          <img width="30" src="{{asset('assets/img/eng.png')}}" alt="English" id="english" class="flag-icon ms-2">
+        </div>
       </div>
     </div>
-  </section><!-- End Top Bar -->
+  </section>
+  
+  
 
   <header id="header" class="header d-flex align-items-center">
 
@@ -70,13 +85,20 @@
               <li><a href="{{ route('selayang-pandang') }}">Visi Misi</a></li> 
               <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
               <li><a href="{{ route('struktur') }}">Struktur Organisasi</a></li>
-              <li><a href="{{ route('profilgb') }}">Profil Guru Besar</a></li>
-              <li><a href="{{ route('profildepartemen') }}">Profil Departemen</a></li>
+              {{-- <li><a href="{{ route('profilgb') }}">Profil Guru Besar</a></li>
+              <li><a href="{{ route('profildepartemen') }}">Profil Departemen</a></li> --}}
               <li><a href="{{ route('fasilitas') }}">Sarana & Prasarana</a></li>
               <li><a href="{{ route('akreditasi') }}">Akreditasi</a></li>
               <li><a href="{{ route('infoalumni') }}">Alumni</a></li>
-              <li><a href="{{ route('dosen') }}">Dosen</a></li>
-              <li><a href="{{ route('tendik') }}">Tendik</a></li>
+              <li class="dropdown"><a href="#"><span>Departemen</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                <li><a href="{{ route('dep.prod.ternak') }}">Teknologi Produksi Ternak</a></li>
+                  <li><a href="{{ route('dep.nutrisi.pakan') }}">Ilmu Nutrisi dan Teknologi Pakan</a></li>
+                  <li><a href="{{ route('dep.pengelolaan.hasil.ternak') }}">Teknologi Pengelolaan Hasil Ternak</a></li>
+                  <li><a href="{{ route('dep.bisnis.peternakan') }}">Pembangunan dan Bisnis Peternakan</a></li>
+                </ul>
+              </li>
+              {{-- <li><a href="{{ route('tendik') }}">Tendik</a></li> --}}
               <li><a href="{{ route('zona') }}">Zona Integritas</a></li>
             </ul>
           </li>
@@ -92,7 +114,7 @@
               <li><a href="{{ route('kemahasiswaan') }}"><span>Kemahasiswaan</span></a>
               </li>
               <li class="dropdown"><a href="#"><span>Program Studi</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
+            <ul>
             <li class="dropdown"><a href="{{ route('s1-pdg') }}"><span>S1 Padang</span></a>
                 <!-- <ul>
                   <li><a href="{{ route('sejarah-prodi-pdg') }}">Sejarah</a></li>
@@ -137,12 +159,12 @@
               </li>
             </ul> -->
           </li>
-          <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
+          {{-- <li class="dropdown"><a class="nav-link scrollto {{ \Route::is('penelitian','pengabdian') ? 'active' : '' }}" href="#"><span>Penelitian dan Pengabdian</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('penelitian') }}">Penelitian</a></li>
               <li><a href="{{ route('pengabdian') }}">Pengabdian</a></li>
             </ul>
-          </li>
+          </li> --}}
           <li><a class="nav-link scrollto {{ \Route::is('kerjasama') ? 'active' : '' }}" href="{{ route('kerjasama') }}">Kerjasama</a></li>
           <li><a class="nav-link scrollto {{ \Route::is('konferensi') ? 'active' : '' }}" href="{{ route('konferensi') }}">Conference</a></li>
           <li><a class="nav-link scrollto {{ \Route::is('dukacita') ? 'active' : '' }}" href="{{ route('dukacita') }}">Duka Cita</a></li>
@@ -172,10 +194,8 @@
       <br>
       <img width="300" src="{{asset('assets/img/footer-img.png')}}" alt="">
       <div class="social-links d-flex mt-4">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com/@faternaunand342/featured" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/faterna.unand/" class="linkedin"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
 
@@ -205,7 +225,7 @@
         Limau Manis <br>
         Padang<br>
         Sumatera Barat <br><br>
-        <strong>Phone:</strong> <br>
+        <strong>Phone: 0751 71464</strong> <br>
         <strong>Email:</strong> <br>
       </p>
 
@@ -237,12 +257,13 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   var hero = document.getElementById('hero');
-  var images = ['/assets/img/unand.png', '/assets/img/cta-bg.jpg']; // Ganti dengan path gambar yang diinginkan
+  var images = ['/assets/img/unand.png', '/assets/img/hero2.png', '/assets/img/hero3.png', '/assets/img/hero4.png', '/assets/img/hero5.png']; // Ganti dengan path gambar yang diinginkan
   var currentIndex = 0;
   var interval = 5000; // Interval perubahan gambar (ms)
 
   function changeBackground() {
     hero.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    hero.style.backgroundSize = 'cover'; // Menambah gaya box-fit
     currentIndex = (currentIndex + 1) % images.length;
   }
 
@@ -265,6 +286,31 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('assets/js/impact.js')}}"></script>
+
+
+<script>
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'id', includedLanguages: 'id,en'}, 'google_translate_element');
+}
+
+document.getElementById('indonesian').addEventListener('click', function() {
+  var selectField = document.querySelector("#google_translate_element select");
+  selectField.selectedIndex = 0; // Pilih Indonesia
+  selectField.dispatchEvent(new Event('change'));
+});
+
+document.getElementById('english').addEventListener('click', function() {
+  var selectField = document.querySelector("#google_translate_element select");
+  selectField.selectedIndex = 1; // Pilih Inggris
+  selectField.dispatchEvent(new Event('change'));
+});
+
+</script>
+
+ <div id="google_translate_element" style="display:none;"></div>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 
 </body>
 

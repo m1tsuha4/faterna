@@ -853,7 +853,7 @@ section {
 
 .call-to-action .container {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../img/cta-bg.jpg") center center;
+        url("../img/profile.jpeg") center center;
     background-size: cover;
     padding: 100px 60px;
     border-radius: 15px;
@@ -1236,7 +1236,104 @@ section {
 .portfolio .portfolio-wrap:hover img {
     transform: scale(1.1);
 }
-
+/*--------------------------------------------------------------
+# Portfolio Dosen
+--------------------------------------------------------------*/
+.portfolio1 .portfolio-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .portfolio1 .dosen1 .member {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .portfolio1 .pic {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  
+  .portfolio1 .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .portfolio1 .member-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 30px;
+  }
+  
+  .portfolio1 .member-info h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio1 .member-info .card-text {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .portfolio1 .member-info .row {
+    margin-top: 15px;
+  }
+  
+  .portfolio1 .member-info .row a img {
+    width: 70px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 992px) {
+    .portfolio1 .dosen1 .member {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .portfolio1 .pic,
+    .portfolio1 .member-info {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .portfolio1 .pic img {
+      max-width: 300px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  
+    .portfolio1 .member-info {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio1 .member-info h4 {
+      font-size: 20px;
+    }
+  
+    .portfolio1 .member-info .card-text {
+      font-size: 14px;
+    }
+  
+    .portfolio1 .member-info .row {
+      justify-content: center;
+    }
+  
+    .portfolio1 .member-info .row a img {
+      width: 60px;
+    }
+  }
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -2159,6 +2256,69 @@ section {
   }
 
 
+/*--------------------------------------------------------------
+# Departemen
+--------------------------------------------------------------*/
+.departemen .icon-boxes {
+    padding-bottom: 60px;
+    margin-top: -100px;
+  }
+  
+  @media (min-width: 1200px) {
+    .departemen .icon-boxes:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(50% + 20px);
+      background-color: #fff;
+    }
+  }
+  
+  .departemen .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #662549;
+    box-shadow: 0 0 29px 0 rgba(150, 20, 20, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .departemen .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .departemen .icon-box .title a {
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .departemen .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 48px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .departemen .icon-box:hover {
+    background: #F6635C;
+  }
+  
+  .departemen .icon-box:hover .title a,
+  .departemen .icon-box:hover .icon {
+    color: #ffffff;
+  }
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
